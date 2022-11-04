@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>영문메인</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="skip-navigation">
+    <a href="#contents_wrap">메뉴 건너뛰기</a>
+</div>
+
+<div id="app">
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+	            <!-- 2020-11-23 #수정 (언어별 양구군청 이동링크 추가) -->
+	            <a href="https://www.yanggu.go.kr/index_main.php?gid=english_page" target="_blank" class="btn-other">
+		            <img src="../../comn/img/logo-yanggu.png" alt="">
+		            <span class="text">Yanggu</span>
+	            </a>
+	            <a href="https://www.ygtour.kr/GuideEng/index" target="_blank" class="btn-VR">
+		            <img src="../../comn/img/logo-yanggu.png" alt="">
+		            <span class="text">Yanggu in VR</span>
+	            </a><!--  2021-08-30 #추가(VR바로가기) -->
+	            <!--
+	            # 영어
+	            <a href="https://www.yanggu.go.kr/index_main.php?gid=english_page" target="_blank" class="btn-other">
+		            <img src="../../comn/img/logo-yanggu.png" alt="">
+		            <span class="text">Yanggu</span>
+	            </a>
+
+	            # 일어
+	            <a href="https://www.yanggu.go.kr/index_main.php?gid=japan_page" target="_blank" class="btn-other">
+		            <img src="../../comn/img/logo-yanggu.png" alt="">
+		            <span class="text">楊口</span>
+	            </a>
+
+	            # 중어
+	            <a href="https://www.yanggu.go.kr/index_main.php?gid=china_page" target="_blank" class="btn-other">
+		            <img src="../../comn/img/logo-yanggu.png" alt="">
+		            <span class="text">杨口</span>
+	            </a>
+	            -->
+	            <img src="../../comn/img/yanggu.png" alt="">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../comn/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="../../comn/img/logo.png" alt="홈으로 이동">
+                </a>
+
+                <div class="wrap_gnb">
+                    <div class="gnbs gnbs-type01 pc clearfix">
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Hot!Place
+                            </a>
+                            <div class="depth02">
+                                <a href="#">Hanbandoseom Island</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Travel
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Festival
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Food & Accommodation
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Community
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="contents_wrap" id="contents_wrap">
+            <div class="area_main">
+                <!-- 메인배너 -->
+                <div class="swiper jumbotron">
+                    <div class="swiper-container">
+                        <!-- 2020-11-18 #수정 (메인배너 교체) -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron01.jpg" alt="">
+
+                                <div class="box-text">
+
+                                    <h3 class="title">Punch bowl</h3>
+                                    <p class="body">
+                                        It is a basin developed at an altitude of 400-500m
+                                        <br/>on the coast of Yanggu-gun, and is located about
+                                        <br/>22km northeast of Yanggu-gun.
+                                    </p>
+									<a href="/Eng/E10000/E10100/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=8" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron02.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Yanggu Hanbando Island</h3>
+                                    <p class="body">
+                                        Yanggu Hanbando Island is
+                                        <br/>the largest artificial wetland in Korea
+                                        <br/>located upstream of Lake Faro
+                                    </p>
+									<a href="/Eng/E10000/E10700/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=12" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron03.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Flower island</h3>
+                                    <p class="body">
+                                        On the Paroho Flower Island,
+                                        <br/>you can see different flowers in each flowering season.
+                                    </p>
+									<a href="/Eng/E10000/E10300/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=2" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron04.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Yanggu nature Eco Park</h3>
+                                    <p class="body">
+                                        Yanggu Arboretum is registered as
+                                        <br/>the 6th public arboretum in the province,
+                                        <br/>and you can enjoy over 1000 kinds of trees and plants in one place.
+                                    </p>
+									<a href="/Eng/E10000/E10500/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=7" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron05.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Park Soo Keun Museum</h3>
+                                    <p class="body">
+                                        Park Soo-geun is a painter who devoted his life to drawing
+                                        <br/>“human goodness and truthfulness” based on the life
+                                        <br/>of an unnamed and poor commoner.
+                                    </p>
+									<a href="/Eng/E10000/E10600/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=6" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron06.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Yanggu Porcelain Museum</h3>
+                                    <p class="body">
+                                        At the White Porcelain Museum,
+                                        <br/>which shows the 600-year history of white porcelain in Yanggu,
+                                        <br/>you can appreciate the lofty shape of Joseon white porcelain produced
+                                        <br/>by Yanggu white clay, centering  on the blue and white porcelain,
+                                        <br/>the last flower of Joseon porcelain.
+                                    </p>
+									<a href="/Eng/E10000/E10400/html" class="btn type02 type-white">read more</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../../comn/img/img_jumbotron07.jpg" alt="">
+
+                                <div class="box-text">
+                                    <h3 class="title">Center of Korea Observatory</h3>
+                                    <p class="body">
+                                        The opportunity to see the wide sky in the center
+                                        <br/>of the Korean Peninsula will be a fun experience and a special memory.
+                                    </p>
+									<a href="/Eng/E10000/E10400/html" class="btn type02 type-white">read more</a>
+									<a href="/GuideEng/vrGroupViewer?gr_seq=11" onclick="WindowOpenCenter(this.href, 'vrPopup', screen.width,screen.height); return false;" class="btn type02 type-white">View as VR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination-wrap">
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-pagination-counts">
+                            <span class="swiper-pagination-count active">1</span>
+                            <span class="swiper-pagination-count slash">/</span>
+                            <span class="swiper-pagination-count total"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hot place -->
+                <section class="section type01" id="section01">
+	                <div class="wrap_1200">
+		                <h3 class="section-title">
+			                <img src="../../comn/img/title-hotplace.png" alt="">
+		                </h3>
+	                </div>
+
+	                <div class="swiper swiper01">
+		                <div class="swiper-content">
+			                <!-- 슬라이더 버튼 -->
+			                <div class="swiper-buttons">
+				                <button class="swiper-button swiper-button-prev" title="이전 슬라이드">
+					                <img src="../../comn/img/halfArrowLeft-white.png" alt="이전 슬라이드">
+				                </button>
+
+				                <button class="swiper-button swiper-button-next" title="다음 슬라이드">
+					                <img src="../../comn/img/halfArrowRight-white.png" alt="다음 슬라이드">
+				                </button>
+			                </div>
+
+			                <!-- 슬라이더 페이징 -->
+			                <div class="swiper-pagination-wrap wrap_1200">
+				                <div class="swiper-pagination"></div>
+			                </div>
+
+			                <!-- 슬라이더 텍스트 -->
+			                <div class="box-text wrap_1200 active">
+				                <div class="content">
+					                <h3 class="title">Park Soo-geun Museum of Art</h3>
+
+					                <p class="body">
+						                The Park Soo-geun Museum of Art possesses a number of artifacts, oil paintings, watercolors, drawings, prints, illustrations, etc., and repairs and permanent displays. In addition, the museum holds a variety of works of major contemporary Korean painting companies that were active in the same era as Park Soo-geun and plans and exhibits them.
+					                </p>
+
+					                <a href="#" class="btn-more">
+						                <img src="../../comn/img/plus-white.png" alt="">
+					                </a>
+				                </div>
+			                </div>
+			                <div class="box-text wrap_1200">
+				                <div class="content">
+					                <h3 class="title">Park Soo-geun of Art</h3>
+
+					                <p class="body">
+						                The Park Soo-geun Museum of Art possesses a number of artifacts, oil paintings, watercolors, drawings, prints, illustrations, etc., and repairs and permanent displays. In addition, the museum holds a variety of works of major contemporary Korean painting companies that were active in the same era as Park Soo-geun and plans and exhibits them.
+					                </p>
+
+					                <a href="#" class="btn-more">
+						                <img src="../../comn/img/plus-white.png" alt="">
+					                </a>
+				                </div>
+			                </div>
+			                <div class="box-text wrap_1200">
+				                <div class="content">
+					                <h3 class="title">Soo-geun Museum of Art</h3>
+
+					                <p class="body">
+						                The Park Soo-ge drawings, prints, illustrations, etc., and repairs and permanent displays. In addition, the museum holds a variety of works of major contemporary Korean painting companies that were active in the same era as Park Soo-geun and plans and exhibits them.
+					                </p>
+
+					                <a href="#" class="btn-more">
+						                <img src="../../comn/img/plus-white.png" alt="">
+					                </a>
+				                </div>
+			                </div>
+			                <div class="box-text wrap_1200">
+				                <div class="content">
+					                <h3 class="title">Museum of Art</h3>
+
+					                <p class="body">
+						                The Park Soo-geun Museum of Art possesses a number of artifacts, oil paintings, watercolors, drawings, prints, illustrations, etc., and repairs and permanent displays. In addition, the museum holds a variety of works of major contemporary Korean painting companies that were active in the same era as Park Soo-geun and plans and exhibits them.
+					                </p>
+
+					                <a href="#" class="btn-more">
+						                <img src="../../comn/img/plus-white.png" alt="">
+					                </a>
+				                </div>
+			                </div>
+		                </div>
+
+		                <!-- 슬라이더 이미지 -->
+		                <div class="swiper-container">
+			                <div class="swiper-wrapper">
+				                <div class="swiper-slide">
+
+					                <!-- 2020-11-25 #수정2-1 (핫 플레이스 이미지 영역 a태그로 변경) -->
+					                <a href="#" class="m-ratioBox-wrap">
+						                <div class="m-ratioBox">
+							                <img src="../../comn/img/hotplace01.jpg" alt="">
+						                </div>
+					                </a>
+				                </div>
+			                </div>
+		                </div>
+	                </div>
+                </section>
+
+	            <!-- Let's go festival -->
+	            <section class="section type01" id="section02">
+		            <div class="wrap_1200">
+			            <h3 class="section-title">
+				            <img src="../../comn/img/title-festival.png" alt="">
+			            </h3>
+		            </div>
+
+		            <div class="swiper swiper02">
+			            <div class="wrap_1200">
+				            <div class="swiper-container">
+					            <div class="swiper-wrapper">
+						            <!-- 2020-11-25 #수정2-2 (이미지 영역 a태그로 변경) -->
+						            <a href="#" class="swiper-slide">
+							            <span class="index">01</span>
+							            <div class="m-ratioBox-wrap">
+								            <div class="m-ratioBox">
+									            <img src="../../comn/img/festival01.jpg" alt="">
+								            </div>
+							            </div>
+
+							            <div class="box-info">
+								            <h3 class="title">DMZ Punch Ball Siraegi Festival</h3>
+								            <p class="body">JUL.31.2020 ~ AUG.02.2020</p>
+							            </div>
+						            </a>
+
+						            <a href="#" class="swiper-slide">
+							            <span class="index">02</span>
+							            <div class="m-ratioBox-wrap">
+								            <div class="m-ratioBox">
+									            <img src="../../comn/img/festival02.jpg" alt="">
+								            </div>
+							            </div>
+
+							            <div class="box-info">
+								            <h3 class="title">Yanggu Navel Festival</h3>
+								            <p class="body">JUL.31.2020 ~ AUG.02.2020</p>
+							            </div>
+						            </a>
+
+						            <a href="#" class="swiper-slide">
+							            <span class="index">03</span>
+
+							            <div class="m-ratioBox-wrap">
+								            <div class="m-ratioBox">
+									            <img src="../../comn/img/festival03.jpg" alt="">
+								            </div>
+							            </div>
+
+							            <div class="box-info">
+								            <h3 class="title">Dosolsan District Battle Victory Event</h3>
+								            <p class="body">JUL.31.2020 ~ AUG.02.2020</p>
+							            </div>
+						            </a>
+					            </div>
+				            </div>
+			            </div>
+		            </div>
+	            </section>
+
+	            <!-- Yanggu in the picture -->
+	            <section class="section type01" id="section03">
+		            <div class="wrap_1200">
+			            <h3 class="section-title">
+				            <img src="../../comn/img/title-picture.png" alt="">
+			            </h3>
+
+			            <div class="pictures">
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture01.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture02.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture03.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture04.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture05.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture06.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture07.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture08.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+				            <a href="#" target="_blank" class="picture">
+					            <div class="m-ratioBox-wrap">
+						            <div class="m-ratioBox">
+							            <img src="../../comn/img/picture09.png" alt="">
+						            </div>
+					            </div>
+
+					            <div class="box-text-wrap">
+						            <div class="box-text">
+
+
+							            <h3 class="title">
+								            <span class="category">shopping</span>
+								            5-day market
+							            </h3>
+						            </div>
+					            </div>
+				            </a>
+			            </div>
+
+			            <div class="btns align-center">
+				            <a href="#" class="btn-more">+ View more</a>
+			            </div>
+		            </div>
+	            </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+	        <button class="btn_top m">
+		        <img src="../../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+	        </button>
+
+	        <img src="../../comn/img/logo_footer.png" alt="" class="logo">
+
+	        <p class="info">
+		        38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+		        <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+
+				<!-- 일문 주소 수정 - 20201203
+		        大韓民国江原道楊口郡楊口邑官公署路38   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+		        <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+				-->
+				<!-- 중문 주소 수정 - 20201203
+		        大韓民国江原道楊口郡杨口邑官公署路38  /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+		        <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+				-->
+	        </p>
+        </div>
+    </footer>
+</div>
+<script>
+    var swiper = new Swiper('.jumbotron .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: '.jumbotron .swiper-pagination',
+            clickable: false,
+        },
+        navigation: {
+            nextEl: '.jumbotron .swiper-button-next',
+            prevEl: '.jumbotron .swiper-button-prev',
+        },
+        on: {
+        	init: function(){
+        		$(".jumbotron .swiper-pagination-count.total").text(this.slides.length - 2);
+            },
+
+        	slideChange: function(){
+				$(".jumbotron .swiper-pagination-count.active").text(this.realIndex + 1);
+            }
+        }
+    });
+
+    var btnControl = $('.jumbotron .swiper-btn-control');
+
+    btnControl.click(function(){
+        $(this).toggleClass('active');
+
+        swiper.autoplay.running ? swiper.autoplay.stop() : swiper.autoplay.start();
+    });
+
+    var swiper01 = new Swiper('.swiper01 .swiper-container', {
+        centeredSlides: true,
+		speed: 1000,
+	    simulateTouch: false,
+	    preventInteractionOnTransition: true,
+	    autoplay: {
+		    delay: 3000,
+		    disableOnInteraction: false,
+	    },
+	    pagination: {
+		    el: '.swiper01 .swiper-pagination',
+		    clickable: true,
+		    renderBullet: function (index, className) {
+			    return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+		    },
+	    },
+	    on: {
+        	"slideChange":function () {
+		        $(".swiper01 .box-text").removeClass("active");
+		        $(".swiper01 .box-text").eq(this.activeIndex).addClass("active");
+	        }
+	    },
+        navigation: {
+            nextEl: '.swiper01 .swiper-button-next',
+            prevEl: '.swiper01 .swiper-button-prev',
+        },
+    });
+
+    var swiper02 = new Swiper('.swiper02 .swiper-container', {
+	    centeredSlides: true,
+	    speed: 600,
+	    simulateTouch: false,
+	    preventInteractionOnTransition: true,
+	    slidesPerView: 3,
+	    spaceBetween:190,
+	    loop: true,
+	    autoplay: {
+		    delay: 1500,
+		    disableOnInteraction: false,
+	    },
+	    breakpoints: {
+	    	1400: {
+			    spaceBetween:140,
+		    },
+		    1000: {
+			    spaceBetween:60,
+			    slidesPerView:2,
+		    },
+		    768: {
+			    spaceBetween:60,
+			    slidesPerView:1,
+		    }
+	    }
+
+    });
+
+    let width;
+    let height;
+
+    setTimeout(function(){
+	    $(".picture img").each(function(index, item){
+		    width = $(item).width();
+		    height = $(item).height();
+
+		    if(width > height)
+			    return $(item).css("width", "auto").css("height", "100%");
+
+		    return $(item).css("width", "100%").css("height", "auto");
+	    });
+    }, 500);
+
+</script>
+</body>
+</html><!-- //하단부분 -->

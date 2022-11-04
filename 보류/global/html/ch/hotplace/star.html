@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>国土正中央天文台</title>
+	<link rel="stylesheet" href="../../../comn/css/default.css">
+	<link rel="stylesheet" href="../../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../comn/css/common.css">
+	<link rel="stylesheet" href="../../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../../comn/css/style.css">
+
+	<script src="../../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../../comn/js/swiper.min.js"></script>
+	<script src="../../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../../comn/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="../../../comn/img/logo.png" alt="홈으로 이동">
+                </a>
+
+				<div class="wrap_gnb">
+					<div class="gnbs gnbs-type01 pc clearfix">
+						<div class="gnb ">
+							<a href="#" class="text">杨口热门景点</a>
+							<div class="depth02">
+								<a href="../hotplace/island.html" title="Korean Peninsula Island">韩半岛岛</a>
+								<a href="../hotplace/flower.html" title="Flower Island">花岛</a>
+								<a href="../hotplace/dmz.html" title="DMZ Punchbowl dulle-gil">DMZ环路</a>
+								<a href="../hotplace/forest.html" title="Yanggu Arboretum">杨口树木园</a>
+								<a href="../hotplace/art.html" title="Park Soo-geun Museum">朴寿根美术馆</a>
+								<a href="../hotplace/museum.html" title="White Porcelain Museum">白瓷博物馆</a>
+								<a href="../hotplace/star.html" title="Center of Korea Observatory">国土正中央天文台</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel</a>
+							<div class="depth02">
+								<a href="#" title="DMZ Peace">DMZ Peace</a>
+								<a href="#" title="Nature">Nature</a>
+								<a href="#" title="History &amp; Culture">History &amp; Culture</a>
+								<a href="#" title="Leisure &amp; Recreation">Leisure &amp; Recreation</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Festival</a>
+							<div class="depth02">
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel information</a>
+							<div class="depth02">
+								<a href="../sub/tourlistInformation.html" title="Tourist Information">Tourist Information</a>
+								<a href="../sub/restaurant.html" title="Restaurant">Restaurant</a>
+								<a href="../sub/accommodation.html" title="Accommodation">Accommodation</a>
+								<a href="../sub/traffic.html" title="Traffic report">Traffic report</a>
+								<a href="../sub/weather.html" title="Weather report">Weather report</a>
+								<a href="../sub/exchangeRateReport.html" title="Exchange rate report">Exchange rate report</a>
+								<a href="https://english.visitkorea.or.kr/enu/TRV/TV_ENG_Must100.jsp#gang" target="_blank" title="Top 100 Korean Tourism">Top 100 Korean Tourism</a>
+								<a href="#" title="FAQ">FAQ</a>
+								<a href="../sub/citytour.html" title="Citytour">Citytour</a>
+							</div>
+						</div>
+					</div><!-- //gnbs -->
+				</div><!-- //wrap_gnb -->
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			- travel
+			<img src="../../../comn/img/visual02.jpg" alt="">
+			- festival
+			<img src="../../../comn/img/visual03.jpg" alt="">
+			- travel info
+			<img src="../../../comn/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="../../../comn/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							Hot! Place
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="../../../comn/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="../../../comn/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mb-60"></div>
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_hotplace area_star">
+				<div class="jumbotron m-parallax type01">
+					<div class="wrap_1200">
+						<div class="box-text">
+							<h3 class="title">国土正中央天文台</h3>
+							<p class="body">“在国土正中央仰望的天空”</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-120"></div>
+
+				<div class="contents">
+					<section id="section01">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<h3 class="title type02">
+										“杨口是从什么时候开始成为韩半岛的国土中心？
+									</h3>
+
+									<div class="mb-60"></div>
+
+									<p class="body type01">
+									是否真的位于韩半岛的中央？”在杨口旅行时，看着杨口在地图上的位置，难免会产生这样的疑问。根据大韩民国宪法，韩国领土包括韩半岛及其附属岛屿，包括岛屿在内可以设定韩国领土东西南北四个极点。以这个4个极点为准，中央经线和纬线的交叉点就是韩国国土的正中央点。韩半岛正中央支点坐标为东经128°02'02.5°，北纬38°03'37.5°。该坐标的相应地区正是江原道杨口郡南面挑村里山48号附近。杨口正是以此为依据被指定为国土的正中央。杨口国土中央天文台成立于2007年，是为了能够在韩国的中心仰望天空，在韩半岛正中央附近建了天文台。在韩半岛的中心遥望天空，单凭这一点也将成为有趣的经历和特别的回忆。
+									</p>
+
+									<div class="mb-30"></div>
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/star02.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section02" class="m-parallax type01">
+						<div class="wrap_1200">
+							<div class="content">
+								<p class="body type01">
+									在国土中央天文台看星星的意义，不仅仅是简单地仰望天空欣赏星星。看着点缀在夜空中的星星，首先想到的是，为什么忙得连仰望天空的时间都没有呢？心里仔细琢磨着仰望天空欣赏美丽星星是在什么时候，看着星星感到神奇向着星星祈愿又是在什么时候。可忽然觉得那些都已经离自己很遥远了。
+								</p>
+
+								<div class="mb-30"></div>
+
+								<p class="body type01">
+								忙碌奔波的生活，不知从何时开始连个抬起头仰望天空数一数星星都变得奢侈。看见漆黑夜空里点缀着色彩斑斓的星星，只是因为觉得美丽而新奇地望去。看着天上的星星，不只是孩子们感到新奇和激动，对于在城市里不常见也没有时间看星星的大人们来说，也是一种非常特别的感受。尤其是，像最近这样所有人疲惫的时期，在天空中闪烁着的星星，其本身也会给我们带来莫大的安慰。
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section03">
+						<div class="wrap_1200">
+							<div class="box-twin type02">
+								<div class="left">
+									<img src="../../../comn/img/star04.jpg" alt="">
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/star05.jpg" alt="">
+								</div>
+							</div>
+
+							<div class="mb-50"></div>
+
+							<div class="body type01">
+								如果觉得在天文台看星星因为过于专业而感到有些负担，那么请你不必担心。虽然每个人都有对宇宙的幻想和好奇，但是还缺乏一些有关行星和星星的具体知识。即使还不够了解行星和星座，也足以陶醉在它的美丽之中。但是如果想更专业地去了解、欣赏和学习星座和行星，杨口国土正中央天文台无疑是你最佳选择。除了利用天文台内的展示解说程序直接观察星星以外，还可以参观天文台并听取详细说明。
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section04">
+						<div class="wrap_1200">
+							<img src="../../../comn/img/star06.jpg" alt="">
+
+							<div class="mb-25"></div>
+
+							<div class="box-twin type02">
+								<div class="fragment left">
+									<p class="body type01">
+									如果在天文台内掌握了有关星星的知识，<br>那么现在让我们到外面直接面对天空。
+									</p>
+
+									<div class="mb-60"></div>
+
+									<img src="../../../comn/img/star07.jpg" alt="">
+
+									<div class="mb-50"></div>
+
+									<p class="body type01">
+									国土中央天文台内有露营地，野营时看到的夜空，仅凭想想都觉得是个浪漫的时光。尽管在室内舒服地观看也不失为一种好方法，但不管怎么说，欣赏夜空最完美的方法应该是呼吸着夜晚清爽的空气，在黑暗中仰望镶嵌在夜空中的星星。这对没有机会呼吸清新的空气和看到晴朗天空的孩子们以及忍受着沉闷的日常生活的大人们来说，都将是一份巨大的礼物。如今野营已成为人们的业余爱好。露营既是暂时脱离日常生活享受自然的时间，又是从人与汽车拥挤的城市中逃离。即使不具备高超的设备和技术，只带着椅子和帐篷住在山清水秀的地方，欣赏那里美丽风景的完整的休息时间。尽管需要准备装备和食物可能会觉得麻烦，但唯独野营例外。
+
+
+
+									</p>
+
+									<div class="mb-25"></div>
+
+									<p class="body type01">
+										I虽然不是什么服务了不起的饭店，也不是舒适安乐的酒店的睡床，但是现在人们都想走出喧闹的地方，选择一处属于自己的疗养地，用略显笨拙的手艺准备野餐，睡在有些不便的帐篷里。因为自然会让您忘掉这一切的不便。在天文台度过的一夜也是如此。如果在阳光明媚的白天充分欣赏了青山绿水，那么到了夜晚在漆黑的黑暗中躺下来悠闲地仰望天空，星星闪烁的夜空似乎在带给我们带来些许安慰。
+
+									</p>
+								</div>
+								<div class="fragment right">
+									<img src="../../../comn/img/star08.jpg" alt="">
+
+									<div class="mb-50"></div>
+
+									<p class="body type01">
+									看着那些闪烁的星星，心里想那颗星星是什么样的星星，似乎能看到星座的模样，一股好奇心悄然而起。到了夜晚用双眼寻找白天耳闻目睹的场景，才是天文台露营场的最大魅力。即使看同样的风景，每个人都会有不同的感受，这也是看星星的乐趣之一。参观天文台获取星座和行星相关信息后，在亲自寻找星座的过程中，即使看到同样的星球，也会说成是不同的星座。这个时候，哪怕只是消遣地赌一把，露营地的回忆也会变得更加完美。
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section05" class="m-parallax type01"></section>
+
+					<div class="mb-60"></div>
+
+					<section class="section06">
+						<div class="wrap_1200">
+							<p class="body type01">
+								从天文台看到的夜空中的星星，无论用什么样的文章或语言都难以完整地表现出来。写文章的时候非常遗憾的是不能完美地表现亲眼目睹的美丽。在深夜的黑暗中看天上的星星，呼吸着清新的空气，心里的杂念一消而光，只有星星在眼前闪烁。
+							</p>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section07" class="m-parallax type01">
+						<div class="wrap_1200">
+							<p class="body type01">
+								要说起“夜景”，人们最熟悉的是登上高处俯瞰脚下绚丽的灯光。但是如果想看真正意义上的“夜景”，不是登高眺望形形色色的灯光，而是站在地面上抬头仰望天空，望着夜空中闪烁着的星星。在韩半岛的中心，用双眼观察夜晚的夜空，给你留下星星般璀璨的美好梦想和回忆。
+
+
+							</p>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="../../../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="../../../comn/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

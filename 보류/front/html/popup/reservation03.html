@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>예약팝업창 단계3</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script type="text/javascript"
+	        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+	<script src="../../comn/js/map.js"></script>
+	<script src="../../comn/js/common.js"></script>
+</head>
+<body>
+
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="popup sub">
+	<header class="popup-header">
+		<div class="wrap_1200">
+			<div class="links">
+				<a href="#" target="_blank" class="link">
+					<img src="../../comn/img/yanggu-white.png" alt="" class="icon">
+					<span class="text">양구문화관광 바로가기</span>
+				</a>
+				<a href="#" target="_blank" class="link">
+					<img src="../../comn/img/yanggu02-white.png" alt="" class="icon">
+					<span class="text">양구군청 바로가기</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="black"></div>
+
+	<div class="main">
+		<div class="visual_wrap">
+			<div class="box_text">
+				<p class="title">양구 시티투어</p>
+			</div>
+			<img src="../../comn/img/popVisual01.jpg" alt="">
+		</div>
+
+		<div class="sub_wrap">
+			<div class="box_depth02 clearfix">
+				<div class="wrap_1200">
+					<a href="#" class="depth02 active">실시간예약</a>
+
+					<a href="#" class="depth02">예약신청확인</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="groupReservation-wrap step04">
+				<div class="wrap_1200">
+					<div class="align-items">
+						<div class="align-item">
+
+						</div>
+
+						<!-- 날짜선택, 예약인원 -->
+						<div class="align-item">
+							<form id="theForm" action="bookingSave" method="post">
+
+								<!-- 인원정보 -->
+								<div class="section-counts section type03">
+									<div class="section-top">
+										<p class="section-title before-squareCheck">인원정보</p>
+									</div>
+
+									<div class="section-bottom">
+										<div class="infos">
+											<div class="input-wrap">
+
+												<!-- 2020-11-25 #수정 #4 (div.info로 감싸기) -->
+												<div class="info">
+													<p class="info-title">1.</p>
+													<div class="info-body">
+														<div class="input-wrap">
+															<div class="input_with_button">
+																<div class="input input_three">
+																	<div class="inputs">
+																		<div class="input input_text">
+																			<input type="text" name="visitNameArray"
+																			       title="성명" placeholder="성명"
+																			       isnullcheck="true" maxlength="10">
+																		</div>
+																		<div class="input input_select">
+																			<select name="visitGenderArray" title="성별"
+																			        isnullcheck="true">
+																				<option value="">성별</option>
+																				<option value="0">남</option>
+																				<option value="1">여</option>
+																			</select>
+																		</div>
+																		<div class="input input_text">
+																			<input type="text" name="visitBirthArray"
+																			       class="numberOnly" title="생년월일"
+																			       placeholder="생년월일 6자리, 예시) 910101"
+																			       isnullcheck="true" maxlength="6">
+																		</div>
+																		<div class="input input_text">
+																			<input type="text" name="visitMemoArray"
+																			       title="비고" placeholder="비고"
+																			       maxlength="50">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="input-wrap">
+
+												<!-- 2020-11-25 #수정 #4 (div.info로 감싸기) -->
+												<div class="info">
+													<p class="info-title">1.</p>
+													<div class="info-body">
+														<div class="input-wrap">
+															<div class="input_with_button">
+																<div class="input input_three">
+																	<div class="inputs">
+																		<div class="input input_text">
+																			<input type="text" name="visitNameArray"
+																			       title="성명" placeholder="성명"
+																			       isnullcheck="true" maxlength="10">
+																		</div>
+																		<div class="input input_select">
+																			<select name="visitGenderArray" title="성별"
+																			        isnullcheck="true">
+																				<option value="">성별</option>
+																				<option value="0">남</option>
+																				<option value="1">여</option>
+																			</select>
+																		</div>
+																		<div class="input input_text">
+																			<input type="text" name="visitBirthArray"
+																			       class="numberOnly" title="생년월일"
+																			       placeholder="생년월일 6자리, 예시) 910101"
+																			       isnullcheck="true" maxlength="6">
+																		</div>
+																		<div class="input input_text">
+																			<input type="text" name="visitMemoArray"
+																			       title="비고" placeholder="비고"
+																			       maxlength="50">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="btns-submit align-right">
+						<a href="bookingStep1?goods_num=6" class="btn btn-gray">이전</a>
+						<a href="#" class="btn btn-blue btnNext">다음</a>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn_top m">
+				<img src="../../comn/img/icon_forked_top_white.png" alt="최상단으로 이동">
+			</button>
+			<button class="btn_down m">
+				<img src="../../comn/img/icon_forked_top_white.png" alt="최상단으로 이동">
+			</button>
+		</div>
+
+		<footer class="popup-footer">
+			<div class="wrap_1200">
+				<div class="texts">
+					<p class="text">운영대행사:매일관광</p>
+					<p class="text">TEL:033-253-4567</p>
+					<a href="tel:033-480-2183" class="text">033-480-2183/2278</a>
+					<p class="text">주소:(24522)강원도 양구군 양구읍 관공서로 38(하리34-5)</p>
+				</div>
+
+				<p class="copyright">Copyright ⓒ 2015 Yanggu County. All rights reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

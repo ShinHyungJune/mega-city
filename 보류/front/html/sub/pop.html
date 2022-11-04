@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>팝업창 예시</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<div class="pop-wrap" style="display:block;" id="pop03">
+    <div class="pop type02">
+        <!-- 팝업창 헤더 -->
+        <div class="pop-header">
+            <h3 class="title">팝업창 제목</h3>
+
+            <button class="btn-close m-script-pop" data-target="#pop03">
+                <img src="../../comn/img/icon_x_white.png" alt="">
+            </button>
+        </div>
+
+        <!-- 팝업창 내용 영역 -->
+        <div class="pop-body">
+
+            <section class="section-detail type01">
+                <div class="wrap_1200">
+                    <!-- 승인상태 폼 -->
+                    <div class="box-form type01">
+                        <div class="m-input-wrap type01">
+                            <h4 class="title">승인상태</h4>
+
+                            <div class="m-input-withBtn type01">
+                                <div class="m-input-text m-input-select type01">
+                                    <select name="" id="">
+                                        <option value="">공개</option>
+                                        <option value="">비공개</option>
+                                    </select>
+                                </div>
+
+                                <button class="m-input-btn m-boards-btn">변경하기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-60"></div>
+
+                    <!-- 코스 폼 -->
+                    <div class="box-form type01">
+                        <div class="m-input-wrap type01">
+                            <h4 class="title">상태</h4>
+
+                            <div class="m-input-select type01">
+                                <select name="" id="">
+                                    <option value="">공개</option>
+                                    <option value="">비공개</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="m-input-wrap type01">
+                            <h4 class="title">나의 여행제목</h4>
+
+                            <div class="m-input-text type01">
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="m-input-wrap type01">
+                            <h4 class="title">코스설명</h4>
+
+                            <div class="m-input-textarea type01">
+                                <textarea name="" id=""></textarea>
+                            </div>
+                        </div>
+
+                        <div class="m-input-wrap type01">
+                            <h4 class="title">해시태그</h4>
+
+                            <div class="m-input-text type01">
+                                <input type="text" placeholder="해시태그 입력 후 엔터키를 눌러 추가하세요.">
+                            </div>
+
+                            <div class="hashtags type01">
+                                <div class="hashtag">
+                                    #펜션
+                                    <button class="btn-remove">X</button>
+                                </div>
+                                <div class="hashtag">
+                                    #숙박
+                                    <button class="btn-remove">X</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-60"></div>
+
+                    <div class="map type04">
+                        <div class="top">
+                            <h3 class="title">여행제목</h3>
+                        </div>
+
+                        <div class="map-wrap">
+                            <!-- 사이드바 -->
+                            <div class="sidebar">
+                                <div class="sidebar-box sidebar-box01">
+                                    <div class="top">
+                                        <p class="title">전체 일정 보기</p>
+                                    </div>
+
+                                    <div class="contents">
+                                        <!-- 2020-11-10 #수정2 (box-content로 content 감싸기, 삭제버튼 추가) -->
+                                        <div class="box-content">
+                                            <button class="content active">
+                                                <span class="title">DAY 1</span>
+                                            </button>
+
+                                            <button class="btn-delete">
+                                                <img src="../../comn/img/trash-white.png" alt="">
+                                            </button>
+                                        </div>
+
+                                        <div class="box-content">
+                                            <button class="content">
+                                                <span class="title">DAY 2</span>
+                                            </button>
+
+                                            <button class="btn-delete">
+                                                <img src="../../comn/img/trash-white.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn-more m-script-pop" data-target=".pop-wrap" data-animation="toggle">
+                                        <img src="../../comn/img/plus-white.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="sidebar-toggle">
+                                    <div class="sidebar-box sidebar-box02">
+                                        <div class="top">
+                                            <h3 class="title">DAY1</h3>
+
+                                            <button class="btn-rotate">
+                                                <img src="../../comn/img/rotate-white.png" alt="" class="icon">
+                                            </button>
+                                        </div>
+
+                                        <div class="contents m-scroll-smooth m-scrollbar">
+                                            <!-- 2020-11-09 #수정 (데이터가 없습니다 추가)
+                                            <div class="empty">
+                                                <img src="../../comn/img/logo_replace.png" alt="">
+
+                                                <p class="text">데이터가 없습니다.</p>
+                                            </div>
+                                            -->
+
+                                            <!-- 2020-11-09 #수정 (체크된 content는 checked 추가) -->
+                                            <div class="content checked">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <span class="number">1</span>
+                                                        <span class="point">대표</span>
+
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <h3 class="title">박수근 미술관</h3>
+
+                                                <div class="btns">
+                                                    <!-- 2020-11-09 #수정2 (체크박스 추가) -->
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox" id="test">
+                                                        <label for="test"></label>
+                                                    </div>
+
+                                                    <button class="btn-util">
+                                                        <img src="../../comn/img/trash-gray.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2020-11-09 #수정 (거리 추가) -->
+                                            <div class="box-distance">
+                                                <img src="../../comn/img/car-gray.png" alt="">
+
+                                                <span class="text">8km</span>
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <span class="number">2</span>
+
+                                                        <img src="" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <h3 class="title">박수근 미술관</h3>
+
+                                                <div class="btns">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox" id="test2">
+                                                        <label for="test2"></label>
+                                                    </div>
+
+                                                    <button class="btn-util">
+                                                        <img src="../../comn/img/trash-gray.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-box sidebar-box03">
+                                        <!-- 2020-11-09 #수정 (상세정보창 추가) -->
+                                        <!-- 상세정보창 -->
+                                        <div class="box-detail">
+                                            <button class="btn-close m-script-pop" data-target=".box-detail" data-animation="toggle">
+                                                <img src="../../comn/img/icon_x_white.png" alt="">
+                                            </button>
+
+                                            <!-- 썸네일 -->
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </div>
+
+                                            <!-- 정보 -->
+                                            <div class="box-detail-content">
+                                                <h3 class="title">박수근 미술관</h3>
+
+                                                <div class="m-infos type01">
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">주소</h4>
+
+                                                        <p class="m-info-body">강원 양구군 양구읍 박수근로 265-15</p>
+                                                    </div>
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">연락처</h4>
+
+                                                        <p class="m-info-body">033-480-2655</p>
+                                                    </div>
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">정기휴무</h4>
+
+                                                        <p class="m-info-body">
+                                                            매주 월요일, 1월 1일(월요일이 공휴일일 경우 정상운영)
+                                                        </p>
+                                                    </div>
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">이용요금</h4>
+
+                                                        <p class="m-info-body">
+                                                            성인(20세 이상)-3,000원 /
+                                                            학생(초/중/고)-2,000원
+                                                        </p>
+                                                    </div>
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">이용시간</h4>
+
+                                                        <p class="m-info-body">
+                                                            오전 09:00~18:00
+                                                            <br/>(관람시간 1시간 전 입장)
+                                                        </p>
+                                                    </div>
+                                                    <div class="m-info">
+                                                        <h4 class="m-info-title before-square">홈페이지</h4>
+
+                                                        <a href="http://www.parksookeun.or.kr" target="_blank" class="m-info-body">http://www.parksookeun.or.kr</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="top">
+                                            <div class="input-search">
+                                                <input type="text" placeholder="장소검색">
+
+                                                <button class="icon">
+                                                    <img src="../../comn/img/search-gray.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="categories">
+                                            <div class="category-wrap">
+                                                <button class="category active">
+                                                    <img src="../../comn/img/flag-white.png" alt="" class="icon">
+                                                    <span class="text">관광지</span>
+                                                </button>
+                                            </div>
+                                            <div class="category-wrap">
+                                                <button class="category">
+                                                    <img src="../../comn/img/spoon-white.png" alt="" class="icon">
+                                                    <span class="text">음식점</span>
+                                                </button>
+                                            </div>
+                                            <div class="category-wrap">
+                                                <button class="category">
+                                                    <img src="../../comn/img/building-white.png" alt="" class="icon">
+                                                    <span class="text">숙박</span>
+                                                </button>
+                                            </div>
+                                            <div class="category-wrap">
+                                                <button class="category">
+                                                    <img src="../../comn/img/star-white.png" alt="" class="icon">
+                                                    <span class="text">즐겨<br/>찾기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="contents m-scroll-smooth m-scrollbar">
+                                            <!-- 2020-11-09 #수정3 (컨텐츠 영역 분리) -->
+                                            <div class="fragment">
+                                                <div class="content">
+                                                    <div class="m-ratioBox-wrap">
+                                                        <div class="m-ratioBox">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="box-text">
+                                                        <h3 class="title">박수근 미술관</h3>
+
+                                                        <p class="sub">핫!플레이스 핫!플레이스 핫!플레이스 핫!플레이스 핫!플레이스 핫!플레이스</p>
+                                                    </div>
+
+                                                    <button class="btn-plus"></button>
+                                                </div>
+
+                                                <!-- 데이터 없을 경우
+                                                <div class="empty">
+                                                    <img src="../../comn/img/logo_replace.png" alt="">
+
+                                                    <p class="text">데이터가 없습니다.</p>
+                                                </div>
+                                                -->
+                                            </div>
+
+                                            <div class="btns">
+                                                <button class="btn-more">더보기 <span class="text">+</span></button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="sidebar-toggle-btn">
+                                    <img src="../../comn/img/arrowLeft-white.png" alt="">
+                                </button>
+                            </div>
+
+                            <!-- 지도 -->
+                            <div id="map"></div>
+                        </div>
+                    </div>
+
+                    <div class="btns mb-60 align-center">
+                        <button class="btn type02 type-gray">목록</button>
+                        <button class="btn type02 type-gray">수정</button>
+                        <button class="btn type02 type-blue">삭제</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- 팝업창 푸터 -->
+        <div class="pop-footer">
+            <div class="btns">
+                <button class="m-boards-btn bg-red m-script-pop" data-target="#pop03">취소</button>
+                <button class="m-boards-btn bg-primary">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

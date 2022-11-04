@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>관리자페이지</title>
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"/>
+	<meta name="format-detection" content="telephone=no, email=no, address=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style_w.css">
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/jquery-ui-1.11.4.min.js"></script>
+	<script src="../../comn/js/pointerMap.js"></script>
+	<!-- 2021-05-04 #수정2-1 - flash.js 추가 -->
+	<script src="../../comn/js/flash.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../comn/js/common.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../../comn/js/respond.min.js"></script>
+
+	<![endif]-->
+	<style>
+
+	</style>
+</head>
+
+<body style="overflow:auto;" class="m-scrollbar type02">
+
+<!-- 2021-05-04 #수정1-1 - 로딩 추가 -->
+<!--
+<div class="m-loading-full type01 active"></div>
+-->
+
+<div class="pointerMap type01">
+	<img src="../../comn/img/vr2.jpg" alt="" class="pointerMap-img">
+
+	<!-- 화면 표시 포인터 -->
+	<div class="pointerMap-displayPointers"></div>
+
+	<!-- 현재 마우스 좌표 -->
+	<div class="pointerMap-currentCoords"></div>
+
+	<!-- 사이드바 -->
+	<div class="pointerMap-sidebar m-scrollbar type02">
+		<button class="pointerMap-sidebar-btnToggle"></button>
+
+		<div class="pointerMap-search">
+			<input type="text" placeholder="장소명">
+
+			<button class="pointerMap-search-btn"></button>
+		</div>
+
+		<div class="pointerMap-pointers-wrap">
+			<!-- 2021-05-12 #수정1-1 - 현재 좌표 영역 추가 -->
+			<!-- 현재 좌표 -->
+			<div class="pointerMap-pointers-wrap-top">
+				<h3 class="pointerMap-pointers-wrap-top-title">현재 좌표</h3>
+
+				<!-- 2021-05-12 #수정2-1 - 저장버튼 추가 -->
+				<a href="#" class="btn-save"><img src="../../comn/img/save-primary.png" alt=""></a>
+			</div>
+
+			<div class="pointerMap-currentCoords">
+				<div class="pointerMap-currentCoords-x">X: <span class="value"></span></div>
+				<div class="pointerMap-currentCoords-y">Y: <span class="value"></span></div>
+			</div>
+
+			<!-- 장소 목록 -->
+			<div class="pointerMap-pointers-wrap-top">
+				<h3 class="pointerMap-pointers-wrap-top-title">장소 목록</h3>
+			</div>
+
+			<div class="pointerMap-places m-scrollbar type02">
+
+			</div>
+
+
+			<!-- 포인터 목록 -->
+			<div class="pointerMap-pointers-wrap-top">
+				<h3 class="pointerMap-pointers-wrap-top-title">포인터 목록</h3>
+			</div>
+
+			<div class="pointerMap-pointers m-scrollbar type02">
+
+			</div>
+		</div>
+
+		<div class="pointerMap-sidebar-btns">
+			<a href="#" class="pointerMap-sidebar-btn">닫기</a>
+			<a href="#" class="pointerMap-sidebar-btn">확인</a>
+		</div>
+	</div>
+
+	<!-- 미니맵 -->
+	<div class="pointerMap-miniMap">
+		<button class="pointerMap-miniMap-btn"></button>
+
+		<img src="../../comn/img/vr2.jpg" alt="" class="pointerMap-miniMap-img">
+
+		<div class="pointerMap-miniMap-screen"></div>
+
+		<!-- 2021-05-07 #수정1-1 - 미니맵 전용 포인터 추가 -->
+		<div class="pointerMap-miniMap-displayPointers"></div>
+
+		<!-- 2021-05-07 #수정1-2 - 미니맵 가이드라인 추가 -->
+		<div class="pointerMap-miniMap-lines">
+			<div class="pointerMap-miniMap-line"></div>
+			<div class="pointerMap-miniMap-line"></div>
+			<div class="pointerMap-miniMap-line"></div>
+			<div class="pointerMap-miniMap-line"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// 2021-05-04 #수정3-1 - 포인터 이미지 넓이, 높이 사이즈 추가
+	let displayPointerSize = {
+		width: 93,
+		height:93
+	};
+
+	// 2021-05-04 #수정2-2 - flash 객체 추가
+	let flash = new Flash();
+
+	let pointers = 	[
+		{
+			id: 1,
+			x: 2000,
+			y: 1980,
+			place_id: 1
+		},
+		{
+			id: 2,
+			x: 5,
+			y: 3,
+			place_id: 2
+		},
+		{
+			id: 3,
+			x: 1000,
+			y: 1400,
+			place_id: 3
+		},
+		{
+			id: 4,
+			x: 450,
+			y: 320,
+			place_id: 4
+		},
+	];
+
+	let places = 	[
+		{
+			id: 1,
+			title: "거실"
+		},
+		{
+			id: 2,
+			title: "화장실"
+		},
+		{
+			id: 3,
+			title: "안방"
+		},
+		{
+			id: 4,
+			title: "서재실"
+		},
+		{
+			id: 5,
+			title: "연습실"
+		},
+	];
+
+	let pointerMap;
+
+	// 포인터맵 세팅
+	pointerMap = new PointerMap({
+		pointers: pointers,
+
+		places: places,
+
+		// 2021-05-12 #수정3-1 - 중앙좌표 초기값 세팅 추가
+		currentCenterCoords: {
+			x:3925,
+			y:2002
+		},
+
+		onPointerSave: function(pointer, afterSave){
+			// 포인터 저장 시 할일 명시
+
+			// afterSave(생성된 pointer 데이터) 호출 필요
+			/* pointer 형태(id 필수)
+			{
+				id: 3,
+				x: 12,
+				y: 45,
+				place_id: 1
+			},
+			* */
+
+			// 2021-05-04 #수정2-3 - 생성 후 메세지 노출
+			flash.show("포인터가 저장되었습니다.");
+		},
+
+		onPointerUpdate: function(pointer){
+			// 포인터 수정 시 할일 명시
+
+			// 2021-05-04 #수정2-4 - 수정 후 메세지 노출
+			flash.show("포인터가 수정되었습니다.");
+		},
+
+		onPointerRemove: function(pointer){
+			// 포인터 삭제 시 할일 명시
+
+			// 2021-05-04 #수정2-5 - 삭제 후 메세지 노출
+			flash.show("포인터가 삭제되었습니다.");
+		},
+	});
+
+	<!-- 2021-05-12 #수정1-2 - 현재 좌표 얻기 함수 호출 예시 -->
+	pointerMap.getCurrentCenterCoordinates();
+	/*
+	{
+		x: 325,
+		y: 123
+	}
+	*/
+
+</script>
+</body>
+</html><!-- //하단부분 -->

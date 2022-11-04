@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>통계</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style_w.css">
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../../comn/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../comn/js/chart.js"></script>
+    <script src="../../comn/js/chart-custom.js"></script>
+</head>
+
+<body>
+
+<div id="skip_nav">
+    <a href="#tnb">주메뉴</a>
+    <a href="#page_container">컨텐츠</a>
+</div>
+
+<div class="wrapper">
+
+    <header class="header">
+        <h1><a href="main.html">관리자페이지</a></h1>
+        <nav class="tnb" id="tnb">
+            <li class="depth1_tnb"><a href="./system/basic_info.html">홈페이지관리</a>
+                <ul class="snb">
+                    <li><a href="./system/basic_info.html">기본설정</a></li>
+                    <li><a href="./contents/contents_list.html">콘텐츠관리</a></li>
+                    <li><a href="./statistics/statistics.html">통계관리</a></li>
+                    <li><a href="./system/terms.html">약관관리</a></li>
+                    <li><a href="./sms/member.html">문자관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./member/member_list.html">회원관리</a>
+                <ul class="snb">
+                    <li><a href="./member/member_list.html">일반회원</a></li>
+                    <li><a href="./member/mentor_list.html">멘토관리</a></li>
+                    <li><a href="./member/admin_list.html">관리자관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./business/club.html">사업관리</a>
+                <ul class="snb">
+                    <li><a href="./business/club.html">창업동아리관리</a></li>
+                    <li><a href="./business/class.html">창업강좌관리</a></li>
+                    <li><a href="./business/dreamon.html">드림온센터</a></li>
+                    <li><a href="./business/upcoming.html">예비기술자관리</a></li>
+                    <li><a href="./business/college.html">창업선도대학관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./onestop/counsel.html">원스톱상담창구</a>
+                <ul class="snb">
+                    <li><a href="./major/counsel.html">상담관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./meetingroom/reservation.html">회의실관리</a>
+                <ul class="snb">
+                    <li><a href="./meetingroom/reservation.html">회의실예약관리</a></li>
+                    <li><a href="./meetingroom/room.html">회의실정보관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./bbs/notice_list.html">커뮤니티관리</a>
+                <ul class="snb">
+                    <li><a href="./bbs/notice_list.html">게시물관리</a></li>
+                    <li><a href="./bbs/bbs_list.html">게시물관리</a></li>
+                </ul>
+            </li>
+        </nav><!-- //tnb -->
+        <div class="admin_info">
+            <span class="admin_name">통합관리자(admin)</span>
+            <div class="admin_menu">
+                <ul>
+                    <li><a href="#" class="ico_logout">로그아웃</a></li>
+                    <li><a href="#" class="ico_homepage">홈페이지</a></li>
+                    <li><a href="#" class="ico_manual">매뉴얼</a></li>
+                </ul>
+            </div><!-- //admin_menu -->
+        </div><!-- //admin_info-->
+    </header><!-- //header -->
+
+    <div class="page_container" id="page_container">
+        <aside class="aside">
+            <h2><span class="ico ico_title1"></span>홈페이지관리</h2>
+            <nav class="lnb">
+                <li class="on"><a href="./system/basic_info.html"><span class="ico ico_setting"></span>기본설정<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../system/basic_info.html" class="on">기본 정보</a></li>
+                        <li><a href="../system/seo.html">SEO정보</a></li>
+                        <li><a href="../system/popup.html">팝업관리</a></li>
+                        <li><a href="../system/banner.html">배너관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contents/contents_list.html"><span class="ico ico_setting"></span>콘텐츠관리<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../contents/contents_list.html">콘텐츠 관리</a></li>
+                        <li><a href="../contents/menu.html">메뉴관리</a></li>
+                        <li><a href="../contents/page.html">HTML</a></li>
+                    </ul>
+                </li>
+                <li><a href="./statistics/statistics.html"><span class="ico ico_setting"></span>통계관리<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../statistics/statistics.html">방문자</a></li>
+                        <li><a href="../statistics/statistics.html">인구</a></li>
+                        <li><a href="../statistics/statistics.html">시스템</a></li>
+                    </ul>
+                </li>
+                <li><a href="./system/terms.html"><span class="ico ico_setting"></span>약관관리<span class="ico ico_arrow"></span></a></li>
+                <li><a href="./sms/member.html"><span class="ico ico_setting"></span>문자관리<span class="ico ico_arrow"></a>
+                    <ul>
+                        <li><a href="../sms/member.html">문자발송 대상관리</a></li>
+                        <li><a href="../sms/setup.html">문자발송 설정관리</a></li>
+                        <li><a href="../sms/history.html">문자발송 이력관리</a></li>
+                        <li><a href="../sms/charge.html">문자 충전하기</a></li>
+                    </ul>
+                </li>
+            </nav><!-- //lnb -->
+            <a href="#openclose" class="btn_openclose">Close</a>
+        </aside><!-- //aside -->
+
+        <div class="navigation_wrap">
+            <h3>기본정보</h3>
+            <div class="navigation">
+                <a href="#">Home</a> >
+                <a href="#">시스템관리</a> >
+                <a href="#">기본설정</a> >
+                <span>기본정보</span>
+            </div><!-- //navigation -->
+
+        </div>
+        <div class="page_contents">
+            <div class="m-graphs m-grids">
+                <!-- 월별 접속 통계 -->
+                <div class="m-grid m-grid-8">
+                    <div class="m-graph-box type01">
+                        <p class="m-graph-box-title">월별 접속 통계</p>
+                        
+                        <div class="m-input-select type01">
+                            <select name="" id="">
+                                <option value="">2020년</option>
+                                <option value="">2019년</option>
+                                <option value="">2018년</option>
+                                <option value="">2017년</option>
+                            </select>
+                        </div>
+
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="m-grid m-gird-4">
+                    <!-- 브라우저별 통계 -->
+                    <div class="m-grid-child">
+                        <div class="m-tabs type02">
+                            <button class="m-tabs-tab active">브라우저별</button>
+                            <button class="m-tabs-tab">운영체제별</button>
+                        </div>
+                        <div class="m-tabs-contents">
+                            <div class="m-tabs-content active">
+                                <div class="m-graph-box type01">
+                                    <p class="m-graph-box-title">브라우저별 통계</p>
+                                    <canvas id="osChart"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="m-graph-box type01">
+                                    <p class="m-graph-box-title">운영체제별 통계</p>
+                                    <canvas id="osChart02"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 서버 사용량 -->
+                    <div class="m-grid-child">
+
+                        <div class="m-graph-box type01">
+                            <p class="m-graph-box-title">서버 사용량</p>
+
+                            <!-- HDD 사용량 -->
+                            <div class="m-graph-gage type01" id="hddChart">
+                                <p class="m-graph-gage-title">HDD 사용량</p>
+
+                                <div class="m-graph-gage-base">
+                                    <div class="m-graph-gage-active"></div>
+                                </div>
+
+                                <div class="m-graph-gage-labels">
+                                    <p class="m-graph-gage-label">0</p>
+                                    <p class="m-graph-gage-label">25%</p>
+                                    <p class="m-graph-gage-label">50%</p>
+                                    <p class="m-graph-gage-label">75%</p>
+                                    <p class="m-graph-gage-label">100%</p>
+                                </div>
+                            </div>
+
+                            <!-- MEMORY 사용량 -->
+                            <div class="m-graph-gage type01" id="memoryChart">
+                                <p class="m-graph-gage-title">MEMORY 사용량</p>
+
+                                <div class="m-graph-gage-base">
+                                    <div class="m-graph-gage-active"></div>
+                                </div>
+
+                                <div class="m-graph-gage-labels">
+                                    <p class="m-graph-gage-label">0</p>
+                                    <p class="m-graph-gage-label">25%</p>
+                                    <p class="m-graph-gage-label">50%</p>
+                                    <p class="m-graph-gage-label">75%</p>
+                                    <p class="m-graph-gage-label">100%</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- //page_contents -->
+    </div><!-- //page_container -->
+    <footer>
+        <div class="copy_wrap">
+            <p>(23441) 강원도 춘천시 강원대학길 1(효자동) 강원대학교 보듬관 / TEL : 033-250-8971~8976 / FAX : 033-259-5714</p>
+            <p>Copyright © KNU Start-up & Enterpreneurship Foundation. All Rights Reserved</p>
+        </div><!-- //copy_wrap -->
+    </footer>
+</div><!-- //wrapper -->
+
+<div class="blind_black"></div>
+<script>
+    // 색깔모음
+    var colors = ["#64C384", "#64D9AC", "#5FCFC3", "#64D96A", "#7FCF5F", "#64F5E6", "#C999AD", "#9CFFBD"];
+
+    // 월별 접속 통계
+    var lineChartData = {
+        ctx: document.getElementById('lineChart').getContext('2d'), // 차트 표시할 영역
+        labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월' ,'8월' ,'9월','10월','11월','12월'], // 통계 라벨
+        data01: [2400,1450,1854,3588,4456,5888,4645,3045,1058,458,1100,2245], // 회원데이터, 라벨별 데이터
+        data02: [2245, 4500, 3000, 2598, 3045, 3000, 2588, 1450, 1100, 1754, 1450, 2400] // 비회원데이터, 라벨별 데이터
+    };
+
+    // 브라우저별 통계
+    var osChartData = {
+        ctx: document.getElementById('osChart').getContext('2d'), // 차트 표시할 영역
+        labels: ["Chrome", "Internet Explorer 11", "Safari", "Microsoft Edge", "Chrome Mobile"], // 통계 라벨
+        datasets: [{
+            label: "브라우저별 통계",
+            backgroundColor: colors, // 라벨별 색깔
+            data: [7, 10, 5, 3, 1] // 라벨별 데이터
+        }]
+    };
+
+    // 운영체제별 통계
+    var osChartData02 = {
+        ctx: document.getElementById('osChart02').getContext('2d'), // 차트 표시할 영역
+        labels: ["윈도우", "ios", "안드로이드", "벨벳", "리눅스", "유닉스"], // 통계 라벨
+        datasets: [{
+            label: "운영체제별 통계",
+            backgroundColor: colors, // 라벨별 색깔
+            data: [40, 25, 30, 70, 23, 15] // 라벨별 데이터
+        }]
+    };
+
+    // HDD 사용량 통계
+    var hddChartData = {
+        ctx: $("#hddChart"),
+        total: 1000, // 전체 수치
+        active: 600 // 활성 수치
+    };
+
+    // MEMORY 사용량 통계
+    var memoryChartData = {
+        ctx: $("#memoryChart"),
+        total: 1840, // 전체 수치
+        active: 1510 // 활성 수치
+    };
+
+    drawChart("line", lineChartData);
+
+    drawChart("doughnut", osChartData);
+
+    drawChart("doughnut", osChartData02);
+
+    drawChart("gage", hddChartData);
+
+    drawChart("gage", memoryChartData);
+</script>
+</body>
+</html><!-- //하단부분 -->

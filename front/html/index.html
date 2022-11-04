@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메인</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../comn/css/default.css">
+    <link rel="stylesheet" href="../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../comn/css/animate.css">
+    <link rel="stylesheet" href="../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../comn/css/common.css">
+    <link rel="stylesheet" href="../comn/css/im_board.css">
+    <link rel="stylesheet" href="../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <script src="../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../comn/js/swiper.min.js"></script>
+    <script src="../comn/js/aos-2.3.1.js"></script>
+    <script src="../comn/js/common.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="skip-navigation">
+    <a href="#contents_wrap">메뉴 건너뛰기</a>
+</div>
+
+<div id="app">
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <!-- 검색창 -->
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../comn/img/logo.png" alt="홈으로 이동">
+            </a>
+
+            <div class="wrap_gnb">
+                <div class="gnbs gnbs-type01 pc clearfix">
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            추천여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행지
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            지역
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행정보
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            나의여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">HOME</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">로그인</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">강원도청</a>
+                </div>
+
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../comn/img/search.png" alt="">
+                </button>
+
+                <div class="pc btn_sitemap">
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="contents_wrap" id="contents_wrap">
+            <div class="area_main">
+
+                <!-- 메인배너 -->
+                <div class="section section01">
+                    <!-- 메인배너 -->
+                    <div class="swiper jumbotron">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url('../comn/img/img_jumbotron01.jpg')">
+
+
+                                    <!-- 제목 -->
+                                    <img src="../comn/img/title1.png" alt="" class="img-title">
+
+                                    <!-- 날씨정보 -->
+                                    <div class="box-weather">
+                                        <div class="content">
+                                            <p class="subtitle">
+                                                <img src="../comn/img/location-white.png" alt="">
+                                                지금여기는
+                                            </p>
+                                            <h3 class="title">춘천시</h3>
+                                            <p class="info">
+                                                10.18 (화)
+                                                <br/>22.0℃ 맑음
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 리뷰작성 바로가기 -->
+                                    <div class="box-review">
+                                        <p class="text">
+                                            “춘천시 여름휴가” 여행을 다녀오셨나요?
+                                            다녀오신 여행지에 대한 리뷰를 남겨주세요.
+                                        </p>
+
+                                        <a href="#" class="btn">
+                                            <img src="../comn/img/halfArrowRight-white.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide" style="background-image:url('../comn/img/img_jumbotron02.jpg')">
+                                    <!-- 제목 -->
+                                    <img src="../comn/img/title1.png" alt="" class="img-title">
+
+                                    <!-- 날씨정보 -->
+                                    <div class="box-weather">
+                                        <div class="content">
+                                            <p class="subtitle">
+                                                <img src="../comn/img/location-white.png" alt="">
+                                                지금여기는
+                                            </p>
+                                            <h3 class="title">강릉시</h3>
+                                            <p class="info">
+                                                10.18 (화)
+                                                <br/>24.4℃ 흐림
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 리뷰작성 바로가기 -->
+                                    <div class="box-review">
+                                        <p class="text">
+                                            “강릉시 여름휴가” 여행을 다녀오셨나요?
+                                            다녀오신 여행지에 대한 리뷰를 남겨주세요.
+                                        </p>
+
+                                        <a href="#" class="btn">
+                                            <img src="../comn/img/halfArrowRight-white.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide" style="background-image:url('../comn/img/img_jumbotron01.jpg')">
+
+
+                                    <!-- 제목 -->
+                                    <img src="../comn/img/title1.png" alt="" class="img-title">
+
+                                    <!-- 날씨정보 -->
+                                    <div class="box-weather">
+                                        <div class="content">
+                                            <p class="subtitle">
+                                                <img src="../comn/img/location-white.png" alt="">
+                                                지금여기는
+                                            </p>
+                                            <h3 class="title">춘천시</h3>
+                                            <p class="info">
+                                                10.18 (화)
+                                                <br/>22.0℃ 맑음
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 리뷰작성 바로가기 -->
+                                    <div class="box-review">
+                                        <p class="text">
+                                            “춘천시 여름휴가” 여행을 다녀오셨나요?
+                                            다녀오신 여행지에 대한 리뷰를 남겨주세요.
+                                        </p>
+
+                                        <a href="#" class="btn">
+                                            <img src="../comn/img/halfArrowRight-white.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 슬라이더 페이징 -->
+                        <div class="swiper-pagination-wrap">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <!-- 공지사항 -->
+                    <div class="box-notice">
+                        <div class="wrap_1200">
+                            <a href="#" class="btn-more">
+                                NOTICE
+                                <img src="../comn/img/smallPlus-white.png" alt="">
+                            </a>
+
+                            <div class="swiper-notice">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide">
+                                            <h3 class="title">[봄 테마] 2022 강원도의 봄 관광안내시도</h3>
+
+                                            <span class="date">2022.05.16</span>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <h3 class="title">[여름 테마] 2022 강원도의 봄 관광안내시도</h3>
+
+                                            <span class="date">2022.05.16</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-btns">
+                                <div class="swiper-btn-wrap">
+                                    <button class="swiper-btn swiper-btn-prev">
+                                        <img src="../comn/img/smallArrowTop-white.png" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="swiper-btn-wrap">
+                                    <button class="swiper-btn swiper-btn-next">
+                                        <img src="../comn/img/smallArrowDown-white.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 즐거운 테마여행 떠나기 -->
+                <div class="section section02">
+                    <div class="wrap_1200">
+                        <div class="section-title">
+                            <p class="sub">테마별 다양한 강원도 여행을 즐기기</p>
+                            <h3 class="title">
+                                즐거운 <span class="point">테마여행</span> 떠나기
+                            </h3>
+                        </div>
+
+                        <div class="swiper">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
+                                        <div class="m-ratioBox-wrap">
+                                            <div class="m-ratioBox">
+                                                <img src="../comn/img/travel1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">#데이트명소</h3>
+                                            <p class="body">
+                                                사랑하는 연인과
+                                                <br/>인생샷 찍으러 가자!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-btns">
+                                <div class="swiper-btn swiper-btn-prev">
+                                    <span class="xi-flag"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+	        <button class="btn_top m">
+		        <img src="../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+	        </button>
+
+	        <img src="../comn/img/logo_footer.png" alt="" class="logo">
+
+	        <p class="info">
+		        38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+		        <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+	        </p>
+        </div>
+    </footer>
+</div>
+<script>
+    var swiper = new Swiper('.jumbotron .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: '.jumbotron .swiper-pagination',
+            clickable: false,
+        },
+        navigation: {
+            nextEl: '.jumbotron .swiper-button-next',
+            prevEl: '.jumbotron .swiper-button-prev',
+        },
+        effect: "fade",
+        on: {
+
+        }
+    });
+
+    var btnControl = $('.jumbotron .swiper-btn-control');
+
+    btnControl.click(function(){
+        $(this).toggleClass('active');
+
+        swiper.autoplay.running ? swiper.autoplay.stop() : swiper.autoplay.start();
+    });
+
+    var swiper01 = new Swiper('.swiper-notice .swiper-container', {
+        direction: "vertical",
+	    simulateTouch: false,
+        loop:true,
+	    preventInteractionOnTransition: true,
+	    autoplay: {
+		    delay: 3000,
+		    disableOnInteraction: false,
+	    },
+	    pagination: {
+		    el: '.swiper01 .swiper-pagination',
+		    clickable: true,
+		    renderBullet: function (index, className) {
+			    return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+		    },
+	    },
+        navigation: {
+            nextEl: '.area_main .section01 .box-notice .swiper-btn-next',
+            prevEl: '.area_main .section01 .box-notice .swiper-btn-prev',
+        },
+    });
+
+</script>
+</body>
+</html><!-- //하단부분 -->

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>일반 게시판 자세히 보기 타입01</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+
+<div class="wrap_1200">
+
+    <!-- admin 클래스 설명
+	- 관리자 권한일 경우, 게시판 최상단 태그에 admin 클래스를 붙여 only-admin 클래스가 붙은 태그들 화면에 노출
+	-->
+    <div class="m-boardDetail type-general01 admin">
+        <!-- 제목 -->
+        <div class="m-boardDetail-header">
+            <span class="m-board-tag">
+                공지사항
+            </span>
+            <span class="m-board-title">
+                일반게시판 게시글 제목 영역입니다.
+            </span>
+            <span class="m-board-state only-admin only-pc">
+                정상
+            </span>
+
+            <div class="m-boardDetail-infos">
+                <div class="m-boardDetail-info">
+                    <span class="m-boardDetail-info-title">
+                        작성자
+                    </span>
+                    <span class="m-boardDetail-info-body">
+                        관리자
+                    </span>
+                </div>
+
+                <div class="m-boardDetail-info">
+                    <span class="m-boardDetail-info-title">
+                        작성일
+                    </span>
+                    <span class="m-boardDetail-info-body">
+                        2020.01.31
+                    </span>
+                </div>
+
+                <div class="only-admin">
+                    <div class="m-boardDetail-info">
+                    <span class="m-boardDetail-info-title">
+                        수정일
+                    </span>
+                        <span class="m-boardDetail-info-body">
+                        2020.01.31
+                    </span>
+                    </div>
+
+                    <div class="m-boardDetail-info">
+                    <span class="m-boardDetail-info-title">
+                        조회수
+                    </span>
+                        <span class="m-boardDetail-info-body">
+                        251
+                    </span>
+                    </div>
+
+                    <div class="m-boardDetail-info">
+                    <span class="m-boardDetail-info-title">
+                        등록아이피
+                    </span>
+                        <span class="m-boardDetail-info-body">
+                        000.000.000.001
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 파일 -->
+        <div class="m-boardDetail-subHeader">
+            <span class="m-icon m-icon-file"></span>
+            <a href="#" class="m-board-body">
+                일반게시판 게시글 첨부파일입니다.hwp
+            </a>
+            <a href="#" class="m-board-body">
+                일반게시판 게시글 첨부파일입니다.hwp
+            </a>
+        </div>
+
+        <!-- 내용 -->
+        <div class="m-boardDetail-content">
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내
+            용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내
+            용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용내용내용내용내
+        </div>
+
+        <!-- 이전글, 다음글 -->
+        <div class="m-boardDetail-prev">
+            <span class="m-board-body">이전글</span>
+            <a href="#" class="m-board-title">일반게시판 게시글 제목 영역입니다.</a>
+        </div>
+        <div class="m-boardDetail-next">
+            <span class="m-board-body">다음글</span>
+            <a href="#" class="m-board-title">일반게시판 게시글 제목 영역입니다.</a>
+        </div>
+
+        <!-- 관리자 버튼 -->
+        <div class="m-boards-btns align-right only-admin">
+            <a href="#" class="m-boards-btn">수정</a>
+            <a href="#" class="m-boards-btn">삭제</a>
+            <a href="#" class="m-boards-btn m-pop-btn-open" data-target="#pop">이동</a>
+            <a href="#" class="m-boards-btn">복사</a>
+            <a href="#" class="m-boards-btn bg-primary">목록</a>
+        </div>
+
+        <!-- 일반 사용자 버튼 -->
+        <div class="m-boards-btns align-center">
+            <a href="#" class="m-boards-btn type-big bg-primary">목록</a>
+        </div>
+
+        <!-- 게시글 이동 팝업창 -->
+        <div class="m-pop-black m-pop-btn-close" data-target="#pop"></div>
+        <div class="m-pop type01" id="pop">
+            <div class="m-pop-wrap">
+                <div class="m-pop-header">
+                    <p class="m-pop-header-title">
+                        게시글 이동
+                    </p>
+
+                    <button class="m-pop-btn-close" data-target="#pop">X</button>
+                </div>
+
+                <div class="m-pop-content">
+                    <div class="m-input-radios">
+                        <div class="m-input-radio type01">
+                            <input type="radio" id="1">
+                            <label for="1">
+		                        <span class="m-input-radio-title">
+		                            등록된게시판명
+		                            등록된게시판명
+		                            등록된게시판명
+		                            등록된게시판명
+		                        </span>
+		                        <span class="m-input-radio-title">
+	                                default
+	                            </span>
+                            </label>
+                        </div>
+
+	                    <div class="m-input-radio type01">
+		                    <input type="radio" id="1">
+		                    <label for="1">
+		                        <span class="m-input-radio-title">
+		                            등록된게시판명
+		                            등록된게시판명
+		                            등록된게시판명
+		                            등록된게시판명
+		                        </span>
+			                    <span class="m-input-radio-title">
+	                                default
+	                            </span>
+		                    </label>
+	                    </div>
+                    </div>
+
+                    <div class="align-center">
+                        <a href="#" class="m-pop-btn">이동</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

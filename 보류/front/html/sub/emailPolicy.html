@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>개인정보처리방침</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<m-policy-body>
+    <!-- 서브페이지는 sub 클래스 필요 -->
+    <div id="app" class="sub">
+        <div class="skip-navigation">
+            <a href="#contents_wrap">메뉴 건너뛰기</a>
+        </div>
+
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../../comn/img/logo.png" alt="메인 페이지로 이동">
+            </a>
+
+            <div class="gnbs">
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">여</span>
+                        <span class="letter">행</span>
+                        <span class="letter">할</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">둘</span>
+                        <span class="letter">러</span>
+                        <span class="letter">볼</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">즐</span>
+                        <span class="letter">길</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">먹</span>
+                        <span class="letter">고</span>
+                        <span class="letter">잘</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">안</span>
+                        <span class="letter">내</span>
+                        <span class="letter">할</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+
+                <div class="gnb">
+                    <a href="#" class="text">
+                        <span class="letter">예</span>
+                        <span class="letter">약</span>
+                        <span class="letter">할</span>
+                        <span class="letter top">구</span>
+                        <span class="letter bottom">양</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="utils">
+                <div class="language">
+                    <button class="language-btn m-script-pop" data-target="#language">Languages <img src="../../comn/img/icon_triangle_bottom_gray.png" alt="랭귀지 열고닫기"></button>
+
+                    <div id="language">
+                        <a href="#">en</a>
+                        <a href="#">ko</a>
+                    </div>
+                </div>
+
+                <a href="https://www.yanggu.go.kr/index.html" class="external" title="새창열림" target="_blank">
+                    <img src="../../comn/img/logo_other01.png" alt="양구군청">
+                </a>
+
+                <button type="button" class="btn-square point">
+                    <img src="../../comn/img/icon_hot.png" alt="핫플레이스로 이동" class="inactive">
+                    <img src="../../comn/img/icon_hot_white.png" alt="핫플레이스로 이동" class="active">
+                </button>
+
+                <div class="squares">
+                    <button class="btn-square m-script-pop" data-target="#search">
+                        <img src="../../comn/img/icon_search_white.png" alt="검색" class="pc">
+                        <img src="../../comn/img/icon_search_blue.png" alt="검색" class="m">
+                    </button>
+
+                    <div class="btn-square btn-menu">
+                        <button class="hamburger hamburger_type01" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <div class="btn-square btn-menu btn-sidebar m">
+                        <button class="hamburger hamburger_type01" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="subgnbs">
+            <div class="top">
+                <div class="language">
+                    <button class="language-btn m-script-pop" data-target="#language-mobile">Languages <img src="../../comn/img/icon_triangle_bottom_gray.png" alt="랭귀지 열고닫기"></button>
+
+                    <div id="language-mobile">
+                        <a href="#">en</a>
+                        <a href="#">ko</a>
+                    </div>
+                </div>
+                <div id="search-mobile">
+                    <div class="fragment">
+                        <form>
+                            <div class="input input_search">
+                                <input type="text">
+                                <button class="input_search_btn">
+                                    <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">여행할구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">여행할구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">추천코스</a>
+                        <div class="box-depth03">
+                            <a href="#">가족 체험 코스</a>
+                            <a href="#">대중교통 코스</a>
+                            <a href="#">드라이브 코스</a>
+                            <a href="#">도보 코스</a>
+                            <a href="#">힐링 코스</a>
+                            <a href="#">데이트 코스</a>
+                            <a href="#">인생샷 코스</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">나만의 코스</a>
+                        <div class="box-depth03">
+
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">시티투어</a>
+                        <div class="box-depth03">
+
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">내 주변</a>
+                        <div class="box-depth03">
+
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">권역별 관광지</a>
+                        <div class="box-depth03">
+                            <a href="#">방산면</a>
+                            <a href="#">동면</a>
+                            <a href="#">해안면</a>
+                            <a href="#">양구읍</a>
+                            <a href="#">남면</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">둘러볼구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">둘러볼구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">즐길구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">즐길구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">먹고잘구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">먹고잘구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">안내할구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">안내할구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subgnb">
+                <button type="button" class="depth01">예약할구양</button>
+
+                <div class="deco">
+                    <div class="box-text">
+                        <p class="title">예약할구양</p>
+                        <p class="m-policy-body">양구만의 특별한 여행지를 소개합니다.</p>
+                    </div>
+
+                    <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+                </div>
+
+                <div class="links">
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+
+                    <div class="box-depth02">
+                        <a href="#">서브메뉴</a>
+                        <div class="box-depth03">
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                            <a href="#">하위메뉴</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-square btn-menu btn-sidebar m">
+                <button class="hamburger hamburger_type01 active" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="black"></div>
+
+        <div class="main">
+            <div class="visual_wrap">
+                <div class="box_text">
+                    <p class="title">1차메뉴</p>
+                </div>
+                <img src="../../comn/img/visual01.jpg" alt="">
+            </div>
+
+            <div class="sub_wrap">
+                <div class="box_depth02 clearfix ">
+                    <div class="wrap_1200">
+                        <a href="#" class="depth02 active">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+
+                        <a href="#" class="depth02">2차메뉴</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="locate_wrap">
+                <div class="wrap_1200">
+                    <div class="locates">
+                        <a href="#" class="locate">
+                            <img src="../../comn/img/icon_home_gray.png" alt="">
+                            HOME
+                        </a>
+
+                        <a href="#" class="locate">1차메뉴</a>
+
+                        <a href="#" class="locate">2차메뉴</a>
+
+                        <a href="#" class="locate">3차메뉴</a>
+                    </div>
+
+                    <div class="utils">
+                        <!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+                        <div class="util m-script-pop" data-target=".m-box-social">
+                            <img src="../../comn/img/icon_share.png" alt="공유">
+
+                            <div class="m-box-social type01">
+                                <div class="socials">
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleFacebook.png" alt="페이스북">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleBlog.png" alt="네이버 블로그">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleStory.png" alt="카카오스토리">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleGoogle.png" alt="구글">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleTwitter.png" alt="트위터">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleInstagram.png" alt="인스타그램">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleYoutube.png" alt="유튜브">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleKakaoCh.png" alt="카카오채널">
+                                        </button>
+                                    </div>
+                                    <!-- 2020-11-16 #수정 (카카오, 네이버밴드 추가)-->
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleKakao.png" alt="카카오톡">
+                                        </button>
+                                    </div>
+                                    <div class="social-wrap">
+                                        <button class="social">
+                                            <img src="../../comn/img/circleBand.png" alt="네이버밴드">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="box-copy">
+                                    <input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+                                    <button class="btn-copy">복사</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="util">
+                            <img src="../../comn/img/icon_clip.png" alt="복사">
+                        </button>
+                        <button class="util">
+                            <img src="../../comn/img/icon_print.png" alt="인쇄">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contents_wrap" class="contents_wrap">
+                <div class="m-policy type02">
+                    <div class="wrap_1200">
+                        <h1>
+                            이메일무단수집거부
+                        </h1>
+
+                        <p class="m-policy-comment type01">
+                            <span class="span_blue">양구문화관광</span>사이트에 게시된 이메일 주소가 전자우편 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사처벌 됨을 유념하시기 바랍니다.
+                        </p>
+                        <div class="mb-30"></div>
+
+                        <section>
+                            <h2>이용약관</h2>
+                            <div class="box-sub">
+                                <p class="before-dot">제1조 (목적)<br>
+                                <P><span class="span_blue">양구문화관광 홈페이지</span><a href="http://www.yanggu.go.kr/">(http://www.yanggu.go.kr/
+                                        )</a>이용자 약관(이하 "본 약관")은 <span class="span_blue">양구문화관광 홈페이지</span> 서비스 이용자(이하 "이용자")가 양구문화관광에서 제공하는 인터넷 관련 서비스(이하 "서비스")를 이용함에 있어
+                                    이용자와 <span class="span_blue">양구문화관광</span>의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</P>
+                                </p>
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제2조 (이용약관의 효력 및 변경)</p>
+                                <p>
+                                    이 약관은 <span class="span_blue">양구문화관광 홈페이지</span>에 게시하여 공시하거나 기타의 방법으로 이용자에게 공지함으로써 효력이 발생합니다.<br>
+                                    양구문화관광은 합리적인 사유가 발생될 경우에는 본 약관을 변경할 수 있으며, 약관이 변경된 경우에는 지체 없이 제1항과 같은 방법으로 이를 공시 혹은 공지합니다.<br>
+                                    이용자는 변경된 약관 사항에 동의하지 않으면 서비스 이용을 중단하고 이용계약을 해지할 수 있습니다. 약관의 효력발생일 이후의 계속적인 서비스 이용은 약관의 변경사항에 동의한 것으로 간주됩니다.</p>
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제3조 (약관의 적용)<p>
+                                <p>
+                                    본 약관은 <span class="span_blue">양구문화관광</span>이 제공하는 서비스 이용에 관하여 적용되며, 이 약관에 명시되지 아니한 사항에 대해서는 관계법령 및 서비스별 안내의 취지에 따라 적용할 수 있습니다.</p>
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제2장 권리 및 의무<br>
+                                    제4조 (양구문화관광의 의무)</p>
+                                <p>
+                                    <span class="span_blue">양구문화관광</span>은 이용자로부터 제기되는 의견이나 불만이 정당하다고 인정할 경우에는 즉시 처리하고, 처리가 곤란한 경우는 이용자에게 그 사유와 처리 일정은 서면이나 전자우편 등으로 통보하여야 합니다.<br> 처리일정을 서면이나 전자우편 등으로 통보하여야 합니다.<br>
+                                    양구문화관광은 공공기관의 개인정보보호에관한법률에 따라서 이용자의 개인정보를 보호할 의무가 있으며 개인정보 보호를 위한 기술적 및 관리적 대책을 강구하여야 합니다.<br>
+                                    양구문화관광은 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인 정보를 즉시 파기하여야 합니다. 다만, 다음 각 호의 1에 해당하는 경우에는 예외로 합니다.<br>
+                                </p>
+                                <div class="box-sub">
+                                    ① 법령의 규정에 의하여 보존할 필요성이 있는 경우<br>
+                                    ② 보유기간을 미리 이용자에게 고지하거나 명시한 경우<br>
+                                    ③ 개별적으로 이용자의 동의를 받은 경우<br>
+                                </div>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제5조 (이용자의 의무)</p>
+                                <p>
+                                    이용자는 서비스 이용을 위해 등록할 경우 현재의 사실과 일치하는 완전한 정보("등록정보")를 제공하여야 합니다.<br>
+                                    이용자는 등록정보에 변경사항이 발생할 경우 즉시 갱신하여야 하며, 이용자가 제공한 정보 및 갱신한 정보가 부정확할 경우 기타 이용자가 본 조 제4항에 위배되는 행위를 한 경우에 <span class="span_blue">양구문화관광</span>은 본 약관 제7조에 의해 이용자의 양구문화관광 서비스 이용을 제한 또는 중지할 수 있습니다.<br>
+                                    이용자는 공공의 안녕질서 또는 미풍양속을 해하는 다음 각 호의 행위를 하여서는 아니됩니다.<br></p>
+                                <div class="box-sub">
+                                    ① 범죄행위를 목적으로 하거나 범죄행위를 교사하는 등 범죄와 결부된다고 객관적으로 판단되는 행위<br>
+                                    ② 다른 이용자의 ID를 부정하게 사용하는 행위<br>
+                                    ③ 서비스에서 얻은 정보를 양구군청의 사전승낙 없이 이용자의 이용 이외의 목적으로 복제하거나 이를 출판 및 방송 등에 사용하거나 제3자에게 제공하는 행위<br>
+                                    ④ <span class="span_blue">양구문화관광</span>의 저작권, 제3자의 저작권 등 기타 타인의 권리를 침해하는 행위<br>
+                                    ⑤ 공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형 등을 타인에게 유포하는 행위<br>
+                                    ⑥ 기타 관계법령에 위반되는 행위<br>
+                                    ⑦ 선량한 풍속, 기타 사회질서를 해하는 행위<br>
+                                    ⑧ 전기통신관련법령등 관계법령에 위반하는 행위를 하는 경우<br></div>
+                                <p>
+                                    이용자는 본 약관에서 규정하는 사항과 서비스 이용안내 또는 주의사항을 준수하여야 하며 양구군청이 공지하거나 별도로 게시한 사항을 준수하여야 합니다.<br>
+                                    이용자는 <span class="span_blue">양구문화관광</span>의 사전 동의 없이 서비스를 이용하여 영업활동을 할 수 없으며, 이에 위반하여 발생한 결과에 대하여 양구문화관광은 책임지지 아니합니다.<br>
+                                    이용자는 <span class="span_blue">양구문화관광</span>의 명시적인 사전 동의가 없는 한 서비스의 이용권한, 기타 이용계약상 지위를 타인에게 양도, 증여할 수 없으며 이를 담보로 제공할 수 없습니다.<br>
+                                    이용자는 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 상업적으로 사용할 수 없습니다.<br></p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제6조 (이용자의 ID 및 비밀번호 관리에 관한 이용자의 의무)</p>
+                                <p>
+                                    이용자 ID는 다음 각호의 1에 해당하는 경우에는 이용자 또는 양구문화관광의 요청에 의하여 변경 할 수 있습니다. <br>
+                                    <span class="span_blue">양구문화관광</span>은 본 약관 제7조에 의해 이용자의 양구문화관광 서비스 이용을 제한 또는 중지할 수 있습니다.
+                                </p>
+                                <div class="box-sub">
+                                    ① 이용자 ID가 이용자의 전화번호 또는 주민등록번호 등으로 등록 되어 사생활 침해가 우려가 있는 경우<br>
+                                    ② 타인에게 혐오감을 주거나 미풍양속에 어긋나는 경우<br>
+                                    ③ 기타 합리적인 사유가 있는 경우<br>
+                                </div>
+                                <p>
+                                    이용자는 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다.<br>
+                                    ID와 비밀번호에 관한 모든 관리책임은 이용자에게 있습니다. <br>
+                                    이용자에게 부여된 계정의 비밀번호의 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 이용자에게 있습니다.<br>
+                                    이용자는 자신의 ID가 부정하게 사용된 경우 반드시 양구문화관광에 그 사실을 통보해야 합니다.</p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제3장 서비스의 제한, 중지 및 종료<br>
+                                    제7조 (계약해지 및 이용제한)</p>
+                                <p>
+                                    <span class="span_blue">양구문화관광</span>이용자가 다음 각호의 1에 해당하는 경우에는 사전통지 없이 이용계약을 해지하거나 서비스의 전부 또는 일부의 이용을 제한할 수 있습니다.
+                                </p>
+                                <div class="box-sub">
+                                    ① 본 약관에 규정된 이용자의 의무를 이행하지 아니한 경우<br>
+                                    ② 서비스의 안정적 운영을 방해할 목적으로 다량의 정보를 전송하거나 수신자의 의사에 반하여 광고성 정보를 지속적으로 전송하는 경우<br>
+                                    ③ 서비스에서 얻은 정보를 양구군청의 사전승낙 없이 이용자의 이용 이외의 목적으로 복제하거나 이를 출판 및 방송 등에 사용하거나 제3자에게 제공하는 행위<br>
+                                    ④ <span class="span_blue">양구문화관광</span>,다른 이용자 또는 제3자의 지적재산권을 침해하는 경우<br>
+                                    ⑤ 정보통신윤리위원회 등 외부기관의 시정요구가 있거나 불법선거운동과 관련하여 선거 관리위원회의 유권해석을 받은 경우<br>
+                                    ⑥ 타인의 이용자 ID, 비밀정보 등 개인정보를 부정하게 사용하는 경우<br>
+                                    ⑦ 서비스 정보를 이용하여 얻은 정보를 <span class="span_blue">양구문화관광</span>의 사전 승낙없이 복제 또는 유통시키거나 상업적으로 이용하는 경우<br>
+                                    ⑧ 전기통신관련법령등 관계법령에 위반하는 행위를 하는 경우<br>
+                                    ⑨ <span class="span_blue">양구문화관광</span>의 서비스 운영을 고의로 방해하는 경우<br>
+                                    ⑩ 가입한 이름이 실명이 아닌 경우<br>
+                                    ⑪ 1인의 이용자가 각기 다른 ID로 이중등록을 한 경우<br>
+                                    ⑫ 공공질서 및 미풍양속에 저해되는 내용을 고의로 유포시킨 경우<br>
+                                    ⑬ 타인의 명예를 손상시키서나 불이익을 주는 행위를 한 경우<br>
+
+                                    ⑭ 이용자가 게시판에 음란물을 게재하거나 음란사이트를 링크한 경우<br>
+                                    ⑮ 본 약관을 포함하여 기타 양구문화관광이 정한 이용조건에 위반한 경우
+                                </div>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제8조 (이용제한에 대한 이의 등)</p>
+                                   <p>
+                                    제7조의 규정에 의하여 이용계약의 해지 또는 이용제한을 받게 된 이용자가 위 조치에 대한 이의가 있을 때에는 이의신청을 할 수 있습니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 제1항의 규정에 의한 이의신청에 대하여 그 확인을 위한 기간까지 이용정지를 일시 연기할 수 있으며, 그 결과를 이용자에게 통지합니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 이용정지 기간 중에 그 이용정지 사유가 해소된 것이 확인된 경우에는 이용정지조치를 즉시 해제합니다.<br>
+                                </p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제9조 (이용자의 게시물)</p>
+                                    <p><span class="span_blue">양구문화관광</span>이용자가 게시하거나 등록하는 서비스내의 내용물이 다음 각 호의 1에 해당한다고 판단되는 경우에는 사전통지 없이 삭제할 수 있습니다.
+                                </p>
+                                <div class="box-sub">
+                                    ① 다른 이용자 또는 제3자를 비방하거나 중상모략으로 명예를 손상시키는 내용인 경우<br>
+                                    ② 공공질서 및 미풍양속에 위반되는 내용인 경우<br>
+                                    ③ 범죄적 행위에 결부된다고 인정되는 내용일 경우<br>
+                                    ④ <span class="span_blue">양구문화관광</span>의 저작권, 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우<br>
+                                    ⑤ <span class="span_blue">양구문화관광</span>에서 규정한 게시기간을 초과한 경우<br>
+                                    ⑥ 이용자가 게시판에 음란물을 게재하거나 음란사이트를 링크하는 경우<br>
+                                    ⑦ 기타 관계법령에 위반된다고 판단되는 경우<br>
+                                </div>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제10조 (서비스 제공의 제한 및 중지)</p>
+                                    <p><span class="span_blue">양구문화관광</span>은 다음 각호의 1에 해당하는 경우 서비스 제공을 중지할 수 있습니다.
+                                </p>
+                                <div class="box-sub">
+                                    가. 서비스용 설비의 보수 등 공사로 인한 부득이한 경우<br>
+                                    나. 전기통신사업법에 규정된 기간통신사업자가 전기통신 서비스를 중지했을 경우<br>
+                                    다. 기타 불가항력적 사유가 있는 경우<br>
+                                </div>
+                                <p>
+                                    <span class="span_blue">양구문화관광</span>은 국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 때에는 서비스의 전부 또는 일부를 제한하거나 중지할 수 있습니다.
+                                </p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제4장 손해배상 등<br>
+                                    제11조 (손해배상의 범위 및 청구)</p>
+                                    <p><span class="span_blue">양구문화관광</span>은 서비스로부터 이용자가 받은 손해가 천재지변 등 불가항력적이거나 이용자의 고의 또는 과실로 인하여 발생한 때에는 손해배상을 하지 아니합니다.
+                                </p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제12조 (면책)</p>
+                                   <p> <span class="span_blue">양구문화관광</span>은 이용자가 <span class="span_blue">양구문화관광</span>의 서비스 제공으로부터 기대되는 이익을 얻지 못하였거나 서비스 자료에 대한 취사선택 또는 이용으로 발생하는 손해 등에 대해서는 책임지지 아니합니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 이용자의 귀책사유로 인하여 서비스 이용의 장애가 발생한 경우에는 책임지지 아니합니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 이용자가 게시 또는 전송한 자료 및 본 서비스로부터 이용자가 제공받을 수 있는 모든 자료들의 진위, 신뢰도, 정확성등 그 내용에 대해서는 책임지지 아니합니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 이용자 상호간 또는 이용자와 제3자 상호간에 서비스를 매개로 하여 물품거래등을 한 경우에 그로부터 발생하는 일체의 손해에 대하여 책임지지 아니합니다.<br>
+                                    <span class="span_blue">양구문화관광</span>은 <span class="span_blue">양구문화관광</span>의 귀책사유 없이 이용자간 또는 이용자와 제3자간에 발생한 일체의 분쟁에 대하여 책임지지 아니합니다.<br>
+                                </p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">제13조 (분쟁 조정)<p>
+                                    <p><span class="span_blue">양구문화관광</span>과 이용자는 개인정보에 관한 분쟁이 있는 경우 신속하고 효과적인 분쟁 해결을 위하여 한국정보보호센터 내의 개인정보분쟁조정위원회에 그 처리를 의뢰할 수 있습니다.
+
+                                </p>
+
+                                <div class="mb-30"></div>
+                                <p class="before-dot">부 칙 (시행일)</p>
+                                    <p>이 약관은 2020년 12월 1일부터 시행합니다.</p>
+
+
+
+
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer clearfix">
+            <button class="btn_top m">
+                <img src="../../comn/img/icon_forked_top_white.png" alt="">
+            </button>
+
+            <div class="box_middle">
+                <div class="box_top">
+                    <div class="wrap">
+                        <div class="links">
+                            <a href="#" class="link point">개인정보처리방침</a>
+                            <a href="#" class="link">저작권보호정책</a>
+                            <a href="#" class="link">관리자메일</a>
+                            <a href="#" class="link">사이트맵</a>
+                        </div>
+
+                        <div class="box_right float right">
+                            <div class="box_family float">
+                                <button class="text  btn_pop">관련사이트</button>
+
+                                <div class="contents_pop">
+                                    <a href="#" class="text" target="_blank">관련사이트1</a>
+                                </div>
+                            </div>
+
+                            <!--<button class="btn_top float" title="최상단으로 스크롤 이동">
+                            <img src="../../comn/img/icon_up_forked_arrow_white.png" alt="">
+                        </button>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="box_bottom">
+                        <img src="../../comn/img/logo_footer.png" alt="양구로부터" class="logo">
+
+                        <p class="info">강원도 양구군 양구읍 관공서로 38 (하리34-5) / <a href="tel:033-480-2251" class="info">대표전화번호 : 033-480-2251</a></p>
+
+                        <p class="copyright">
+                            Copyright ⓒ Yanggu-gun. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+</m-policy-body>
+
+</html>

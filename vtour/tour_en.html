@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>krpano - 실외_360테스트</title>
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+	<script src="./skin/im/js/jquery-1.7.1.min.js"></script>
+	<script src="./skin/im/js/common.js"></script>
+	<link rel="stylesheet" href="skin/im/css/style.css">
+	<link rel="stylesheet" href="skin/im/css/en.css">
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: #FFFFFF;
+			background-color: #000000;
+		}
+	</style>
+</head>
+<body>
+
+<script src="tour.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<div class="area_vr">
+		<!-- <iframe src="https://my.matterport.com/show/?m=eqLK3MfgKYw" frameborder="0" class="iframe"></iframe> -->
+
+		<header class="header type02 fold">
+			<a href="#" class="logo">
+				<img src="skin/im/img/en/logo.png" alt="">
+			</a>
+
+			<h3 class="title">박수근미술관</h3>
+		</header>
+
+		<!-- vr 사이드바 -->
+		<div class="sidebar active">
+			<button type="button" class="btn-fold">
+				<img src="./skin/im/img/smallTriangleRight-white.png" alt="">
+			</button>
+
+			<div class="detail m-scrollbar type01">
+				<button type="button" class="btn-close">
+					<img src="./skin/im/img/thinX-white.png" alt="">
+				</button>
+
+				<div class="wrap_box_ratio">
+					<div class="box_ratio">
+						<img src="./skin/im/img/picture01.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="content">
+					<!--<a href="#" class="btn-vr">
+						<img src="./skin/im/img/360.png" alt="">
+						<span class="text">VR보기</span>
+					</a>-->
+
+					<h3 class="title">박수근 미술관</h3>
+
+					<p class="before-location">강원 양구군 양구읍 박수근로 265-15 박수근미술관</p>
+
+					<!-- 2021-07-08 #수정1-2 - 버튼 변경 -->
+					<div class="btns">
+						<button class="btn m-script-pop" data-target=".m-pop-wrap">Play Video</button>
+
+						<div class="btn btn-sound">
+							<span class="text inactive">Listen Audio</span>
+							<span class="text active">Stop Audio</span>
+
+							<audio src="./skin/im/file/example.mp3" controls style=""></audio>
+						</div>
+					</div>
+
+					<p class="body">
+						박수근의 작품들은 대체로 어두운 색감에 거친 질감이 특징 이다. 거칠고 차가운 느낌은 그림을 감상하는 이로 하여금 고단 했던 그의 생애를 느낄 수 있게 해준다. 실제로 박수근 미술관의 외벽은 화강암을 쌓아 올려 지어졌다. 그 벽을 보고 있자면 거칠고 단단하다는 느낌이 든다.
+					</p>
+				</div>
+
+				<!-- 2021-07-08 #수정1-3 - 영상 팝업창 추가 -->
+				<div class="m-pop-wrap">
+					<div class="m-pop type02">
+						<button class="btn-close m-script-pop" data-target=".m-pop-wrap">
+							<img src="./skin/im/img/x-white.png" alt="">
+						</button>
+
+						<div class="wrap_box_ratio">
+							<div class="box_ratio">
+								<iframe src="https://www.youtube.com/embed/ahCwLS1FsyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 2021-07-07 #수정1-2 - 팝업창 추가 -->
+			<div class="m-pop m-pop type01">
+				<div class="m-pop-header">
+					<h3 class="m-pop-header-title">박수근 미술관 B관</h3>
+
+					<button class="m-pop-btn-close">
+						<img src="./skin/im/img/thinX-white.png" alt="">
+					</button>
+				</div>
+
+				<div class="m-pop-content">
+					<p class="body">
+						양구수목원은 수목원과 DMZ야생동물생태관, DMZ 야
+						생화분재원, DMZ무장애나눔숲길, 생태탐방로가 어우
+						러진 자연 중심의 생태 타운입니다.
+					</p>
+
+					<!-- 2021-07-08 #수정1-4 - 버튼 변경 -->
+					<div class="btns">
+						<a href="#" class="btn-icon btn-sound">
+							<span class="text inactive">
+								Listen Audio
+							</span>
+							<span class="text active">
+								Stop Audio
+							</span>
+
+							<audio src="./skin/im/file/example.mp3" controls style=""></audio>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="menus-wrap">
+				<div class="box-logo">
+					<a href="#">
+						<img src="./skin/im/img/en/logo-yanggu.png" alt="" class="logo">
+					</a>
+				</div>
+
+				<button type="button" class="menu btn-up">
+					<img src="./skin/im/img/arrowUp-white.png" alt="">
+				</button>
+				<button type="button" class="menu btn-down">
+					<img src="./skin/im/img/arrowUp-white.png" alt="" style="transform:rotate(180deg)">
+				</button>
+
+				<!-- 2021-07-07 #수정1-3 - 메뉴 변경 -->
+				<div class="menus">
+					<a href="#" class="menu active">
+						<button class="btn-icon">
+							<img src="./skin/im/img/info.png" alt="">
+						</button>
+						양구 한반도섬
+					</a>
+					<div class="menus">
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							양구 한반도섬 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							양구 한반도섬 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							양구 한반도섬 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							양구 한반도섬 A관
+						</a>
+					</div>
+
+
+					<a href="#" class="menu">
+						<button class="btn-icon">
+							<img src="./skin/im/img/info.png" alt="">
+						</button>
+
+						박수근 미술관
+					</a>
+					<div class="menus">
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							박수근 미술관 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							박수근 미술관 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							박수근 미술관 A관
+						</a>
+
+						<a href="#" class="menu">
+							<button class="btn-icon">
+								<img src="./skin/im/img/document.png" alt="">
+							</button>
+
+							박수근 미술관 A관
+						</a>
+					</div>
+
+
+					<a href="#" class="menu">두타연</a>
+					<a href="#" class="menu">양구꽃섬</a>
+					<a href="#" class="menu">양구백자박물관</a>
+					<a href="#" class="menu">양구수목원(생태식물원)</a>
+					<a href="#" class="menu">양구수목원(DMZ야생화분재원)</a>
+					<a href="#" class="menu">국토정중앙천문대</a>
+					<a href="#" class="menu">사명산</a>
+					<a href="#" class="menu">봉화산</a>
+					<a href="#" class="menu">대암산</a>
+					<a href="#" class="menu">DMZ펀치볼둘레길</a>
+				</div>
+			</div>
+		</div>
+
+		<noscript>
+			<table style="width:100%;height:100%;">
+				<tr style="vertical-align:middle;">
+					<td>
+						<div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div>
+					</td>
+				</tr>
+			</table>
+		</noscript>
+		<script>
+			embedpano({
+				swf: "tour.swf",
+				xml: "tour.xml",
+				target: "pano",
+				html5: "auto",
+				mobilescale: 1.0,
+				passQueryParameters: true
+			});
+		</script>
+	</div>
+</div>
+
+</body>
+</html>

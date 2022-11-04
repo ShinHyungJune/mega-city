@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>박수근미술관</title>
+	<link rel="stylesheet" href="/assets/global/css/default.css">
+	<link rel="stylesheet" href="/assets/global/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="/assets/global/css/animate.css">
+	<link rel="stylesheet" href="/assets/global/css/swiper.min.css">
+	<link rel="stylesheet" href="/assets/global/css/common.css">
+	<link rel="stylesheet" href="/assets/global/css/im_board.css">
+	<link rel="stylesheet" href="/assets/global/css/style.css">
+
+	<script src="/assets/global/js/jquery-1.7.1.min.js"></script>
+	<script src="/assets/global/js/swiper.min.js"></script>
+	<script src="/assets/global/js/aos-2.3.1.js"></script>
+	<script src="/assets/global/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="/assets/global/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="/assets/global/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="/assets/global/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="/assets/global/img/logo.png" alt="홈으로 이동">
+                </a>
+
+                <div class="wrap_gnb">
+                    <div class="gnbs gnbs-type01 pc clearfix">
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tour Guide
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tourist Attraction
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Festival & Experience
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Food & Accommodation
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Community
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="/assets/global/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="/assets/global/img/visual01.jpg" alt="">
+			- travel
+			<img src="/assets/global/img/visual02.jpg" alt="">
+			- festival
+			<img src="/assets/global/img/visual03.jpg" alt="">
+			- travel info
+			<img src="/assets/global/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="/assets/global/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							Hot! Place
+							<img src="/assets/global/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="/assets/global/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="/assets/global/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="/assets/global/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_hotplace area_art">
+				<div class="jumbotron m-parallax type01">
+					<div class="wrap_1200">
+						<div class="box-text">
+							<h3 class="title">Park Soo-geun Museum</h3>
+							<p class="body">“Park Soo-geun, the painter most loved by Koreans”</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-120"></div>
+
+				<div class="contents">
+					<section id="section01">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<img src="/assets/global/img/art01.jpg" alt="">
+
+									<div class="mb-60"></div>
+
+									<p class="body type01">
+										Park Soo-geun, the painter most loved by Koreans
+									</p>
+
+									<div class="mb-30"></div>
+
+									<p class="body type01">
+										Park Soo-geun was born as the eldest son of a poor family in Yanggu, and had a poor childhood. Contrary to the values of painter Park Soo-geun that we think of now, he has never received art education properly because of the poor family environment. He is responsible for the livelihood of his family and has developed his dream of art by self-education. Park Soo-geun is a painter who devoted his life to drawing “human goodness and truth” based on the life of an unnamed and poor commoner.
+									</p>
+								</div>
+								<div class="right">
+									<p class="title type01">Park Soo-geun</p>
+
+									<h3 class="title type02">
+										most loved by Koreans.
+									</h3>
+
+									<div class="mb-30"></div>
+
+									<img src="/assets/global/img/art02.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section02">
+						<div class="wrap_1200">
+							<img src="/assets/global/img/art03.jpg" alt="">
+
+							<div class="mb-60"></div>
+
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+										Perhaps that is why Park's works depict everyday and simple things rather than colorful or abstract ones. Most of them are objects expressed with lines and outlines, indigenous colors consisting of white, grayish brown, and yellowish brown, and techniques that ignore perspective and emphasize contrast. Park Soo-geun's work has a charm that makes viewers comfortable and calm.
+									</p>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										He achieved the epitome of Korean beauty by emphasizing the essence of the object by using simple shapes and line drawings, and expressing the Korean national sentiment with rough granite-like texture through Western painting techniques. He, who portrayed the everyday life of our people with a warm gaze, is a popular painter who embodies simple beauty and is considered the most Korean painter of the 20th century.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section03" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<p class="body type01 white">
+								When I look at the works at the museum,
+								<br/>I can feel that the life of Park Soo-geun is contained in it, not just art.
+								<br/>It can be imagined as a scene in the picture, and you can enter his life for a while.
+							</p>
+						</div>
+					</section>
+
+					<div class="mb-300"></div>
+
+					<section id="section04">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="title type01">
+										His life and paintings were rough
+									</p>
+									<h3 class="title type02">
+										But warm
+									</h3>
+
+									<div class="mb-60"></div>
+
+									<p class="body type01">
+										Park's works are generally characterized by dark colors and rough textures. The harsh and cold feeling makes the viewers of the painting feel his hard life. In fact, the exterior wall of Park Soo-geun Museum was built with granite. Looking at the wall, it feels rough and hard. As if he expressed it in his work. Painter Park Soo-geun's issue is "Miseok".
+									</p>
+
+									<div class="mb-30"></div>
+
+									<p class="body type01">
+										It seems to be derived from the beauty of granite, which is often used for towers and tombstones. He sought beauty in the stone and tried to format it. Park Soo-geun tried to realize Korean beauty by expressing the rough texture of the old stone surface. You can feel each and every one of his life from the exterior of the museum.
+									</p>
+								</div>
+								<div class="right">
+									<img src="/assets/global/img/art05.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section05">
+						<div class="wrap_1200">
+							<div class="box-twin type02">
+								<div class="left">
+									<img src="/assets/global/img/art06.jpg" alt="">
+									<div class="mb-50"></div>
+									<p class="body type01">
+										Just because he was poor and difficult didn't mean that his life was just cold and dark. At the age of twenty-six, he met Mrs. Kim Bok-soon, Park's life partner. The first place they met was in the laundry, and Park Soo-geun wrote the most true love he could make. “I am a painter. The only property is brushes and palettes. If you agree and marry me, you will suffer materially, but mentally, I am confident that I will make you happier than anyone else. Would you like to be a great painter and you will be a great painter's wife?” This is part of the contents of a letter sent by Park Soo-geun to Ms. Bok-soon Kim. In the writing, I can feel the love and warm heart of Park Soo-geun for Ms. Bok-soon Kim.
+									</p>
+								</div>
+								<div class="right">
+									<img src="/assets/global/img/art07.jpg" alt="">
+									<div class="mb-50"></div>
+									<p class="body type01">
+										It can be seen that Park Soo-geun, expressed in Kim Bok-soon's diary, is also a person with an extremely warm heart. “When he bought something, he bought it from a streetcar, a handcart, or a basket market rather than from a big store. He always felt pity for the women who shopped in baskets, and always felt pitiful for the neighbors who suffered after the war, so it may be that the subjects of his paintings are all those who do business on the street. ”The above, which is part of Kim Bok-soon's diary, shows where Park Soo-geun’s mind is always heading. He himself could not live a leisurely life, but he was a person who lived with pity for others.
+										Even though his life was poor, the warmth of his soul can be felt in his works depicting the people he sees and throughout the museum.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section06" class="m-parallax type01"></section>
+
+					<div class="mb-120"></div>
+
+					<section id="section07">
+						<div class="wrap_1200">
+							<div class="box-text type01">
+								<div class="left">
+									<h3 class="title type02">Nature Pictures <br/>and People</h3>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										The biggest attraction of Park Soo-geun Museum is that nature does not exist for the museum, but the “harmony” as if the museum was drawn in nature. As you slowly look around the entire museum, you often come across Park Soo-geun's works. It feels as if we are seeing what he saw and drew together during his lifetime. As I walk surrounded by trees and grass, the painting of Park Soo-geun, his life, and myself melt together in nature.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-300"></div>
+
+					<section id="section08" class="section-last">
+						<div class="wrap_1200">
+							<p class="body type01">
+								As you walk on the road to the Park Soo-geun Mausoleum in the museum, special exhibitions are held in the Park Soo-geun Pavilion and the Museum of Modern Art, with art collections and various subjects, and you can enjoy special exhibitions other than the work of Park Soo-geun. He left his work, but his influence continues to impress many contemporary artists.
+							</p>
+							<div class="mb-25"></div>
+							<p class="body type01">
+								In June of this year, a children's art museum was opened in the Park Soo-geun Museum. Art and cutting-edge technology blend together here. In addition, there are a variety of experience spaces where you can experience Park Soo-geun's childhood stories more intimately and stimulate the five senses of children. Decorated with local artists, this space is not just for children. It is a place where children can enjoy and learn a variety of materials through experience and play, making it easy for parents to understand Park Soo-geun's view of art together.
+							</p>
+
+						</div>
+						<img src="/assets/global/img/art09.jpg" alt="">
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="/assets/global/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="/assets/global/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

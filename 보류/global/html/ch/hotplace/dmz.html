@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DMZ环路</title>
+	<link rel="stylesheet" href="../../../comn/css/default.css">
+	<link rel="stylesheet" href="../../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../comn/css/common.css">
+	<link rel="stylesheet" href="../../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../../comn/css/style.css">
+
+	<script src="../../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../../comn/js/swiper.min.js"></script>
+	<script src="../../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../../comn/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="../../../comn/img/logo.png" alt="홈으로 이동">
+                </a>
+
+				<div class="wrap_gnb">
+					<div class="gnbs gnbs-type01 pc clearfix">
+						<div class="gnb ">
+							<a href="#" class="text">杨口热门景点</a>
+							<div class="depth02">
+								<a href="../hotplace/island.html" title="Korean Peninsula Island">韩半岛岛</a>
+								<a href="../hotplace/flower.html" title="Flower Island">花岛</a>
+								<a href="../hotplace/dmz.html" title="DMZ Punchbowl dulle-gil">DMZ环路</a>
+								<a href="../hotplace/forest.html" title="Yanggu Arboretum">杨口树木园</a>
+								<a href="../hotplace/art.html" title="Park Soo-geun Museum">朴寿根美术馆</a>
+								<a href="../hotplace/museum.html" title="White Porcelain Museum">白瓷博物馆</a>
+								<a href="../hotplace/star.html" title="Center of Korea Observatory">国土正中央天文台</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel</a>
+							<div class="depth02">
+								<a href="#" title="DMZ Peace">DMZ Peace</a>
+								<a href="#" title="Nature">Nature</a>
+								<a href="#" title="History &amp; Culture">History &amp; Culture</a>
+								<a href="#" title="Leisure &amp; Recreation">Leisure &amp; Recreation</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Festival</a>
+							<div class="depth02">
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel information</a>
+							<div class="depth02">
+								<a href="../sub/tourlistInformation.html" title="Tourist Information">Tourist Information</a>
+								<a href="../sub/restaurant.html" title="Restaurant">Restaurant</a>
+								<a href="../sub/accommodation.html" title="Accommodation">Accommodation</a>
+								<a href="../sub/traffic.html" title="Traffic report">Traffic report</a>
+								<a href="../sub/weather.html" title="Weather report">Weather report</a>
+								<a href="../sub/exchangeRateReport.html" title="Exchange rate report">Exchange rate report</a>
+								<a href="https://english.visitkorea.or.kr/enu/TRV/TV_ENG_Must100.jsp#gang" target="_blank" title="Top 100 Korean Tourism">Top 100 Korean Tourism</a>
+								<a href="#" title="FAQ">FAQ</a>
+								<a href="../sub/citytour.html" title="Citytour">Citytour</a>
+							</div>
+						</div>
+					</div><!-- //gnbs -->
+				</div><!-- //wrap_gnb -->
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			- travel
+			<img src="../../../comn/img/visual02.jpg" alt="">
+			- festival
+			<img src="../../../comn/img/visual03.jpg" alt="">
+			- travel info
+			<img src="../../../comn/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="../../../comn/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							杨口热门景点
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="../../../comn/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="../../../comn/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mb-60"></div>
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_hotplace area_dmz">
+				<div class="jumbotron m-parallax type01">
+					<div class="wrap_1200">
+						<div class="box-text">
+							<h3 class="title">DMZ环路</h3>
+							<p class="body">这里的地形通常被称为“宾治盆地”。</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-120"></div>
+
+				<div class="contents">
+					<section id="section01">
+						<div class="wrap_1200">
+							<div class="box-text type01">
+								<div class="left">
+									<p class="title type01">这里的地形通常被称为 </p>
+
+									<h3 class="title type02">“宾治盆地”。</h3>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										这是位于杨口郡亥安面的盆地，因为韩国战争时期有一位外国随军记者发现其形状很像潘趣酒碗而取此名。目前是韩国唯一民间人出入控制线以内仍有居民居住的面所在地，在地政学上具有特殊的意义。这一带在6.25战争时期曾经展开过宾治盆地战斗、兜率山战斗、加七峰战斗等激战，至今还能发现很多“地雷”标记牌。虽然罕见的场景会引起人们的好奇心，但又是一个让人感到紧张的地方。
+									</p>
+								</div>
+							</div>
+
+							<div class="mb-60"></div>
+
+							<img src="../../../comn/img/dmz01.jpg" alt="" class="full">
+
+						</div>
+					</section>
+                
+					<div class="mb-120"></div>
+
+					<section id="section02"">
+					<div class="wrap_1200">
+						<div class="box-twin type01">
+							<div class="left">
+								<img src="../../../comn/img/dmz02.jpg" alt="">
+							</div>
+							<div class="right">
+								<p class="body type01">
+									DMZ宾治盆地环路，由于其地域特殊性，如果没有林间路体验向导的陪伴，禁止游客擅自探访。在民间人出入控制线内修建的林荫道，周围还有很多尚未排除的雷区，游客必须遵从导游的指示。尽管如此，之所以仍有很多人选择这条环路，是因为这里对于在尚未结束的战争痛苦中生活的我们来说具有非常重大的意义。
+								</p>
+								<div class="mb-25"></div>
+								<p class="body type01">
+									探访路分为4条路线。要对路线作简要的说明，第一条是单程14Km，约需4个小时的和平树林路。该路线从咨询中心出发，一路上能够看到卧牛山瞭望台、桦树林、大型掩体等军事分界线的象征物。在这里人们可以亲眼目睹并感受到在日常生活原以为理所当然的和平是多么的宝贵。
+								</p>
+							</div>
+						</div>
+					</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section03">
+						<div class="wrap_1200">
+							<div class="box-twin type02">
+								<div class="left">
+									<img src="../../../comn/img/dmz03.jpg" alt="">
+
+									<div class="mb-50"></div>
+
+									<p class="body type01">
+										接下来是五柳田间小路，需要5个小时，单程为21.12Km。也是从咨询中心出发，通过该路线可以游览东幕洞、五柳水库、野花公园、宋家峰瞭望台、DMZ野生植物园和史前遗址。这条路线被划为天然纪念保护区，最大特点是在森林基因资源保护林内可以看到多种植被和被指定为天然纪念物的野生动物的痕迹，还能看到盆地地形的秀丽景观。
+									</p>
+									<div class="mb-25"></div>
+									<p class="body type01">
+										万岱田野路单程21.9公里，是所有路线中耗时最长、难度最高的路线。该路线经过万岱村、DMZ野生植物园、城隍堂、万岱水库、金刚松造林地、野猪岭树林路等景点。其最大魅力在于，可以看到守护城隍庙的保护树——小橡树，走在大岩山脚的山脊和山谷中，观赏松树造林地下面一马平川的万岱平原的宏伟景观。
+									</p>
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/dmz04.jpg" alt="">
+
+									<div class="mb-50"></div>
+									<div class="mb-25"></div>
+									<p class="body type01">
+										最后是野猪岭路。虽然单程仅为16.2公里，但可以说是颇有难度的路线。该路线经过白桦林、雷区、临时控制哨所、阿里郎岭、军用直升机场、野猪岭、停车防御线、万岱田园路等景点。走在这里会切身感受到自己真的已进入到DMZ。通过雷区公路，看着临时控制哨所和防御线，会感觉到战争留下的痕迹。但是沿着大岩山脊一路走下去，金刚山、云峰和斯大林高地等现在无法前往的北方山川和向南延伸的雪岳山、点凤山、香炉峰等山峰，像一幅美丽的水彩画展现在眼前。
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section04" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+										虽然每条路线都有不同的魅力，但是几乎在所有路线都能够沿着环路欣赏周围美丽的风景，让人感到既神奇美妙又感慨万千。因为在过去半个多世纪以来控制民间人出入，所以这里人迹罕至，生态系统至今保存完好。寻找平时难以见到的野生动物痕迹的乐趣和观看野生植物，将成为一次非常神奇的经历。而且，在山路上徒步，呼吸新鲜空气，还能使人们感到心情舒畅而轻松。走在山路上，欣赏风景，走走停停，过不了多久就会气喘吁吁。
+									</p>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										一路上设有很多休息区，为走路观景疲惫的人们提供休息。当感觉到呼吸困难的时候暂停脚步，呼吸从树林喷出的绿色空气，举目欣赏眼前秀丽的自然风景。大自然绿色的气息会让您感觉到全身充满活力。重复很多次走走停停以后，刚开始还不太敢相信走完全程的人们，不知不觉中也会沉浸在徒步的乐趣之中。正所谓大自然的回报跟走路的艰辛成正比。尤其是站在山峰上俯瞰的宾治盆地，除了美感之外，还由于罕见的地理特性而也给人一种神秘的感觉。看着在开阔的山脚下形成坑坑洼洼的地形，可以理解战争当时成为激战地的原因所在。
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section class="section05">
+						<div class="wrap_1200">
+							<p class="body type01">
+								沿着山路一路走上去，处处可以看到“地雷”标记牌。毕竟是除非在新闻上看到，平时很少能接触的事情，所以眼前的场景既让人感到神奇，又有一种恐怖的感觉。一想到至今仍残留着已过半个世纪的战争痕迹，还有很多未排出的地雷，心里涌现出一股莫名的悲伤。面对着停战而非终战的现实，再次希望大家所期盼的终战早日来临。
+							</p>
+
+							<div class="mb-50"></div>
+
+							<img src="../../../comn/img/dmz06.jpg" alt="" class="full">
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section07">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+									但是，并非因发生过战争的地方而没有希望。人们对人迹罕至的地方也许会感到一些危险，可这里又是一个充满神秘的地方。在野生花盛开的野花公园里一簇簇花丛犹如电影中的一个场景展现在眼前，激动的心情油然而生。DMZ野生植物园最适合观赏各种植物。虽然是带着伤痛的土地，可是在这里绽放的大自然的生命，给人们一种像植物发芽一样充满希望的力量。
+									</p>
+									<div class="mb-25"></div>
+
+									<p class="body type01">
+										什么都不做，只是走在山路上也是不错的选择，但是听着解说了解平时很难接触到的领域，会让我们重新审视每一朵花每一棵树以及动物们留下的痕迹等平时很容易忽略的事物。
+									</p>
+									<div class="mb-25"></div>
+
+									<p class="body type01">
+										这就是杨口DMZ宾治盆地环路带给我们的意义所在。走在这里能够近距离感受到平时觉得理所当然的和平也是来自不易的，我们未曾环顾过的大自然中许多生命的痕迹。也许悲剧是从人开始的，也应该由人来结束悲剧。我们非常清楚在一路上经历的惨痛悲剧和美好和平中要选在哪一条路。我们要忘掉过去的悲伤，沿着光明的道路，跟着环路带给我们的希望走下去。
+									</p>
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/dmz07.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section08" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<div class="content">
+								<p class="body type01">
+									我想当环路快走到头的时候，从四面八方聚到这里共走同一条路的人们，心中应该浮现同样的想法。欢迎大家来到DMZ环路，留下平时难以经历的美好的回忆，做一次近距离感受历史和自然的特殊的经验。
+								</p>
+								<div class="mb-25"></div>
+								<p class="body type01">
+								除野猪岭路以外的其它三条路线，可以一个小时为单位分段徒步穿越除田间小路以外的树林路区间，显得尤为舒适宜人。
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<!--<section id="section12" class="section-last">
+						<img src="../../../comn/img/forest14.jpg" alt="">
+
+						<div class="tags type01">
+							<div class="wrap_1200">
+								<span class="tag">#인생샷</span>
+								<span class="tag">#공원</span>
+								<span class="tag">#데이트</span>
+								<span class="tag">#양구여행</span>
+								<span class="tag">#도보</span>
+								<span class="tag">#드라이브</span>
+								<span class="tag">#가족</span>
+								<span class="tag">#연인</span>
+								<span class="tag">#박물관</span>
+								<span class="tag">#추천코스</span>
+								<span class="tag">#연인</span>
+								<span class="tag">#박물관</span>
+								<span class="tag">#추천코스</span>
+								<span class="tag">#포토존</span>
+								<span class="tag">#박수근</span>
+								<span class="tag">#가족과함께</span>
+							</div>
+						</div>
+					</section>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="../../../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="../../../comn/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

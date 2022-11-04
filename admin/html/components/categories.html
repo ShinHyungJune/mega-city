@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>카테고리</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style_w.css">
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../../comn/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../comn/js/chart.js"></script>
+    <script src="../../comn/js/chart-custom.js"></script>
+
+    <style>
+        /* 카테고리 css 부분 */
+        #sidebar {width:340px; height:100%; position:absolute; top:0; left:0; overflow:auto; transition:left .3s; z-index:2;}
+        #sidebar h3 {padding:20px 25px; border-bottom:1px solid #dad8d3; color:#5c422d; font-size:18px; font-weight:600; background:#edebe7;}
+        #sidebar.active {left:-345px;}
+        #sidebar .sidebar-wrap {height:100%; overflow:auto;}
+        #sidebar .sidebar-wrap > .box_link > .link {}
+        #sidebar .sidebar-wrap .link .m-input-text {position:relative;}
+        #sidebar .sidebar-wrap .link .m-input-text input {height:27px;}
+        #sidebar .sidebar-wrap .link .m-input-text .btns {position:absolute; bottom:-28px; right:0; z-index:1;}
+        #sidebar .sidebar-wrap .link .m-input-text button {width:24px; height:24px; position:relative; margin:0; margin-left:-1px;  background-color:#28a893;}
+        #sidebar .sidebar-wrap .link .m-input-text button img {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+        #sidebar .link {display:block; position:relative; font-weight:300; border-bottom:1px solid #dad8d3;}
+        #sidebar .link:before {content:""; width:15px; height:15px; position:absolute; top:14px; left:10px;  background:url("../img/btn_plus.png") no-repeat;}
+        #sidebar .link.active:before {background:url("../img/btn_minus.png") no-repeat;}
+        #sidebar .sidebar-wrap > .box_link > .link {padding:10px 25px; padding-left:35px; font-weight:300;}
+        #sidebar .box_subLink {display:none; overflow-x:visible !important; padding-left:10px; background-color:#fff;}
+        #sidebar .box_subLink > .link {padding:5px; padding-right:20px; padding-left:35px; border:none; white-space:nowrap;}
+        #sidebar .box_subLink > .link:before {top:8px;}
+        #sidebar .box_subLink > .link.loading:before {top:8px;}
+        #sidebar .link.no-more:before {background:url("../img/icon_circle_menu.png") no-repeat;}
+        #sidebar .link.active.no-more .text {background-color:#ffeeb4;}
+        #sidebar .link.active.no-more:before {background:url("../img/icon_circle_menu_active.png") no-repeat;}
+        #sidebar .link.loading:before {content:""; width:10px; height:10px; top:13px; left:9px;
+            border-top: 3px solid rgba(148, 130, 116, 0.4);
+            border-right: 3px solid rgba(148, 130, 116, 0.4);
+            border-bottom: 3px solid rgba(148, 130, 116, 0.4);
+            border-left: 3px solid #948274;
+            border-radius:50%;
+            animation-duration: .6s; animation-name:rotate; animation-iteration-count: infinite; background:none;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        .context {display:none; width:auto; position:absolute; border:1px solid #8b8b8b; z-index:10;}
+        .context-btn {display:block; width:100%; padding:4px 10px; font-size:14px; text-align:left; background-color:#dad8d3; border-bottom:1px solid #ccc;}
+        .context-btn.active {color:#fff; background-color:#8b8b8b;}
+        .context-btn:hover {color:#fff; background-color:#8b8b8b;}
+
+        .form.type01 {position:relative; border:1px solid #e1e1e1; border-top:2px solid #505050;}
+        .form.type01 .form-top {padding:15px;}
+        .form.type01 .form-top .tag {display:inline-block; margin-right:30px;}
+        .form.type01 .form-top .tag .state {margin-right:7px; background-color:#dbdbdb; color:#333;}
+        .form.type01 .form-top .tag.main .state {padding:6px 12px; background-color:#28a893; color:#fff;}
+        .form.type01 .form-top .tag.main {font-size:20px; font-weight:500;}
+        .form.type01 .box-title {padding:10px 10px; background-color:#edebe7;}
+        .form.type01 .box-title .text {float:left; font-weight:500;}
+        .form.type01 .box-title .btns {float:right;}
+        .form.type01 .box-title .box-title-btn {width:18px; height:18px; margin:0; line-height:13px; color:#fff;}
+        .form.type01 .box-title .btn-add {background-color:#656565;}
+        .form.type01 .box-title .btn-remove {background-color:#eb6400;}
+        .form.type01 .form-middle {padding-left:340px; position:relative;}
+        .form.type01 .form-main-wrap {min-height:500px; padding:40px 30px; border-left:1px solid #e1e1e1;}
+        .form.type01 .btn_small {padding:4px 10px; font-size:14px; border-radius:3px;}
+        .form.type01 .marks {margin-bottom:20px;}
+        .form.type01 iframe {margin-top:10px;}
+
+        .guide.type01 {position:relative;}
+        .guide.type01:after {display:block; clear:both; content:""; }
+        .guide.type01 .img {position:absolute; top:0; left:0;}
+
+        .m-steps.type02 .m-steps-title {margin-bottom:20px; font-size:20px; font-weight:500;}
+        .m-steps.type02 .m-step {margin-bottom:20px; padding-left:35px; position:relative;}
+        .m-steps.type02 .m-step:last-child {margin-bottom:0;}
+        .m-steps.type02 .m-step-number {width:24px; line-height:24px; position:absolute; left:0; top:0; text-align:center; color:#fff; background-color:#28a893; border-radius:3px;}
+        .m-steps.type02 .m-step-title {margin-bottom:5px; font-weight:500;}
+        .m-steps.type02 .m-step-body {color:#5f5f5f;}
+
+        @media screen and (max-width:1500px){
+            .guide.type01 {padding-left:0;}
+            .guide.type01 .img {display:block;margin:0 auto; margin-bottom:20px; position:static;}
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="skip_nav">
+    <a href="#tnb">주메뉴</a>
+    <a href="#page_container">컨텐츠</a>
+</div>
+
+<div class="wrapper">
+
+    <header class="header">
+        <h1><a href="main.html">관리자페이지</a></h1>
+        <nav class="tnb" id="tnb">
+            <li class="depth1_tnb"><a href="./system/basic_info.html">홈페이지관리</a>
+                <ul class="snb">
+                    <li><a href="./system/basic_info.html">기본설정</a></li>
+                    <li><a href="./contents/contents_list.html">콘텐츠관리</a></li>
+                    <li><a href="./statistics/statistics.html">통계관리</a></li>
+                    <li><a href="./system/terms.html">약관관리</a></li>
+                    <li><a href="./sms/member.html">문자관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./member/member_list.html">회원관리</a>
+                <ul class="snb">
+                    <li><a href="./member/member_list.html">일반회원</a></li>
+                    <li><a href="./member/mentor_list.html">멘토관리</a></li>
+                    <li><a href="./member/admin_list.html">관리자관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./business/club.html">사업관리</a>
+                <ul class="snb">
+                    <li><a href="./business/club.html">창업동아리관리</a></li>
+                    <li><a href="./business/class.html">창업강좌관리</a></li>
+                    <li><a href="./business/dreamon.html">드림온센터</a></li>
+                    <li><a href="./business/upcoming.html">예비기술자관리</a></li>
+                    <li><a href="./business/college.html">창업선도대학관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./onestop/counsel.html">원스톱상담창구</a>
+                <ul class="snb">
+                    <li><a href="./major/counsel.html">상담관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./meetingroom/reservation.html">회의실관리</a>
+                <ul class="snb">
+                    <li><a href="./meetingroom/reservation.html">회의실예약관리</a></li>
+                    <li><a href="./meetingroom/room.html">회의실정보관리</a></li>
+                </ul>
+            </li>
+            <li class="depth1_tnb"><a href="./bbs/notice_list.html">커뮤니티관리</a>
+                <ul class="snb">
+                    <li><a href="./bbs/notice_list.html">게시물관리</a></li>
+                    <li><a href="./bbs/bbs_list.html">게시물관리</a></li>
+                </ul>
+            </li>
+        </nav><!-- //tnb -->
+        <div class="admin_info">
+            <span class="admin_name">통합관리자(admin)</span>
+            <div class="admin_menu">
+                <ul>
+                    <li><a href="#" class="ico_logout">로그아웃</a></li>
+                    <li><a href="#" class="ico_homepage">홈페이지</a></li>
+                    <li><a href="#" class="ico_manual">매뉴얼</a></li>
+                </ul>
+            </div><!-- //admin_menu -->
+        </div><!-- //admin_info-->
+    </header><!-- //header -->
+
+    <div class="page_container" id="page_container">
+        <aside class="aside">
+            <h2><span class="ico ico_title1"></span>홈페이지관리</h2>
+            <nav class="lnb">
+                <li class="on"><a href="./system/basic_info.html"><span class="ico ico_setting"></span>기본설정<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../system/basic_info.html" class="on">기본 정보</a></li>
+                        <li><a href="../system/seo.html">SEO정보</a></li>
+                        <li><a href="../system/popup.html">팝업관리</a></li>
+                        <li><a href="../system/banner.html">배너관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contents/contents_list.html"><span class="ico ico_setting"></span>콘텐츠관리<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../contents/contents_list.html">콘텐츠 관리</a></li>
+                        <li><a href="../contents/menu.html">메뉴관리</a></li>
+                        <li><a href="../contents/page.html">HTML</a></li>
+                    </ul>
+                </li>
+                <li><a href="./statistics/statistics.html"><span class="ico ico_setting"></span>통계관리<span class="ico ico_arrow"></span></a>
+                    <ul>
+                        <li><a href="../statistics/statistics.html">방문자</a></li>
+                        <li><a href="../statistics/statistics.html">인구</a></li>
+                        <li><a href="../statistics/statistics.html">시스템</a></li>
+                    </ul>
+                </li>
+                <li><a href="./system/terms.html"><span class="ico ico_setting"></span>약관관리<span class="ico ico_arrow"></span></a></li>
+                <li><a href="./sms/member.html"><span class="ico ico_setting"></span>문자관리<span class="ico ico_arrow"></a>
+                    <ul>
+                        <li><a href="../sms/member.html">문자발송 대상관리</a></li>
+                        <li><a href="../sms/setup.html">문자발송 설정관리</a></li>
+                        <li><a href="../sms/history.html">문자발송 이력관리</a></li>
+                        <li><a href="../sms/charge.html">문자 충전하기</a></li>
+                    </ul>
+                </li>
+            </nav><!-- //lnb -->
+            <a href="#openclose" class="btn_openclose">Close</a>
+        </aside><!-- //aside -->
+
+        <div class="navigation_wrap">
+            <h3>기본정보</h3>
+            <div class="navigation">
+                <a href="#">Home</a> >
+                <a href="#">시스템관리</a> >
+                <a href="#">기본설정</a> >
+                <span>기본정보</span>
+            </div><!-- //navigation -->
+
+        </div>
+        <div class="page_contents">
+            <!-- 목차 메뉴 우클릭 시 나올 메뉴 -->
+            <div class="context">
+                <button type="button" class="context-btn">이름 변경</button>
+                <button type="button" class="context-btn">삭제</button>
+            </div>
+
+            <form action="#" class="form type01">
+                <div class="form-top clearfix">
+                    <div class="tags float_left">
+                        <div class="tag main">
+                            <span class="state">단행자료</span>
+                            간이집(簡易集)
+                        </div>
+                        <div class="tag">
+                            <span class="state">시군정보</span>
+                            간이집(簡易集)
+                        </div>
+                        <div class="tag">
+                            <span class="state">분야정보</span>
+                            총류
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn float_right">목록</a>
+                </div>
+
+                <div class="form-middle">
+                    <!-- 좌측 목차 -->
+                    <div id="sidebar">
+
+                        <div class="sidebar-wrap">
+                            <div class="box-title clearfix">
+                                <p class="text">목차</p>
+
+                                <div class="btns">
+                                    <button type="button" class="box-title-btn btn-add">+</button>
+                                    <button type="button" class="box-title-btn btn-remove">-</button>
+                                </div>
+                            </div>
+
+                            <div class="box_link">
+                                <!-- link 클래스 설명
+									- link => 하위 메뉴가 있는 메뉴
+									- link.no-more => 더 이상 하위 메뉴가 없는 메뉴
+									- link.loading => ajax 호출 시 불러오는중일 때
+								-->
+                                <a href="#" class="link blocked">메뉴1</a>
+
+                                <div class="box_subLink">
+                                    <a href="#" class="link">메뉴1-1</a>
+
+                                    <div class="box_subLink">
+                                        <a href="#" class="link">
+                                            <span class="text">메뉴1-1-1</span>
+                                        </a>
+
+                                        <div class="box_subLink">
+                                            <a href="#" class="link">
+                                                <span class="text">메뉴1-1-1-1</span>
+                                            </a>
+
+                                            <div class="box_subLink">
+                                                <a href="#" class="link">
+                                                    <span class="text">메뉴1-1-1-1-1</span>
+                                                </a>
+
+                                                <div class="box_subLink">
+                                                    <a href="#" class="link">
+                                                        <span class="text">메뉴1-1-1-1-1-1</span>
+                                                    </a>
+
+                                                    <div class="box_subLink">
+                                                        <a href="#" class="link">
+                                                            <span class="text">메뉴1-1-1-1-1-1-1</span>
+                                                        </a>
+
+                                                        <div class="box_subLink">
+                                                            <a href="#" class="link no-more">
+                                                                <span class="text">메뉴</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box_subLink">
+                                    </div>
+                                    <div class="box_subLink">
+                                        <a href="#" class="link no-more">
+                                            <span class="text">메뉴1-1-2</span>
+                                        </a>
+                                    </div>
+                                    <div class="box_subLink">
+                                        <a href="#" class="link no-more">
+                                            <span class="text">메뉴1-1-3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box_link">
+                                <a href="#" class="link loading blocked">
+                                    <div class="m-input-text type01">
+                                        <input type="text" placeholder="카테고리명">
+                                        <div class="btns">
+                                            <button type="button" onclick="">
+                                                <img src="../../comn/img/icon_small_v_white.png" alt="">
+                                            </button>
+                                            <button type="button">
+                                                <img src="../../comn/img/icon_small_x_white.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="box_subLink">
+                                    <a href="#" class="link no-more loading">
+                                        <span class="text">메뉴2-1</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 우측 입력폼 -->
+                    <div class="form-main">
+                        <div class="box-title clearfix">
+                            <p class="text">목차 편집</p>
+                        </div>
+
+                        <div class="form-main-wrap">
+                            <div class="guide type01">
+                                <div class="m-steps type02">
+                                    <p class="m-steps-title">[자료관리 이용 안내]</p>
+
+                                    <div class="m-step">
+                                        <p class="m-step-number">1</p>
+
+                                        <div class="m-step-texts">
+                                            <p class="m-step-title">하위 목차 등록</p>
+                                            <p class="m-step-body">
+                                                왼쪽 목차 영역에서 목차명 위에서 마우스 오른쪽 클릭하시면 4개의 메뉴가 나옵니다.
+                                                <br>‘하위 목차등록’ 을 선택하시면 오른쪽 목차 편집 영역에서 목차명 입력 후 ‘등록’버튼을 누리시면 생성됩니다.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-step">
+                                        <p class="m-step-number">2</p>
+
+                                        <div class="m-step-texts">
+                                            <p class="m-step-title">하위 게시글 등록</p>
+                                            <p class="m-step-body">
+                                                게시글을 등록하고 싶은 목차명 위에서 마우스 오른쪽 클릭하신 후 ‘하위 게시글등록’ 을 선택하시면
+                                                <br>오른쪽 목차 편집 영역에서 게시글의 내용을 등록하실 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-step">
+                                        <p class="m-step-number">3</p>
+
+                                        <div class="m-step-texts">
+                                            <p class="m-step-title">이름변경</p>
+                                            <p class="m-step-body">
+                                                변경하고 싶은 목차 위에서 마우스 오른쪽 클릭하신 후 ‘이름변경’을 선택하시고
+                                                <br>오른쪽 목차 편집 영역에서 목차명을 수정한 후 ‘수정’버튼을 누르시면 변경됩니다.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-step">
+                                        <p class="m-step-number">4</p>
+
+                                        <div class="m-step-texts">
+                                            <p class="m-step-title">삭제</p>
+                                            <p class="m-step-body">
+                                                변경하고 싶은 목차 위에서 마우스 오른쪽 클릭하신 후 ‘이름변경’을 선택하시고
+                                                <br>오른쪽 목차 편집 영역에서 목차명을 수정한 후 ‘수정’버튼을 누르시면 변경됩니다.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div><!-- //page_contents -->
+    </div><!-- //page_container -->
+    <footer>
+        <div class="copy_wrap">
+            <p>(23441) 강원도 춘천시 강원대학길 1(효자동) 강원대학교 보듬관 / TEL : 033-250-8971~8976 / FAX : 033-259-5714</p>
+            <p>Copyright © KNU Start-up & Enterpreneurship Foundation. All Rights Reserved</p>
+        </div><!-- //copy_wrap -->
+    </footer>
+</div><!-- //wrapper -->
+
+<div class="blind_black"></div>
+<script>
+    /* 카테고리 js 부분 */
+
+    // sidebar
+    $("#sidebar .link").not(".m-input-text button").click(function(){
+        if($(this).hasClass("no-more")){
+            $("#sidebar .link.no-more").removeClass("active");
+            $(this).addClass("active");
+        }else{
+            $(this).toggleClass("active");
+        }
+
+        $(this).siblings(".box_subLink").toggle();
+    });
+
+    // prevent sidebar link bubbling
+    $("#sidebar .link .m-input-text button, #sidebar .link .m-input-text a").click(function(event){
+        event.stopPropagation();
+        event.preventDefault();
+    });
+
+    var opened = false;
+
+    $("#sidebar .link").on("contextmenu", function(e){
+        e.preventDefault();
+
+        $(".context").show()
+                .css({top: (event.pageY - 60) + "px", left: event.pageX + "px"});
+
+        opened = true;
+    });
+
+    $(window).click(function(){
+        if(opened){
+            opened = false;
+
+            $(".context").hide();
+        }
+    });
+
+</script>
+</body>
+</html><!-- //하단부분 -->

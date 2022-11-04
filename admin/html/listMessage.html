@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>관리자페이지</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+	<meta name="format-detection" content="telephone=no, email=no, address=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="../comn/css/style.css">
+	<script src="../comn/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<script src="../comn/js/common.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../comn/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+<div id="skip_nav">
+	<a href="#tnb">주메뉴</a>
+	<a href="#page_container">컨텐츠</a>
+</div>
+
+<div class="wrapper">
+
+	<header class="header">
+		<button type="button" class="btn_menu" title="메뉴 열기/닫기"></button>
+		<div class="black"></div>
+		<h1><a href="main.html">관리자페이지</a></h1>
+		<nav class="tnb" id="tnb">
+			<li class="depth1_tnb"><a href="./system/basic_info.html" class="on">홈페이지관리</a>
+				<ul class="snb">
+					<li><a href="./system/basic_info.html">기본설정</a></li>
+					<li><a href="./contents/contents_list.html">콘텐츠관리</a></li>
+					<li><a href="./statistics/statistics.html">통계관리</a></li>
+					<li><a href="./system/terms.html">약관관리</a></li>
+					<li><a href="./sms/member.html">문자관리</a></li>
+				</ul>
+			</li>
+			<li class="depth1_tnb"><a href="./member/member_list.html">회원관리</a>
+				<ul class="snb">
+					<li><a href="./member/member_list.html">일반회원</a></li>
+					<li><a href="./member/mentor_list.html">멘토관리</a></li>
+					<li><a href="./member/admin_list.html">관리자관리</a></li>
+				</ul>
+			</li>
+			<li class="depth1_tnb"><a href="./business/club.html">사업관리</a>
+				<ul class="snb">
+					<li><a href="./business/club.html">창업동아리관리</a></li>
+					<li><a href="./business/class.html">창업강좌관리</a></li>
+					<li><a href="./business/dreamon.html">드림온센터</a></li>
+					<li><a href="./business/upcoming.html">예비기술자관리</a></li>
+					<li><a href="./business/college.html">창업선도대학관리</a></li>
+				</ul>
+			</li>
+			<li class="depth1_tnb"><a href="./onestop/counsel.html">원스톱상담창구</a>
+				<ul class="snb">
+					<li><a href="./major/counsel.html">상담관리</a></li>
+				</ul>
+			</li>
+			<li class="depth1_tnb"><a href="./meetingroom/reservation.html">회의실관리</a>
+				<ul class="snb">
+					<li><a href="./meetingroom/reservation.html">회의실예약관리</a></li>
+					<li><a href="./meetingroom/room.html">회의실정보관리</a></li>
+				</ul>
+			</li>
+			<li class="depth1_tnb"><a href="./bbs/notice_list.html">커뮤니티관리</a>
+				<ul class="snb">
+					<li><a href="./bbs/notice_list.html">게시물관리</a></li>
+					<li><a href="./bbs/bbs_list.html">게시물관리</a></li>
+				</ul>
+			</li>
+		</nav><!-- //tnb -->
+		<div class="admin_info">
+			<span class="admin_name">통합관리자(admin)</span>
+			<div class="admin_menu">
+				<ul>
+					<li><a href="#" class="ico_logout">로그아웃</a></li> 
+					<li><a href="#" class="ico_homepage">홈페이지</a></li>
+					<li><a href="#" class="ico_manual">매뉴얼</a></li>
+				</ul>
+			</div><!-- //admin_menu -->
+		</div><!-- //admin_info-->
+	</header><!-- //header -->
+
+	<div class="page_container" id="page_container">
+		<aside class="aside">
+
+			<!-- <h2><span class="ico ico_title1"></span>홈페이지관리</h2> -->
+			<h2><img src="../comn/img/logo_black.png" alt="원주자유시장 로고"></h2>
+
+			<nav class="lnb">
+				<li class="on"><a href="./system/basic_info.html"><span class="ico ico_setting"></span>기본설정<span class="ico ico_arrow"></span></a>
+					<ul>
+						<li><a href="../system/basic_info.html" class="on">기본 정보</a></li>
+						<li><a href="../system/seo.html">SEO정보</a></li>
+						<li><a href="../system/popup.html">팝업관리</a></li>
+						<li><a href="../system/banner.html">배너관리</a></li>
+					</ul>
+				</li>
+				<li><a href="./contents/contents_list.html"><span class="ico ico_setting"></span>콘텐츠관리<span class="ico ico_arrow"></span></a>
+					<ul>
+						<li><a href="../contents/contents_list.html">콘텐츠 관리</a></li>
+						<li><a href="../contents/menu.html">메뉴관리</a></li>
+						<li><a href="../contents/page.html">HTML</a></li>
+					</ul>
+				</li>
+				<li><a href="./statistics/statistics.html"><span class="ico ico_setting"></span>통계관리<span class="ico ico_arrow"></span></a>
+					<ul>
+						<li><a href="../statistics/statistics.html">방문자</a></li>
+						<li><a href="../statistics/statistics.html">인구</a></li>
+						<li><a href="../statistics/statistics.html">시스템</a></li>
+					</ul>
+				</li>
+				<li><a href="./system/terms.html"><span class="ico ico_setting"></span>약관관리<span class="ico ico_arrow"></span></a></li>
+				<li><a href="./sms/member.html"><span class="ico ico_setting"></span>문자관리<span class="ico ico_arrow"></a>
+					<ul>
+						<li><a href="../sms/member.html">문자발송 대상관리</a></li>
+						<li><a href="../sms/setup.html">문자발송 설정관리</a></li>
+						<li><a href="../sms/history.html">문자발송 이력관리</a></li>
+						<li><a href="../sms/charge.html">문자 충전하기</a></li>
+					</ul>
+				</li>
+			</nav><!-- //lnb -->
+			<a href="#openclose" class="btn_openclose">Close</a>
+		</aside><!-- //aside -->
+
+		<div class="navigation_wrap">
+			<h3>기본정보</h3>
+			<div class="navigation">
+				<a href="#">Home</a> >
+				<a href="#">시스템관리</a> >
+				<a href="#">기본설정</a> >
+				<span>기본정보</span>
+			</div><!-- //navigation -->
+
+		</div>
+		<div class="page_contents">
+
+			<div class="page_contents_wrap">
+
+			<!-- ================ 내용시작 =================-->
+
+				<!-- 탭메뉴 -->
+				<ul class="tabMenu menu_13 menu_auto menu_small">
+					<li>
+						<select name="" id="" style="height:35px; padding-right:20px; position:relative; top:1px;">
+							<option value="2018">2018</option>
+						</select>
+					</li>
+					<li><a href="#"><span>01월</span></a></li>
+					<li><a href="#"><span>02월</span></a></li>
+					<li><a href="#"><span>03월</span></a></li>
+					<li><a href="#"><span>04월</span></a></li>
+					<li><a href="#"><span>05월</span></a></li>
+					<li><a href="#"><span>06월</span></a></li>
+					<li><a href="#"><span>07월</span></a></li>
+					<li><a href="#"><span>08월</span></a></li>
+					<li><a href="#"><span>09월</span></a></li>
+					<li><a href="#"><span>10월</span></a></li>
+					<li><a href="#"><span>11월</span></a></li>
+					<li><a href="#" class="active"><span>12월</span></a></li>
+				</ul>
+
+				<p class="text">※ 월 기본요금 : <span class="text_primary">100,000원</span></p>
+
+				<!-- 버튼 -->
+				<div class="btn_wrap clearfix align-right">
+					<a href="#" class="btn primary">변경</a>
+				</div><!-- //btn_wrap -->
+
+				<!-- 기본테이블 -->
+				<div class="table_wrap">
+					<table class="table_basic">
+						<caption>문자배정</caption>
+						<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">아이디</th>
+							<th scope="col">업체명</th>
+							<th scope="col">대표자</th>
+							<th scope="col">상태</th>
+							<th scope="col">① 배정금액</th>
+							<th scope="col">② 알림톡/금액</th>
+							<th scope="col">③ 친구톡/금액</th>
+							<th scope="col">④ LMS/금액</th>
+							<th scope="col">
+								LMS/금액
+								<br/>② + ③ + ④ = ⑤
+							</th>
+							<th scope="col">
+								잔액
+								<br/>①-⑤
+							</th>
+							<th scope="col">금액조정</th>
+							<th scope="col">
+								조정후
+								<br/>잔여금액
+							</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>84</td>
+							<td>admin</td>
+							<td>최고관리자</td>
+							<td>최고관리자</td>
+							<td>
+								<span class="btn blue">승인</span>
+							</td>
+							<td>1269원</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건
+							</td>
+							<td>
+								1269원
+							</td>
+							<td>
+								<input type="text" value="0" class="textAlign_right">
+							</td>
+							<td>
+								1269원
+							</td>
+						</tr>
+
+						<tr>
+							<td>83</td>
+							<td>3206</td>
+							<td>최고관리자</td>
+							<td>최고관리자</td>
+							<td>
+								<span class="btn white">승인</span>
+							</td>
+							<td>1269원</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건 / 0원
+							</td>
+							<td>
+								0건
+							</td>
+							<td>
+								1269원
+							</td>
+							<td>
+								<input type="text" class="textAlign_right">
+							</td>
+							<td>
+								1269원
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- 페이지 -->
+				<div class="pagenate_wrap">
+					<ul class="pagenation align-center">
+						<a href="#" class="ico ico_arrow_prev">이전</a>
+						<a href="#">1</a>
+						<span>2</span>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="ico ico_arrow_next">다음</a>
+					</ul>
+				</div>
+
+				<!-- ================ 내용종료 =================-->
+
+			</div>
+		</div><!-- //page_contents -->
+	</div><!-- //page_container -->
+	<footer>
+		<div class="copy_wrap">
+			<p>(23441) 강원도 춘천시 강원대학길 1(효자동) 강원대학교 보듬관 / TEL : 033-250-8971~8976 / FAX : 033-259-5714</p>
+			<p>Copyright © KNU Start-up & Enterpreneurship Foundation. All Rights Reserved</p>
+		</div><!-- //copy_wrap -->
+	</footer>
+</div><!-- //wrapper -->
+
+<div class="blind_black"></div>
+
+<script>
+	// # 발송 스크립트
+	$(".btn_type").click(function(){
+		var reservated = $(this).hasClass("later");
+
+		if(reservated)
+			return $(".box_time").show();
+
+		return $(".box_time").hide();
+	})
+</script>
+</body>
+</html><!-- //하단부분 -->

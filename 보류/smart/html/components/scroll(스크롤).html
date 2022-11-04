@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>스크롤</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../comn/js/common.js"></script>
+	<script src="../../comn/js/animation.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <!-- 사이트맵 -->
+        <div class="sitemap pop">
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <span style="font-size:30px; font-weight:bold;">로고</span>
+                    <!--<img src="../../comn/img/logo_black.png" alt="">-->
+                </a>
+                <div class="btn_close_sitemap wrap_hamburger">
+                    <button class="active hamburger_type01">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- 사이트맵 -->
+                <div class="menus clearfix">
+                    <div class="box_depth01">
+                        <a href="#" class="depth01">메뉴1</a>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴2</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴3</a>
+                            </div>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box_depth01">
+                        <a href="#" class="depth01">메뉴1</a>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴2</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴3</a>
+                            </div>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box_depth01">
+                        <a href="#" class="depth01">메뉴1</a>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴2</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴3</a>
+                            </div>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box_depth01">
+                        <a href="#" class="depth01">메뉴1</a>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴2</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴3</a>
+                            </div>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+                        </div>
+
+                        <div class="box_depth02">
+                            <a href="#" class="depth02">메뉴</a>
+
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                            <div class="box_depth03">
+                                <a href="#" class="depth03">- 메뉴</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 상단 util창 -->
+        <div class="top clearfix">
+            <div class="wrap_1200">
+                <div class="utils">
+                    <a href="#" class="util m">
+                        <img src="../../comn/img/icon_home_gray.png" alt="" class="img">
+                        HOME
+                    </a>
+                    <a href="#" class="util login">로그인</a>
+                    <a href="#" class="util">회원가입</a>
+                    <a href="#" class="util pc">HOME</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <span style="font-size:30px; font-weight:bold">로고</span>
+                    <!-- <img src="../../comn/img/logo.png" alt="홈으로 이동"> -->
+                </a>
+
+                <div class="wrap_gnb">
+                    <div class="gnbs gnbs-type01 pc clearfix">
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                메뉴1
+                            </a>
+                            <div class="depth02">
+                                <a href="#">메뉴1-서브메뉴01</a>
+                                <a href="#">메뉴1-서브메뉴02</a>
+                                <a href="#">메뉴1-서브메뉴03</a>
+                            </div>
+                        </div>
+
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                메뉴2
+                            </a>
+                            <div class="depth02">
+                                <a href="#">메뉴2-서브메뉴01</a>
+                                <a href="#">메뉴2-서브메뉴02</a>
+                                <a href="#">메뉴2-서브메뉴03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                메뉴3
+                            </a>
+                            <div class="depth02">
+                                <a href="#">메뉴3-서브메뉴01</a>
+                                <a href="#">메뉴3-서브메뉴02</a>
+                                <a href="#">메뉴3-서브메뉴03</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="utils">
+                        <button class="btn_search btn_open_pop" data-target="#search">
+                            <img src="../../comn/img/icon_search_black.png" alt="">
+                        </button>
+
+                        <div class="pc wrap_hamburger btn_sitemap">
+                            <button class="hamburger hamburger_type01" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브메뉴1</a>
+                    <a href="#">서브메뉴2</a>
+                    <a href="#">서브메뉴3</a>
+                    <a href="#">서브메뉴4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브메뉴1</a>
+                    <a href="#">서브메뉴2</a>
+                    <a href="#">서브메뉴3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브메뉴1</a>
+                    <a href="#">서브메뉴2</a>
+                    <a href="#">서브메뉴3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+			<img src="../../comn/img/visual01.png" alt="">
+		</div>
+
+		<div class="sub_wrap">
+			<div class="box_depth02 clearfix ">
+				<a href="#" class="depth02">2차메뉴</a>
+
+				<a href="#" class="depth02">2차메뉴</a>
+
+				<a href="#" class="depth02">2차메뉴</a>
+			</div>
+
+			<div class="locates">
+				<div class="wrap_1200">
+					<a href="#" class="locate">
+						<img src="../../comn/img/icon_home_gray.png" alt="">
+					</a>
+
+					<a href="#" class="locate">2차메뉴</a>
+
+					<a href="#" class="locate">3차메뉴</a>
+				</div>
+			</div>
+
+			<h4 class="subtitle">2차메뉴</h4>
+
+			<div class="box_depth03">
+				<a href="#" class="depth03">3차메뉴</a>
+				<a href="#" class="depth03">3차메뉴</a>
+			</div>
+		</div>
+
+		<div id="contents_wrap" class="contents_wrap">
+            <div class="test" style="min-height:1000px;"></div>
+
+            <h1>페럴랙스. m-parallax.type01</h1>
+            <div class="jumbotron m-parallax type01">
+
+            </div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <span class="logo float" style="font-size:30px; font-weight:bold; color:#fff;">임팩시스</span>
+        <!-- <img src="../../comn/img/logo_footer.png" alt="" class="logo float"> -->
+        <div class="box_middle float">
+            <div class="links">
+                <a href="#" class="link">찾아오시는길</a>
+                <a href="#" class="link point">개인정보처리방침</a>
+                <a href="#" class="link">이메일무단수집거부</a>
+            </div>
+
+            <p class="info">강원도 춘천시 강원대학길 1 강원대학교 청정산업신기술센터 805호 | <a href="tel:070-7004-6500" class="info">Tel : 070-7004-6500</a></p>
+
+            <p class="copyright">
+                Copyright ⓒ 2020 IMPACSYS Corporation. All rights reserved.
+            </p>
+        </div>
+
+        <div class="box_right float right">
+            <div class="box_family float">
+                <button class="text btn_pop">관련 사이트</button>
+
+                <img src="../comn/img/icon_arrow_top_white.png" alt="" class="arrow">
+
+                <div class="contents_pop">
+                    <a href="#" class="text" target="_blank">관련사이트1</a>
+
+                    <a href="#" class="text" target="_blank">관련사이트2</a>
+
+                    <a href="#" class="text" target="_blank">관련사이트3</a>
+
+                    <a href="#" class="text" target="_blank">관련사이트4</a>
+                </div>
+            </div>
+
+            <button class="m-animation-top type01" title="최상단으로 스크롤 이동">
+                TOP
+            </button>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

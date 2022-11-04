@@ -1,0 +1,49 @@
+
+@font-face{
+    font-family:"NanumBarunGothic";
+	font-weight:400;
+    src:url('font/NanumBarunGothicWeb.eot');
+    src:url('font/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'),
+    url('font/NanumBarunGothicWeb.woff') format('woff'),
+    url('font/NanumBarunGothicWeb.ttf') format('truetype');
+    src:local('?'), url('font/NanumBarunGothicWeb.woff') format('woff');
+}
+
+@font-face{
+    font-family:"NanumBarunGothic";
+	font-weight:600;
+    src:url('font/NanumBarunGothicWebBold.eot');
+    src:url('font/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'),
+    url('font/NanumBarunGothicWebBold.woff') format('woff'),
+    url('font/NanumBarunGothicWebBold.ttf') format('truetype');
+    src:local('?'), url('font/NanumBarunGothicWebBold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/KoPubDotum-Light.eot);
+  src: url(font/KoPubDotum-Light.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Light.woff) format('woff'),
+       url(font/KoPubDotum-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/KoPubDotum-Regular.eot);
+  src: url(font/KoPubDotum-Regular.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Regular.woff) format('woff'),
+       url(font/KoPubDotum-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 600;
+  src: url(font/KoPubDotum-Bold.eot);
+  src: url(font/KoPubDotum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Bold.woff) format('woff'),
+       url(font/KoPubDotum-Bold.ttf) format('truetype');
+}

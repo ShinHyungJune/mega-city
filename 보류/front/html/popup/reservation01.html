@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>예약팝업창 단계1</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script type="text/javascript"
+	        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+	<script src="../../comn/js/map.js"></script>
+	<script src="../../comn/js/common.js"></script>
+</head>
+<body>
+
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="popup sub">
+	<header class="popup-header">
+		<div class="wrap_1200">
+			<div class="links">
+				<a href="#" target="_blank" class="link">
+					<img src="../../comn/img/yanggu-white.png" alt="" class="icon">
+					<span class="text">양구문화관광 바로가기</span>
+				</a>
+				<a href="#" target="_blank" class="link">
+					<img src="../../comn/img/yanggu02-white.png" alt="" class="icon">
+					<span class="text">양구군청 바로가기</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="black"></div>
+
+	<div class="main">
+		<div class="visual_wrap">
+			<div class="box_text">
+				<p class="title">양구 시티투어</p>
+			</div>
+			<img src="../../comn/img/popVisual01.jpg" alt="">
+		</div>
+
+		<div class="sub_wrap">
+			<div class="box_depth02 clearfix ">
+				<div class="wrap_1200">
+					<a href="#" class="depth02 active">실시간예약</a>
+
+					<a href="#" class="depth02">예약신청확인</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="contents_wrap" class="contents_wrap">
+			<!-- 2020-11-25 #수정1 (step03 -> step01) -->
+			<div class="groupReservation-wrap step01">
+				<div class="wrap_1200">
+					<div class="align-items">
+						<!-- 시설정보 -->
+						<div class="align-item">
+							<div class="boards type02">
+								<div class="board">
+									<!-- 상단 스와이퍼 -->
+									<div class="board-left">
+										<div class="swiper type03 swiper0">
+											<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+												<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+													<div class="swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-next" data-swiper-slide-index="0">
+														<div class="wrap_box_ratio">
+															<div class="box_ratio">
+																<img src="../../comn/img/guide-citytour.png">
+															</div>
+														</div>
+													</div>
+													<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+												<!-- Add Arrows -->
+												<div class="swiper-button-next" title="다음 슬라이드" tabindex="0"
+												     role="button" aria-label="Next slide"></div>
+												<div class="swiper-button-prev" title="이전 슬라이드" tabindex="0"
+												     role="button" aria-label="Previous slide"></div>
+											</div>
+										</div>
+
+										<!-- 하단 정보 -->
+										<div class="board-right">
+											<p class="board-title line-1">놀면뭐하니! 코스 테스트</p>
+											<div class="board-infos">
+												<div class="infos type04">
+
+													<!-- 2020-11-25 #수정3 (정보나열 수정) -->
+													<div class="info">
+														<h3 class="info-title">이용요금</h3>
+														<p class="info-body before-square">성인, 학생(초,중고) :
+															8,000원</p>
+														<p class="info-body before-square">만3세~미취학아동:4,000원</p>
+														<p class="info-body before-square">경로,장애인,국가유공자 : 무료</p>
+													</div>
+
+													<div class="mb-30"></div>
+
+													<div class="info">
+														<h3 class="info-title">예약 안내</h3>
+														<p class="info-body before-square">관광지 입장료는 차량 탑승시 현금으로
+															납부해주세요.</p>
+														<p class="info-body before-square">체험비, 중식비, 숙박비는 별도
+															입니다.</p>
+														<p class="info-body before-square">두타연 출입신청 예약은 시티투어
+															운영사에서 대행하오니 별도로 신청안하셔도 됩니다.</p>
+														<p class="info-body before-square">인터넷 예약 후 예약 당일 춘천역 또는
+															양구 명품관(양구읍)에서 차량 탑승 시 비용을 지불하시면 됩니다.</p>
+														<p class="info-body before-square">
+															인터넷 예약 시 예약자 및 동반자의 생년월일을 등록하셔야 합니다.
+															<br/>(예약전 미리 생년월일과 연락처를준비하시기 바랍니다.)
+														</p>
+														<p class="info-body before-square">
+															양구시티투어는 10명 이상 예약시 운영하고 있으며, 인원미달로 취소될 경우 투어 전일
+															16:00 이후에
+															전화(또는 문자) 연락 드립니다.
+														</p>
+														<p class="info-body before-square">
+															<span class="bold">예약문의</span> : 양구문화관광 <a
+																href="tel: 033-480-2183"
+																class="bold">033-480-2183/2278</a> 매일관광
+															<a href="tel:033-253-4567"
+															   class="bold">033-253-4567</a>
+														</p>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2020-11-25 #수정2 (align-right -> align-center) -->
+					<div class="btns-submit align-center">
+						<a href="goodsList?sys_type=citytour" class="btn btn-gray">이전</a>
+						<a href="bookingStep1?goods_num=6" class="btn btn-blue btnNext">예약하기</a>
+					</div>
+
+					<!-- 2020-11-25 #수정3-1 (페이지네이션 추가) -->
+					<div class="m-pagination type01">
+						<div class="m-pagination-pages">
+							<a href="javascript:;" class="m-pagination-first"></a>
+							<a href="javascript:;" class="m-pagination-prev"></a>
+							<span>1</span>
+							<a href="javascript:;" class="m-pagination-next"></a>
+							<a href="javascript:;" class="m-pagination-last"></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn_top m">
+				<img src="../../comn/img/icon_forked_top_white.png" alt="최상단으로 이동">
+			</button>
+			<button class="btn_down m">
+				<img src="../../comn/img/icon_forked_top_white.png" alt="최상단으로 이동">
+			</button>
+		</div>
+
+		<footer class="popup-footer">
+			<div class="wrap_1200">
+				<div class="texts">
+					<p class="text">운영대행사:매일관광</p>
+					<p class="text">TEL:033-253-4567</p>
+					<a href="tel:033-480-2183" class="text">033-480-2183/2278</a>
+					<p class="text">주소:(24522)강원도 양구군 양구읍 관공서로 38(하리34-5)</p>
+				</div>
+
+				<p class="copyright">Copyright ⓒ 2015 Yanggu County. All rights reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

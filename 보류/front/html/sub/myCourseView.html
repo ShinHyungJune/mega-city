@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>먹고잘구양 > 나만의 코스 > 상세</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../../comn/img/logo.png" alt="메인 페이지로 이동">
+        </a>
+
+        <div class="gnbs">
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">여</span>
+                    <span class="letter">행</span>
+                    <span class="letter">할</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">둘</span>
+                    <span class="letter">러</span>
+                    <span class="letter">볼</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">즐</span>
+                    <span class="letter">길</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">먹</span>
+                    <span class="letter">고</span>
+                    <span class="letter">잘</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">안</span>
+                    <span class="letter">내</span>
+                    <span class="letter">할</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+
+            <div class="gnb">
+                <a href="#" class="text">
+                    <span class="letter">예</span>
+                    <span class="letter">약</span>
+                    <span class="letter">할</span>
+                    <span class="letter top">구</span>
+                    <span class="letter bottom">양</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="utils">
+            <div class="language">
+                <button class="language-btn m-script-pop" data-target="#language">Languages <img src="../../comn/img/icon_triangle_bottom_gray.png" alt="랭귀지 열고닫기"></button>
+
+                <div id="language">
+                    <a href="#">en</a>
+                    <a href="#">ko</a>
+                </div>
+            </div>
+
+            <a href="https://www.yanggu.go.kr/index.html" class="external" title="새창열림" target="_blank">
+                <img src="../../comn/img/logo_other01.png" alt="양구군청">
+            </a>
+
+            <button type="button" class="btn-square point">
+                <img src="../../comn/img/icon_hot.png" alt="핫플레이스로 이동" class="inactive">
+                <img src="../../comn/img/icon_hot_white.png" alt="핫플레이스로 이동" class="active">
+            </button>
+
+            <div class="squares">
+                <button class="btn-square m-script-pop" data-target="#search">
+                    <img src="../../comn/img/icon_search_white.png" alt="검색" class="pc">
+                    <img src="../../comn/img/icon_search_blue.png" alt="검색" class="m">
+                </button>
+
+                <div class="btn-square btn-menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="btn-square btn-menu btn-sidebar m">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="subgnbs">
+        <div class="top">
+            <div class="language">
+                <button class="language-btn m-script-pop" data-target="#language-mobile">Languages <img src="../../comn/img/icon_triangle_bottom_gray.png" alt="랭귀지 열고닫기"></button>
+
+                <div id="language-mobile">
+                    <a href="#">en</a>
+                    <a href="#">ko</a>
+                </div>
+            </div>
+            <div id="search-mobile">
+                <div class="fragment">
+                    <form>
+                        <div class="input input_search">
+                            <input type="text">
+                            <button class="input_search_btn">
+                                <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">여행할구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">여행할구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">추천코스</a>
+                    <div class="box-depth03">
+                        <a href="#">가족 체험 코스</a>
+                        <a href="#">대중교통 코스</a>
+                        <a href="#">드라이브 코스</a>
+                        <a href="#">도보 코스</a>
+                        <a href="#">힐링 코스</a>
+                        <a href="#">데이트 코스</a>
+                        <a href="#">인생샷 코스</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">나만의 코스</a>
+                    <div class="box-depth03">
+
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">시티투어</a>
+                    <div class="box-depth03">
+
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">내 주변</a>
+                    <div class="box-depth03">
+
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">권역별 관광지</a>
+                    <div class="box-depth03">
+                        <a href="#">방산면</a>
+                        <a href="#">동면</a>
+                        <a href="#">해안면</a>
+                        <a href="#">양구읍</a>
+                        <a href="#">남면</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">둘러볼구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">둘러볼구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">즐길구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">즐길구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">먹고잘구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">먹고잘구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">안내할구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">안내할구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subgnb">
+            <button type="button" class="depth01">예약할구양</button>
+
+            <div class="deco">
+                <div class="box-text">
+                    <p class="title">예약할구양</p>
+                    <p class="body">양구만의 특별한 여행지를 소개합니다.</p>
+                </div>
+
+                <img src="../../comn/img/subgnb01.png" alt="장식이미지">
+            </div>
+
+            <div class="links">
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-depth02">
+                    <a href="#">서브메뉴</a>
+                    <div class="box-depth03">
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                        <a href="#">하위메뉴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-square btn-menu btn-sidebar m">
+            <button class="hamburger hamburger_type01 active" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="black"></div>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">1차메뉴</p>
+            </div>
+			<img src="../../comn/img/visual01.jpg" alt="">
+		</div>
+
+		<div class="sub_wrap">
+			<div class="box_depth02 clearfix ">
+                <div class="wrap_1200">
+                    <a href="#" class="depth02 active">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+
+                    <a href="#" class="depth02">2차메뉴</a>
+                </div>
+			</div>
+        </div>
+
+        <div class="locate_wrap">
+            <div class="wrap_1200">
+                <div class="locates">
+                    <a href="#" class="locate">
+                        <img src="../../comn/img/icon_home_gray.png" alt="">
+                        HOME
+                    </a>
+
+                    <a href="#" class="locate">1차메뉴</a>
+
+                    <a href="#" class="locate">2차메뉴</a>
+
+                    <a href="#" class="locate">3차메뉴</a>
+                </div>
+
+                <div class="utils">
+                    <button class="util">
+                        <img src="../../comn/img/icon_share.png" alt="공유">
+                    </button>
+                    <button class="util">
+                        <img src="../../comn/img/icon_clip.png" alt="복사">
+                    </button>
+                    <button class="util">
+                        <img src="../../comn/img/icon_print.png" alt="인쇄">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+		<div id="contents_wrap" class="contents_wrap">
+            <section class="section-detail type02">
+                <div class="fragment fragment01">
+                    <div class="wrap_1200">
+                        <h3 class="title-36">여기서 찍어보자. 내 인생 첫 인생샷!</h3>
+
+                        <div class="tags type01">
+                            <span class="tag">#인생샷</span>
+                            <span class="tag">#공원</span>
+                            <span class="tag">#데이트</span>
+                            <span class="tag">#양구여행</span>
+                            <span class="tag">#도보</span>
+                            <span class="tag">#힐링</span>
+                            <span class="tag">#드라이브</span>
+                            <span class="tag">#가족</span>
+                            <span class="tag">#연인</span>
+                            <span class="tag">#박물관</span>
+                            <span class="tag">#추천코스</span>
+                            <span class="tag">#포토존</span>
+                            <span class="tag">#박수근</span>
+                            <span class="tag">#가족과함께</span>
+                        </div>
+
+                        <div class="thumbnailInfo type02">
+                            <div class="m-ratioBox-wrap">
+                                <div class="m-ratioBox">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="btns">
+                                    <button class="btn type04 type-gray">
+                                        <img src="../../comn/img/love-white-active.png" alt="" class="icon">
+                                        <span class="text">좋아요</span>
+                                        <span class="count">182</span>
+                                    </button>
+                                    <button class="btn type04 type-blue">
+                                        <img src="../../comn/img/myCourse.png" alt="" class="icon">
+                                        <span class="text">
+                                            나만의 코스 시작하기
+                                        </span>
+                                    </button>
+                                    <!-- # 버튼 유형
+                                    <button class="btn type04 type-blue">
+                                        <img src="../../comn/img/myCourse.png" alt="" class="icon">
+                                        <span class="text">
+                                            나만의 코스 시작하기
+                                        </span>
+                                    </button>
+
+                                    <button class="btn type04 type-blue">
+                                        <img src="../../comn/img/cart-white.png" alt="" class="icon">
+                                        <span class="text">
+                                            담기
+                                        </span>
+                                    </button>
+
+                                    <button class="btn type04 type-blue">
+                                        <img src="../../comn/img/airplane-white.png" alt="" class="icon">
+                                        <span class="text">
+                                            스크랩
+                                        </span>
+                                    </button>
+                                    -->
+                                </div>
+                            </div>
+
+                            <p class="comment">
+                                인생에 한번쯤은 나의 모습을 멋지게 찍어 추억으로 남겨보아요. 좋은 카메라가 없어도 나의 인생샷을 찍을 수 있는 여행, 떠나볼까요?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fragment fragment02 bg-sky">
+                    <div class="wrap_1200">
+	                    <!-- 2020-11-12 #수정 (탭메뉴 변경) -->
+                        <div class="map type02">
+	                        <div class="m-tabs type05">
+		                        <button class="m-tabs-fakeTab active">DAY 1</button>
+		                        <button class="m-tabs-fakeTab">DAY 2</button>
+		                        <button class="m-tabs-fakeTab">DAY 3</button>
+	                        </div>
+
+	                        <div class="m-tabs-contents">
+		                        <div class="m-tabs-content active">
+			                        <h3 class="title-26">여행지 상세보기</h3>
+
+			                        <div class="swiper swiper01">
+				                        <div class="swiper-container">
+					                        <div class="swiper-wrapper">
+						                        <a href="#" target="_blank" title="새창열림" class="swiper-slide">
+							                        <div class="m-ratioBox-wrap">
+								                        <div class="m-ratioBox">
+									                        <img src="" alt="">
+								                        </div>
+							                        </div>
+
+							                        <div class="box-content">
+								                        <div class="flag">
+									                        <span class="text">1</span>
+								                        </div>
+
+								                        <div class="box-text">
+									                        <p class="body"><span class="deco"></span>2km</p>
+									                        <h3 class="title">문화관광</h3>
+								                        </div>
+							                        </div>
+						                        </a>
+
+						                        <a href="#" target="_blank" title="새창열림" class="swiper-slide">
+							                        <div class="m-ratioBox-wrap">
+								                        <div class="m-ratioBox">
+									                        <img src="" alt="">
+								                        </div>
+							                        </div>
+
+							                        <div class="box-content">
+								                        <div class="flag">
+									                        <span class="text">2</span>
+								                        </div>
+
+								                        <div class="box-text">
+									                        <p class="body"><span class="deco"></span>2km</p>
+									                        <h3 class="title">양구문화관광</h3>
+								                        </div>
+							                        </div>
+						                        </a>
+
+						                        <a href="#" target="_blank" title="새창열림" class="swiper-slide">
+							                        <div class="m-ratioBox-wrap">
+								                        <div class="m-ratioBox">
+									                        <img src="" alt="">
+								                        </div>
+							                        </div>
+
+							                        <div class="box-content">
+								                        <div class="flag">
+									                        <span class="text">3</span>
+								                        </div>
+
+								                        <div class="box-text">
+									                        <p class="body"><span class="deco"></span>2km</p>
+									                        <h3 class="title">양구문화관광</h3>
+								                        </div>
+							                        </div>
+						                        </a>
+
+						                        <a href="#" target="_blank" title="새창열림" class="swiper-slide">
+							                        <div class="m-ratioBox-wrap">
+								                        <div class="m-ratioBox">
+									                        <img src="" alt="">
+								                        </div>
+							                        </div>
+
+							                        <div class="box-content">
+								                        <div class="flag">
+									                        <span class="text">4</span>
+								                        </div>
+
+								                        <div class="box-text">
+									                        <p class="body"><span class="deco"></span>2km</p>
+									                        <h3 class="title">문화관광</h3>
+								                        </div>
+							                        </div>
+						                        </a>
+					                        </div>
+				                        </div>
+
+				                        <div class="swiper-buttons">
+					                        <div class="swiper-button swiper-button-prev" title="이전 슬라이드">
+						                        <img src="../../comn/img/arrow_left_gray.png" alt="이전 슬라이드">
+					                        </div>
+					                        <div class="swiper-button swiper-button-next" title="다음 슬라이드">
+						                        <img src="../../comn/img/arrow_right_gray.png" alt="다음 슬라이드">
+					                        </div>
+				                        </div>
+			                        </div>
+
+			                        <div class="mb-60"></div>
+
+			                        <h3 class="title-26">지도로 보는 코스</h3>
+			                        <div id="map"></div>
+		                        </div>
+	                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fragment fragment03">
+                    <div class="wrap_1200">
+                        <h3 class="title-26">다른 추천 코스</h3>
+
+                        <div class="cards type03">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <h3 class="title">내 아이와 즐거운 체험하고 소중한 추억남겨주기~!</h3>
+
+                                    <div class="like">
+                                        <img src="../../comn/img/heart-black.png" alt="">
+                                        <span class="text">215</span>
+                                    </div>
+
+                                    <p class="body">
+                                        인생에 한번쯤은 나의 모습을 멋지게 찍어 추억으로 남겨보아요.
+                                        <br/>좋은 카메라가 없어도 나의 인생샷을 찍을 수 있는 여행, 떠나볼까요?
+                                    </p>
+
+                                    <div class="tags type01 scroll-smooth">
+                                        <span class="tag">#인생샷</span>
+                                        <span class="tag">#공원</span>
+                                        <span class="tag">#데이트</span>
+                                        <span class="tag">#양구여행</span>
+                                        <span class="tag">#도보</span>
+                                        <span class="tag">#힐링</span>
+                                        <span class="tag">#드라이브</span>
+                                        <span class="tag">#가족</span>
+                                        <span class="tag">#연인</span>
+                                        <span class="tag">#박물관</span>
+                                        <span class="tag">#추천코스</span>
+                                        <span class="tag">#포토존</span>
+                                        <span class="tag">#박수근</span>
+                                        <span class="tag">#가족과함께</span>
+                                    </div>
+
+                                    <div class="roads scroll-smooth">
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker1.png" alt="">
+
+                                                <h3 class="title">박수근미술관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker2.png" alt="">
+
+                                                <h3 class="title">양구인 문학박물관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker3.png" alt="">
+
+                                                <h3 class="title">선사ㆍ근현대사 박물관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker4.png" alt="">
+
+                                                <h3 class="title">한반도섬</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker5.png" alt="">
+
+                                                <h3 class="title">근현대사 체험관</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <h3 class="title">사랑하는 가족들과 즐거운 추억을!</h3>
+
+                                    <div class="like">
+                                        <img src="../../comn/img/heart-black.png" alt="">
+                                        <span class="text">215</span>
+                                    </div>
+
+                                    <p class="body">
+                                        인생에 한번쯤은 나의 모습을 멋지게 찍어 추억으로 남겨보아요.
+                                        <br/>좋은 카메라가 없어도 나의 인생샷을 찍을 수 있는 여행, 떠나볼까요?
+                                    </p>
+
+                                    <div class="tags type01 scroll-smooth">
+                                        <span class="tag">#인생샷</span>
+                                        <span class="tag">#공원</span>
+                                        <span class="tag">#데이트</span>
+                                        <span class="tag">#양구여행</span>
+                                        <span class="tag">#도보</span>
+                                        <span class="tag">#힐링</span>
+                                        <span class="tag">#드라이브</span>
+                                        <span class="tag">#가족</span>
+                                        <span class="tag">#연인</span>
+                                        <span class="tag">#박물관</span>
+                                        <span class="tag">#추천코스</span>
+                                        <span class="tag">#포토존</span>
+                                        <span class="tag">#박수근</span>
+                                        <span class="tag">#가족과함께</span>
+                                    </div>
+
+                                    <div class="roads scroll-smooth">
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker1.png" alt="">
+
+                                                <h3 class="title">박수근미술관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker2.png" alt="">
+
+                                                <h3 class="title">양구인 문학박물관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker3.png" alt="">
+
+                                                <h3 class="title">선사ㆍ근현대사 박물관</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="road-wrap">
+                                            <div class="road">
+                                                <img src="../../comn/img/marker4.png" alt="">
+
+                                                <h3 class="title">한반도섬</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="btns align-center">
+                            <a href="#" class="btn type04 type-blue">
+                                <span class="text">목록보기</span>
+                            </a>
+                        </div>
+
+                        <div class="pageInfo type01">
+                            <div class="pageInfo-top">
+                                <div class="charger">
+                                    <img src="../../comn/img/circleBook.png" alt="" class="icon">
+
+                                    <h3 class="title">담당부서</h3>
+
+                                    <p class="body">문화관광과</p>
+                                </div>
+                                <div class="charger">
+                                    <img src="../../comn/img/circlePerson.png" alt="" class="icon">
+
+                                    <h3 class="title">관리담당자</h3>
+
+                                    <p class="body">033-480-1234</p>
+                                </div>
+                                <div class="charger">
+                                    <img src="../../comn/img/circlePen.png" alt="" class="icon">
+
+                                    <h3 class="title">최종수정일</h3>
+
+                                    <p class="body">2020-09-02</p>
+                                </div>
+                            </div>
+                            <div class="pageInfo-body">
+                                <h3 class="comment">이 페이지에서 제공하는 정보에 대하여 만족하시나요?</h3>
+
+                                <div class="stars">
+                                    <button class="star active"></button>
+                                    <button class="star"></button>
+                                    <button class="star"></button>
+                                    <button class="star"></button>
+                                    <button class="star"></button>
+                                </div>
+
+                                <button class="btn type03 type-gray">등록하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <button class="btn_top m">
+            <img src="../../comn/img/icon_forked_top_white.png" alt="">
+        </button>
+
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">저작권보호정책</a>
+                        <a href="#" class="link">관리자메일</a>
+                        <a href="#" class="link">사이트맵</a>
+                    </div>
+
+                    <div class="box_right float right">
+                        <div class="box_family float">
+                            <button class="text  btn_pop">관련사이트</button>
+
+                            <div class="contents_pop">
+                                <a href="#" class="text" target="_blank">관련사이트1</a>
+                            </div>
+                        </div>
+
+                        <!--<button class="btn_top float" title="최상단으로 스크롤 이동">
+                            <img src="../../comn/img/icon_up_forked_arrow_white.png" alt="">
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="box_bottom">
+                    <img src="../../comn/img/logo_footer.png" alt="양구로부터" class="logo">
+
+                    <p class="info">강원도 양구군 양구읍 관공서로 38 (하리34-5) / <a href="tel:033-480-2251" class="info">대표전화번호 : 033-480-2251</a></p>
+
+                    <p class="copyright">
+                        Copyright ⓒ Yanggu-gun. All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+<script>
+
+    // 지도 테스트 데이터
+    let items = [
+        {
+            id: 1,
+            place_name: "한반도섬",
+            address_name: "강원 양구군 양구읍 고대리 647-1",
+            thumbnail: "../../comn/img/picture01.png",
+            x: "127.983189",
+            y: "38.130878",
+            detailLink: "#" // 슬라이드 클릭 시 이동할 링크
+        },
+        {
+            id: 2,
+            place_name: "양구선사박물관",
+            address_name: "강원도 양구군 양구읍 하리 510",
+            thumbnail: "../../comn/img/picture02.png",
+            x: "127.990462",
+            y: "38.123400",
+            detailLink: "#"
+        },
+        {
+            id: 3,
+            place_name: "박수근미술관",
+            address_name: "강원도 양구군 양구읍 정림리 131-1 박수근로265-15",
+            thumbnail: "../../comn/img/picture03.png",
+            x: "127.990462",
+            y: "38.096514",
+            detailLink: "#"
+        },
+        {
+            id: 4,
+            place_name: "양구인 문학박물관",
+            address_name: "강원도 양구군 양구읍 동수리 100-1 파로호로869번길 101",
+            thumbnail: "../../comn/img/picture04.png",
+            x: "127.981223",
+            y: "38.121961",
+            detailLink: "#"
+        },
+        {
+            id: 1,
+            place_name: "한반도섬",
+            address_name: "강원 양구군 양구읍 고대리 647-1",
+            thumbnail: "../../comn/img/picture01.png",
+            x: "127.983189",
+            y: "38.130878",
+            detailLink: "#"
+        },
+    ];
+
+    <!-- 2020-11-11 #추가부분 (지도, 슬라이더 다중선언) -->
+    settingMap(items, "map");
+
+    createSwiper(".swiper01");
+
+    function createSwiper(className){
+        new Swiper(className + ' .swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 14,
+            loop: false,
+            navigation: {
+                nextEl: className + ' .swiper-button-next',
+                prevEl: className + ' .swiper-button-prev',
+            },
+            breakpoints: {
+                1400: {
+                    slidesPerView: 3,
+                },
+                1000: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 1,
+                    loop:true
+                }
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>컴포넌트</title>
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../comn/js/common.js"></script>
+	<style>
+		body {padding-bottom:150px;}
+		body > .components > section {margin:20px; padding:20px; border-bottom:1px solid #e1e1e1;}
+		body > .components > section > h3 {margin-bottom:20px; padding:10px 20px; font-size:24px; font-weight:600; color:#fff; background-color:green;}
+		.component {max-width:1560px; margin:0 auto;}
+
+		#componentSearch {width:100%; position:fixed; bottom:0; left:0;}
+		#componentSearch input {width:100%; padding:20px 10px; background-color:black; color:#fff !Important;}
+
+	</style>
+</head>
+<body>
+
+<div class="components">
+
+	<section data-class=".example 예시 테스트">
+		<h3>.example</h3>
+
+		<div class="component">
+			<div class="example">예시</div>
+		</div>
+	</section>
+</div>
+
+<div id="componentSearch">
+	<input type="text" placeholder="클래스명을 입력하세요." onkeyup="filter(event)">
+</div>
+<script>
+	let componentsEl = $("body > .components > section");
+
+	let filteredEl = [];
+
+	/* 컴포넌트들과 무관한 함수 */
+	function filter(event){
+		filteredEl = [];
+
+		componentsEl.each(function(index, item){
+			if($(item).attr("data-class").includes(event.target.value))
+				filteredEl.push(item);
+		});
+
+		$("body > .components").empty();
+
+		$("body > .components").append(filteredEl);
+	}
+
+</script>
+</body>
+</html>

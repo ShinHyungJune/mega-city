@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>서브틀</title>
+	<link rel="stylesheet" href="../../../comn/css/default.css">
+	<link rel="stylesheet" href="../../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../comn/css/common.css">
+	<link rel="stylesheet" href="../../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../../comn/css/style.css">
+
+	<script src="../../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../../comn/js/swiper.min.js"></script>
+	<script src="../../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../../comn/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="../../../comn/img/logo.png" alt="홈으로 이동">
+                </a>
+
+                <div class="wrap_gnb">
+                    <div class="gnbs gnbs-type01 pc clearfix">
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tour Guide
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tourist Attraction
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Festival & Experience
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Food & Accommodation
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Community
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			- travel
+			<img src="../../../comn/img/visual02.jpg" alt="">
+			- festival
+			<img src="../../../comn/img/visual03.jpg" alt="">
+			- travel info
+			<img src="../../../comn/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="../../../comn/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							Hot! Place
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="../../../comn/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="../../../comn/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_weather">
+				<div class="wrap_1200">
+					<div class="box-title">
+						<img src="../../comn/img/calendar-cartoon.png" alt="">
+						<h3 class="title">양구날씨 주간예보</h3>
+					</div>
+
+					<div class="mb-30"></div>
+
+					<div class="wrap-table scroll-smooth m-scrollbar type01">
+						<table class="table type01">
+							<thead>
+							<tr>
+								<th>날짜</th>
+								<th>
+									<span class="subtitle">오늘</span>
+									<br/>2020년 08월 30일
+								</th>
+								<th>
+									<span class="subtitle">내일</span>
+									<br/>2020년 08월 31일
+								</th>
+								<th>2020년 09월 01일</th>
+								<th>2020년 09월 02일</th>
+								<th>2020년 09월 03일</th>
+								<th>2020년 09월 04일</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td rowspan="2">날씨</td>
+								<td>
+									<img src="../../comn/img/weather1.png" alt="">
+								</td>
+								<td>
+									<img src="../../comn/img/weather2.png" alt="">
+								</td>
+								<td>
+									<img src="../../comn/img/weather3.png" alt="">
+								</td>
+								<td>
+									<img src="../../comn/img/weather4.png" alt="">
+								</td>
+								<td>
+									<img src="../../comn/img/weather5.png" alt="">
+								</td>
+								<td>
+									<img src="../../comn/img/weather6.png" alt="">
+								</td>
+							</tr>
+							<tr>
+								<td>맑음</td>
+								<td>구름 조금</td>
+								<td>구름 많음, 맑음</td>
+								<td>구름 많음</td>
+								<td>비</td>
+								<td>비,눈</td>
+							</tr>
+							<tr>
+								<td>최저/최고기온(℃)</td>
+								<td>25℃/30℃</td>
+								<td>22℃/30℃</td>
+								<td>23℃/30℃</td>
+								<td>26℃/30℃</td>
+								<td>25℃/35℃</td>
+								<td>25℃/30℃</td>
+							</tr>
+							<tr>
+								<td>강수확률</td>
+								<td>100%</td>
+								<td>0%</td>
+								<td>100%</td>
+								<td>100%</td>
+								<td>100%</td>
+								<td>100%</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="../../../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="../../../comn/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

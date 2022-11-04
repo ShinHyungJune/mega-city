@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>지도 테스트</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../comn/js/common.js"></script>
+    <style>
+        h1 {margin-bottom:20px; font-size:20px; font-weight:500; }
+        section {margin:10px; padding:20px; border:1px solid #e1e1e1;}
+		.small {transform:scale(0.6);}
+    </style>
+</head>
+
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+	<div class="main">
+		<div id="contents_wrap" class="contents_wrap">
+            <div class="wrap">
+	            <div id="map" style="height:400px; width:100%;"></div>
+            </div>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1ef231cd0a39ca2c5c751d0ab9d7c5ee&libraries=services,clusterer,drawing"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+	// 개발자 수정 필요01 - 회사 인증키값으로 변경
+	let naver = {
+		clientId: "gxg2vo7lgp", // 인증키
+		clientSecret: "N0JdQ6AZgSuA3tWOTYm383DozioCbqnnF6TSixbV", // 인증보안키
+		drivingUrl: "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving" // 길찾기요청 url
+	};
+
+	let items = [ 	// 테스트 위치정보목록
+		{
+			id: 1,
+			place_name: "한반도섬",
+			address_name: "강원 양구군 양구읍 고대리 647-1",
+			thumbnail: "../../comn/img/test.png",
+			x: "127.983189",
+			y: "38.130878",
+			detailLink: "#" // 슬라이드 클릭 시 이동할 링크
+		},
+		{
+			id: 2,
+			place_name: "한숲시티",
+			address_name: "강원도 춘천시 퇴계동 산) 25-9",
+			thumbnail: "../../comn/img/test.png",
+			x: "127.730450",
+			y: "37.853465",
+			detailLink: "#"
+		},
+		{
+			id: 3,
+			place_name: "박수근미술관",
+			address_name: "강원도 양구군 양구읍 정림리 131-1 박수근로265-15",
+			thumbnail: "../../comn/img/test.png",
+			x: "127.990462",
+			y: "38.096514",
+			detailLink: "#"
+		},
+		{
+			id: 4,
+			place_name: "양구인 문학박물관",
+			address_name: "강원도 양구군 양구읍 동수리 100-1 파로호로869번길 101",
+			thumbnail: "../../comn/img/test.png",
+			x: "127.981223",
+			y: "38.121961",
+			detailLink: "#"
+		},
+	];
+
+	let markers = []; // 마커목록
+	let infos = []; // 마커정보목록
+
+	// 두 위치정보 이동시간, 거리 구하기 시뮬레이션
+	getWay(items[0], items[1]);
+
+	// 지도세팅 시뮬레이션(마커 & 마커정보 추가)
+	settingMap(items);
+
+	/*
+		@ 기능
+		- 지도에 마커, 마커정보 세팅
+
+		@ 입력값
+		- items: 위치정보목록
+
+		@ 출력값
+		- 생성된 지도객체
+	*/
+	function settingMap(items){
+
+		let coordinate = { // 초기좌표
+			y: items[0].y,
+			x: items[0].x
+		};
+
+		let container = document.getElementById('map'); // 지도를 담을 영역
+
+		let options = { // 지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(coordinate.y, coordinate.x), // 지도의 중심좌표.
+			level: 8 // 지도의 레벨(확대, 축소 정도)
+		};
+
+		// 지도객체 생성
+		map = new kakao.maps.Map(container, options);
+
+		// 마커 & 마커정보 추가
+		items.map(function(item, index) {
+			infos.push(addInfo(item));
+
+			markers.push(addMarker(item, index));
+		});
+
+		return map;
+	}
+
+	/*
+		@ 기능
+		- 마커 정보창 생성
+
+		@ 입력값
+		- item : 위치정보
+
+		@ 출력값
+		- 생성된 마커정보 객체
+	*/
+	function addInfo(item){
+		return {
+			id: item.id,
+			content: new kakao.maps.InfoWindow({
+				position: new kakao.maps.LatLng(item.y, item.x),
+				content: '<div class="infoWindow"><p class="infoWindow-title">' +
+					item.place_name +
+					'</p><p class="infoWindow-subtitle">' +
+					item.address_name +
+					'</p><a class="infoWindow-link btn type03 type-blue" href="' +
+					'https://map.kakao.com/link/to/' + item.place_name + ',' + item.y + ',' + item.x +
+					'"target="_blank">길찾기</a>' +
+					'</div>',
+				removable: true
+			})
+		}
+	}
+
+	/*
+		@ 기능
+		- 지도에 마커 추가
+
+		@ 입력값
+		- item : 위치정보, index : 노출순서
+
+		@ 출력값
+		- 생성된 마커 객체
+	*/
+	function addMarker(item, index){
+		let targetInfo = null;
+
+		// 개발자 수정 필요02 - 이미지 경로 변경
+		let img = {
+			src: "../../comn/img/marker" + parseInt(index + 1) + ".png",
+			size: new kakao.maps.Size(34,41)
+		};
+
+		img = new kakao.maps.MarkerImage(img.src, img.size);
+
+		let marker = {
+			id: item.id,
+			content: new kakao.maps.Marker({
+				map: map,
+				position: new kakao.maps.LatLng(item.y,item.x),
+				image: img
+			})
+		};
+
+		// 마커 클릭 이벤트
+		kakao.maps.event.addListener(marker.content, 'click', function(){
+			// 열려있던 정보창 닫기
+			infos.map(function(info){
+				info.content.close()
+			});
+
+			// 대상 정보창 열기
+			targetInfo = infos.filter(function(info){
+				if(info.id === marker.id)
+					return true;
+
+				return false;
+			})[0];
+
+			if(targetInfo)
+				targetInfo.content.open(map, marker.content);
+		});
+
+		return marker;
+	}
+
+
+	/*
+		@ 기능
+		- 두 위치정보 사이 걸리는 시간, 거리 구하기
+
+		@ 입력값
+		- positionA: 위치정보A, positionB: 위치정보B
+
+		@ 출력값
+		- void
+	*/
+	function getWay(positionA, positionB){
+		$.ajax({
+			url: naver.drivingUrl,
+			data: {
+				start: positionA.x + "," + positionA.y,// 출발지 좌표
+				goal: positionB.x + "," + positionB.y, // 목적지 좌표
+			},
+			method: "get",
+			headers: {
+				"X-NCP-APIGW-API-KEY-ID" : naver.clientId,
+				"X-NCP-APIGW-API-KEY" : naver.clientSecret
+			},
+			success: function(response) {
+				console.log("시간: " + response.route.traoptimal[0].summary.duration + "ms");
+				console.log("거리: " + response.route.traoptimal[0].summary.distance + "m");
+			}
+		})
+	}
+</script>
+</body>
+</html>

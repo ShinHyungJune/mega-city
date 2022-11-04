@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>dmz</title>
+	<link rel="stylesheet" href="/assets/global/css/default.css">
+	<link rel="stylesheet" href="/assets/global/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="/assets/global/css/animate.css">
+	<link rel="stylesheet" href="/assets/global/css/swiper.min.css">
+	<link rel="stylesheet" href="/assets/global/css/common.css">
+	<link rel="stylesheet" href="/assets/global/css/im_board.css">
+	<link rel="stylesheet" href="/assets/global/css/style.css">
+
+	<script src="/assets/global/js/jquery-1.7.1.min.js"></script>
+	<script src="/assets/global/js/swiper.min.js"></script>
+	<script src="/assets/global/js/aos-2.3.1.js"></script>
+	<script src="/assets/global/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="/assets/global/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="/assets/global/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="/assets/global/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="/assets/global/img/logo.png" alt="홈으로 이동">
+                </a>
+
+                <div class="wrap_gnb">
+                    <div class="gnbs gnbs-type01 pc clearfix">
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tour Guide
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Tourist Attraction
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Festival & Experience
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Food & Accommodation
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+
+                        <div class="gnb">
+                            <a href="#" class="text">
+                                Community
+                            </a>
+                            <div class="depth02">
+                                <a href="#">서브01</a>
+                                <a href="#">서브02</a>
+                                <a href="#">서브03</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="/assets/global/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="/assets/global/img/visual01.jpg" alt="">
+			- travel
+			<img src="/assets/global/img/visual02.jpg" alt="">
+			- festival
+			<img src="/assets/global/img/visual03.jpg" alt="">
+			- travel info
+			<img src="/assets/global/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="/assets/global/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							Hot! Place
+							<img src="/assets/global/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="/assets/global/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="/assets/global/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="/assets/global/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="/assets/global/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_hotplace area_dmz">
+				<div class="jumbotron m-parallax type01">
+					<div class="wrap_1200">
+						<div class="box-text">
+							<h3 class="title">DMZ Punch bowl dulle-gil</h3>
+							<p class="body">“The beauty of a clean area punchbowl village”</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-120"></div>
+
+				<div class="contents">
+					<section id="section01">
+						<div class="wrap_1200">
+							<div class="box-text type01">
+								<div class="left">
+									<p class="title type01">The terrain here is <br/>commonly referred </p>
+
+									<h3 class="title type02">to as a punch bowl</h3>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										It is a basin located in Haean-myeon, Yanggu-gun, and was named by foreign journalists during the Korean War as it looked like a bowl of flower. This area is currently the only area in Korea where residents reside within the civilian access control line and has a geopolitical peculiarity. In this area, during the Korean War, the punch bowl Battle, the Battle of Dosol Mountain, and the Battle of Gachilbong were fiercely fought, and there are still signs of “landmines” everywhere. It is a place that makes viewers feel tense, although the unusual appearance may arouse curiosity.
+									</p>
+								</div>
+							</div>
+
+							<div class="mb-60"></div>
+
+							<img src="/assets/global/img/dmz01.jpg" alt="" class="full">
+
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section02"">
+					<div class="wrap_1200">
+						<div class="box-twin type01">
+							<div class="left">
+								<img src="/assets/global/img/dmz02.jpg" alt="">
+							</div>
+							<div class="right">
+								<p class="body type01">
+									DMZ punch bowl Dulle-gil cannot be explored without being accompanied by a forest trail experience instructor due to the local characteristics. It is a forest path built within the civilian access control line, and is adjacent to an unidentified mine area, where the instructions of the guide must be followed. Nevertheless, the reason why many people visit Dulle-gil here is because it is a place that gives great meaning to us living in the pain that has not yet ended.
+								</p>
+								<div class="mb-25"></div>
+								<p class="body type01">
+									The trail is divided into four courses. To briefly explain the course, it is a forest path of peace that takes 14 km one way and takes 4 hours. This course starts from the information center and sees the symbols of the Military Demarcation Line, such as the Wausan Observatory, birch groves, and large bunkers. Here, we can see and feel with our own eyes how valuable the peace we feel in our daily lives.
+								</p>
+							</div>
+						</div>
+					</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section03">
+						<div class="wrap_1200">
+							<div class="box-twin type02">
+								<div class="left">
+									<img src="/assets/global/img/dmz03.jpg" alt="">
+
+									<div class="mb-50"></div>
+
+									<p class="body type01">
+										The next is the Oyubat-gil course, which is a one-way 21.12km course that takes about 5 hours. Also starting from the information center, you can explore Dongmak-dong, Oyu Reservoir, Wildflower Park, Songgabong Observatory, DMZ Native Botanical Garden, and prehistoric sites. This course is a natural monument protected area, and you can see traces of various vegetation and wild animals, which are natural monuments, in the Forest Genetic Resource Reserve, as well as a beautiful view of the basin topography.
+									</p>
+									<div class="mb-25"></div>
+									<p class="body type01">
+										The longest one way of the course is 21.9Km, which is a bit difficult among the courses. Mandae Village, DMZ Native Botanical Garden, Seonghwangdang, Mandae Reservoir, Gangsong Arboretum, and Munmetjae Forest Trail. The best course is to see the Japanese oak trees that protect Seonghwangdang, and walk the ridges and valleys at the foot of Mt.
+									</p>
+								</div>
+								<div class="right">
+									<img src="/assets/global/img/dmz04.jpg" alt="">
+
+									<div class="mb-50"></div>
+
+									<p class="body type01">
+										The longest one way of the course is 21.9Km, which is a bit difficult among the courses. Mandae Village, DMZ Native Botanical Garden, Seonghwangdang, Mandae Reservoir, Gangsong Arboretum, and Munmetjae Forest Trail. The best course is to see the Japanese oak trees that protect Seonghwangdang, and walk the ridges and valleys at the foot of Mt.
+									</p>
+									<div class="mb-25"></div>
+									<p class="body type01">
+										The last is Munmet Jaegil. It is 16.2km one way, but it can be said to be quite a difficult course. It is a course that tours the birch forest, minefield, temporary control post, Arirang Pass, military heliport, Munmet sewing, stopping defense ship, and Mandae field road. When I walk around this place, I think, "I'm really in the DMZ right now." Passing through the minefield road and looking at the temporary control post and defense lines, you can feel the signs of war. However, if you walk along the ridge of Daeamsan Mountain, you can see mountains in the north such as Geumgangsan, Unbong, and Stalingoji, and mountain peaks such as Seoraksan, Jumbongsan, and Hyangrobong that stretch to the south, like a picture.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section04" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+										Each course has different charms, but the sights you see while walking along the Dulle-gil on all courses are fascinating and make you think a lot. The ecosystem has been well preserved as it has been restricted to the private sector for more than half a century, so people cannot reach it. It will be a wonderful experience to find the uncommon wildlife traces and to see wild plants.
+										In addition, the cool, fresh air that you drink while walking along the mountain path lightens the minds of those who walk. As I walk around here and there, it's a mountain path,
+										so my breath is full. In order to provide rest to such people, there are also shelters where you can sit and relax in various places on Dulle-gil.
+									</p>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										Whenever you start to breathe a little, pause for a moment, take a deep breath, breathe in the green air from the forest, and watch the natural scenery in front of you. I can feel the good energy filling my body. If you repeat walking and taking a break for a while, people who initially wondered if it would be possible to finish the race will be walking with fun. You can get the energy that nature rewards you as much as you walk and work hard. In particular, the punch bowl terrain, which you can see from the top of a mountain peak, is both beautiful and uncommon, giving you a strange feeling. Because the terrain is hollow under an open mountain, it is easy to understand why this place was engaged during the war.
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section class="section05">
+						<div class="wrap_1200">
+							<p class="body type01">
+								As you walk up the mountain path, you can see caution signs that read ‘landmines’ in various places. Unless I see it in the news, I rarely encounter it, so the fact that there is something like this in front of me is both strange and a little scary. However, it is a little sad that there are still traces of war that have passed half a century and there are many landmines that have not been discovered. I feel that it is a ceasefire, not the end of the war, and I look forward to seeing the end of the war one more time that everyone wishes to come.
+							</p>
+
+							<div class="mb-50"></div>
+
+							<img src="/assets/global/img/dmz06.jpg" alt="" class="full">
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section07">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+										However, the place where the war took place is not unfortunate. It may be a dangerous place, as it was rare, but it is also a mysterious place. The wildflower park with wildflowers spreads out like a flower garden from a scene in a movie, making viewers feel thrilled. DMZ Native Botanical Garden is a great place to see various plants.
+									</p>
+									<div class="mb-25"></div>
+
+									<p class="body type01">
+										Although it is a land with pain, the things made there give people the power to create hope as if a plant sprouts.
+									</p>
+									<div class="mb-25"></div>
+
+									<p class="body type01">
+										This is the meaning that both DMZ punch bowl circumferences give us.
+										<br/>The peace that we normally felt for granted is probably not natural, the traces of many lives in nature that we have never looked around, and we can feel it closest to here. Perhaps the tragedy started with a person, and it is a human job to turn it back and recover. We all know the tragedy we've seen in the path we've taken, and the opposite of peace and beauty. We must leave behind the sadness that has passed and follow the light that unfolds in front of us and the bright energy that Dullegil gives us.
+									</p>
+								</div>
+								<div class="right">
+									<img src="/assets/global/img/dmz07.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section08" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<div class="content">
+								<p class="body type01">
+									By the time the Dullegil course is over, I think that everyone who has walked the same path will have the same thoughts in the hearts of everyone from different places. We hope that everyone walks at least once on the DMZ Circumference Road, which creates a special memory that we have never encountered before and presents an experience where we can feel both history and nature in the nearest place.
+								</p>
+								<div class="mb-25"></div>
+								<p class="body type01">
+									In particular, the three courses excluding Munmetjae-gil are particularly good because you can tailor the trekking for only the section of the forest road excluding farm roads by 1 hour.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<!--<section id="section12" class="section-last">
+						<img src="/assets/global/img/forest14.jpg" alt="">
+
+						<div class="tags type01">
+							<div class="wrap_1200">
+								<span class="tag">#인생샷</span>
+								<span class="tag">#공원</span>
+								<span class="tag">#데이트</span>
+								<span class="tag">#양구여행</span>
+								<span class="tag">#도보</span>
+								<span class="tag">#드라이브</span>
+								<span class="tag">#가족</span>
+								<span class="tag">#연인</span>
+								<span class="tag">#박물관</span>
+								<span class="tag">#추천코스</span>
+								<span class="tag">#연인</span>
+								<span class="tag">#박물관</span>
+								<span class="tag">#추천코스</span>
+								<span class="tag">#포토존</span>
+								<span class="tag">#박수근</span>
+								<span class="tag">#가족과함께</span>
+							</div>
+						</div>
+					</section>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="/assets/global/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="/assets/global/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

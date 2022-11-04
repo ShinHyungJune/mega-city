@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>朴寿根美术馆</title>
+	<link rel="stylesheet" href="../../../comn/css/default.css">
+	<link rel="stylesheet" href="../../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../../comn/css/common.css">
+	<link rel="stylesheet" href="../../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../../comn/css/style.css">
+
+	<script src="../../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../../comn/js/swiper.min.js"></script>
+	<script src="../../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 2020-11-16 #수정 (서브페이지는 sub 클래스 추가) -->
+<div id="app" class="sub">
+	<div class="skip-navigation">
+		<a href="#contents_wrap">메뉴 건너뛰기</a>
+	</div>
+
+    <div id="search">
+        <div class="fragment">
+            <div class="input input_search">
+                <input type="text">
+                <button class="input_search_btn">
+                    <img src="../../../comn/img/icon_search_gray.png" alt="검색하기">
+                </button>
+            </div>
+        </div>
+
+        <button type="button" class="btn_close_pop" data-target="#search">
+            <img src="../../../comn/img/icon_x_gray.png" alt="">
+        </button>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <div class="top">
+            <div class="wrap_1200">
+                <div class="m-input-select type01">
+                    <select name="" id="">
+                        <option value="">Languages</option>
+                        <option value="">Ko</option>
+                        <option value="">En</option>
+                    </select>
+                </div>
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../../comn/img/icon_search_white.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+
+            <div class="wrap_1200">
+                <a href="#" class="logo">
+                    <img src="../../../comn/img/logo.png" alt="홈으로 이동">
+                </a>
+
+				<div class="wrap_gnb">
+					<div class="gnbs gnbs-type01 pc clearfix">
+						<div class="gnb ">
+							<a href="#" class="text">杨口热门景点</a>
+							<div class="depth02">
+								<a href="../hotplace/island.html" title="Korean Peninsula Island">韩半岛岛</a>
+								<a href="../hotplace/flower.html" title="Flower Island">花岛</a>
+								<a href="../hotplace/dmz.html" title="DMZ Punchbowl dulle-gil">DMZ环路</a>
+								<a href="../hotplace/forest.html" title="Yanggu Arboretum">杨口树木园</a>
+								<a href="../hotplace/art.html" title="Park Soo-geun Museum">朴寿根美术馆</a>
+								<a href="../hotplace/museum.html" title="White Porcelain Museum">白瓷博物馆</a>
+								<a href="../hotplace/star.html" title="Center of Korea Observatory">国土正中央天文台</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel</a>
+							<div class="depth02">
+								<a href="#" title="DMZ Peace">DMZ Peace</a>
+								<a href="#" title="Nature">Nature</a>
+								<a href="#" title="History &amp; Culture">History &amp; Culture</a>
+								<a href="#" title="Leisure &amp; Recreation">Leisure &amp; Recreation</a>
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Festival</a>
+							<div class="depth02">
+							</div>
+						</div>
+						<div class="gnb ">
+							<a href="#" class="text">Travel information</a>
+							<div class="depth02">
+								<a href="../sub/tourlistInformation.html" title="Tourist Information">Tourist Information</a>
+								<a href="../sub/restaurant.html" title="Restaurant">Restaurant</a>
+								<a href="../sub/accommodation.html" title="Accommodation">Accommodation</a>
+								<a href="../sub/traffic.html" title="Traffic report">Traffic report</a>
+								<a href="../sub/weather.html" title="Weather report">Weather report</a>
+								<a href="../sub/exchangeRateReport.html" title="Exchange rate report">Exchange rate report</a>
+								<a href="https://english.visitkorea.or.kr/enu/TRV/TV_ENG_Must100.jsp#gang" target="_blank" title="Top 100 Korean Tourism">Top 100 Korean Tourism</a>
+								<a href="#" title="FAQ">FAQ</a>
+								<a href="../sub/citytour.html" title="Citytour">Citytour</a>
+							</div>
+						</div>
+					</div><!-- //gnbs -->
+				</div><!-- //wrap_gnb -->
+
+                <div class="pc wrap_hamburger btn_sitemap">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="main">
+		<div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">Hot! Place</p>
+            </div>
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			<!--
+			- hotplace
+			<img src="../../../comn/img/visual01.jpg" alt="">
+			- travel
+			<img src="../../../comn/img/visual02.jpg" alt="">
+			- festival
+			<img src="../../../comn/img/visual03.jpg" alt="">
+			- travel info
+			<img src="../../../comn/img/visual04.jpg" alt="">
+			-->
+		</div>
+
+		<div class="locate_wrap">
+			<div class="wrap_1200">
+				<div class="locates">
+					<a href="#" class="locate">
+						<img src="../../../comn/img/icon_home_gray.png" alt="">
+					</a>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+							Hot! Place
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth01" class="subs">
+							<a href="#">Travel</a>
+							<a href="#">Festival</a>
+						</div>
+					</div>
+
+					<div class="box-locate">
+						<button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+							Hanbandoweom Island
+							<img src="../../../comn/img/arrowDown-gray.png" alt="">
+						</button>
+						<div id="depth02" class="subs">
+							<a href="#">Hanbandoweom Island1</a>
+							<a href="#">Hanbandoweom Island2</a>
+							<a href="#">Hanbandoweom Island3</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="utils">
+					<!-- 2020-11-09 #수정 (공유 팝업창 추가) -->
+					<div class="util m-script-pop" data-target=".m-box-social">
+						<img src="../../../comn/img/icon_share.png" alt="공유">
+
+						<div class="m-box-social type01">
+							<div class="socials">
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleFacebook.png" alt="페이스북">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleBlog.png" alt="네이버 블로그">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleStory.png" alt="카카오스토리">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleGoogle.png" alt="구글">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleTwitter.png" alt="트위터">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleInstagram.png" alt="인스타그램">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleYoutube.png" alt="유튜브">
+									</button>
+								</div>
+								<div class="social-wrap">
+									<button class="social">
+										<img src="../../../comn/img/circleKakaoCh.png" alt="카카오채널">
+									</button>
+								</div>
+							</div>
+
+							<div class="box-copy">
+								<input type="text" value="http://ygtour.impacsys.me/Home" disabled>
+								<button class="btn-copy">Copy</button>
+							</div>
+						</div>
+					</div>
+					<button class="util">
+						<img src="../../../comn/img/icon_print.png" alt="인쇄">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mb-60"></div>
+		<div id="contents_wrap" class="contents_wrap">
+			<div class="area_hotplace area_art">
+				<div class="jumbotron m-parallax type01">
+					<div class="wrap_1200">
+						<div class="box-text">
+							<h3 class="title">朴寿根美术馆</h3>
+							<p class="body">“韩国人最爱的画家朴寿根”</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-120"></div>
+
+				<div class="contents">
+					<section id="section01">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<img src="../../../comn/img/art01.jpg" alt="">
+
+									<div class="mb-60"></div>
+
+									<p class="body type01">
+										韩国人最爱的画家朴寿根
+									</p>
+
+									<div class="mb-30"></div>
+
+									<p class="body type01">
+										朴寿根是一位韩国人耳熟能详的著名画家。也可能是因为小时候在课本里看过，他的画具有让人们缓解紧张情绪的魅力。朴寿根出生在杨口一个贫苦家庭，是家里的长子，度过了一个贫苦的童年。与我们现在所想的朴寿根画家的价值不同，因为家境贫寒，他没有接受过正规的美术教育。他负责家庭的生计，通过自学培养了对美术的梦想。朴寿根先生是以穷苦老百姓的生活为素材，为描绘“人类的善良和真实”而献出一生的画家。
+									</p>
+								</div>
+								<div class="right">
+									<p class="title type01">朴寿根</p>
+
+									<h3 class="title type02">
+										“韩国人最爱的画家朴寿根”
+									</h3>
+
+									<div class="mb-30"></div>
+
+									<img src="../../../comn/img/art02.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section02">
+						<div class="wrap_1200">
+							<img src="../../../comn/img/art03.jpg" alt="">
+
+							<div class="mb-60"></div>
+
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="body type01">
+										也许正因如此，在朴寿根的作品中，比起华丽或抽象的东西，更多地描绘了日常朴素的东西。大部分使用了由线条和轮廓表现的对象，用白色、灰褐色、黄褐色组成的土俗色彩，不拘泥于远近法使用了强调明暗的技巧等。朴寿根先生的作品具有令人舒适而平静的魅力。
+									</p>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										他利用简单的形态和线描来刻画对象的本质，通过西洋画技巧，用花岗岩等材质感表现我们民族的情感，形成了韩国美的典型。他用温暖的视线描绘了我们民族日常生活场景，被评价为既是体现朴素美的平民画家，又是二十世纪最具韩国特色的画家。
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section03" class="m-parallax type01">
+						<div class="wrap_1200 flex-center">
+							<p class="body type01 white">
+								环顾美术馆，会发现这不仅仅是美术作品，其中也蕴含着朴寿根先生的人生。他的作品很容易让人们想象到画中的某一个场面，走进他的人生做一次短暂的停留。
+							</p>
+						</div>
+					</section>
+
+					<div class="mb-300"></div>
+
+					<section id="section04">
+						<div class="wrap_1200">
+							<div class="box-twin type01">
+								<div class="left">
+									<p class="title type01">
+										他略显粗糙却很温馨的人生以及绘画
+									</p>
+									
+
+									<div class="mb-60"></div>
+
+									<p class="body type01">
+										朴寿根的作品以暗淡的色感和粗糙的质感为特征。略显粗犷冰冷的感觉，使欣赏画的人感受到他疲惫的一生。朴寿根美术馆的外墙实际上是由花岗岩砌成的。看着那堵墙，给人一种粗硬的感觉。就像他在作品中所表现的那样。画家朴寿根的号是“美石”。也许正是从用于建造塔和石碑的花岗石的美丽中取号。他试图在石雕中寻找美丽并且将其造型化。朴寿根表现古老石雕表面的粗糙质感，想体现韩国的美。从美术馆的外观中也能感受到他人生的每一个细节。
+									</p>
+
+									<div class="mb-30"></div>
+
+									<p class="body type01">
+										也许正是从用于建造塔和石碑的花岗石的美丽中取号。他试图在石雕中寻找美丽并且将其造型化。朴寿根表现古老石雕表面的粗糙质感，想体现韩国的美。从美术馆的外观中也能感受到他人生的每一个细节。
+									</p>
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/art05.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section05">
+						<div class="wrap_1200">
+							<div class="box-twin type02">
+								<div class="left">
+									<img src="../../../comn/img/art06.jpg" alt="">
+									<div class="mb-50"></div>
+									<p class="body type01">
+										尽管生活穷苦而艰难，但这并不意味着他的生活里只有寒冷和黑暗。朴寿根在26岁的时候，遇见了自己的人生伴侣金福顺女士。他们第一次见面的地方是洗衣处，朴寿根用文字表达了他能够做到的最真实的爱。“我是画画的人。财产只有毛笔和调色板。如果你能答应我和我结婚，物质上会受苦的。但是在精神上我有信心比任何人都能让你幸福。我要成为一名优秀的画家，你想不想成为一位优秀画家的妻子？”这是朴寿根先生生前写给金福顺女士的信中的部分内容。从文章中可以感受到朴寿根先生对金福顺女士的爱和温暖的真心。
+									</p>
+								</div>
+								<div class="right">
+									<img src="../../../comn/img/art07.jpg" alt="">
+									<div class="mb-50"></div>
+									<p class="body type01">
+										金福顺女士的日记中所描述的朴寿根先生，也是内心温暖的人。“他买东西的时候，不喜欢去大商店，而是更喜欢到路边商贩或背包商贩那里买东西。也许他总是怜悯那些背着筐叫卖东西的女人，总是同情那些战后受苦受难的邻居，也许正因为如此，他作品的素材全都是在路边摊做生意的人。”从金福顺女士日记中上述内容，也可以发现朴寿根先生的内心向往和美好追求。虽然他自己也没有过上富裕的生活，但是他始终拥有一颗怜悯和同情他人的善心。<br>
+										通过用他的视觉去描绘的作品以及在美术馆的处处，都可以感觉到即使他的生活很贫穷但他的灵魂却是多么的温暖。
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-120"></div>
+
+					<section id="section06" class="m-parallax type01"></section>
+
+					<div class="mb-120"></div>
+
+					<section id="section07">
+						<div class="wrap_1200">
+							<div class="box-text type01">
+								<div class="left">
+									<h3 class="title type02">自然、<br/>绘画以及人</h3>
+								</div>
+								<div class="right">
+									<p class="body type01">
+										朴寿根美术馆最大的魅力，不是为了美术馆而存在自然，而是在美术馆中融入自然的“和谐”。如果仔细观察整个美术馆，随处会浮现出朴寿根的作品。感觉就像是站在一起看着他生前所画的人和事物。走在树木和草丛中，仿佛朴寿根先生的绘画作品和他的人生以及我自己都一起融入到大自然中。
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="mb-300"></div>
+
+					<section id="section08" class="section-last">
+						<div class="wrap_1200">
+							<p class="body type01">
+								走在去美术馆内朴寿根墓地的路上，在朴寿根亭子和现代美术馆将举办美术收藏品和各种主题的企划展。除了朴寿根先生的作品以外，还可以欣赏到其他特别展。他只留下了作品，而他的影响力却始终感动着许许多多当代艺术家。
+								今年6月，朴寿根美术馆内开设了儿童美术馆。这里融入了艺术和尖端技术。还可以更亲切地了解朴寿根先生的童年故事，激发儿童五感的体验空间也准备了多种多样的。与地方艺术家们共同打造的这个空间并不一定只属于儿童。不仅孩子们可以享受，父母也可以一起理解朴寿根先生的艺术观。在这里可以通过体验和游戏学习各种资料。
+								朴寿根美术馆不只是简单展示一位画家的作品的地方，空间本身就是孕育自然、艺术和人的空间。在这里可以放慢脚步欣赏朴寿根先生具有的艺术性和现代艺术家们的作品，体验美术馆所具有的空间意义。
+							</p>
+							<div class="mb-25"></div>
+							<p class="body type01">
+								朴寿根美术馆的建筑是由李钟昊（1957-2014）建筑师设计的。从朴寿根美术馆的外观来看，既有艺术感又有个性。石块和混凝土的粗糙感、玻璃和金属的冰冷，表现为一个整体的建筑。
+								建筑物的外部可能有点冰冷和黑暗的感觉，但看着被草丛包围的整体，绿油油的草地和灰色的花岗岩形成了协调。这是走出美术馆到户外散步的好地方。
+							    杨口朴寿根美术馆与其说是“美术馆”，倒不如说是享受自然，从事艺术活动，走进画家生活中的地方。画、建筑和自然不是分离，而是就像原来就是一个整体，也许这正是一座即使轻松光顾却能收获颇丰的最完美的美术馆。
+							</p>
+							
+
+						</div>
+						<img src="../../../comn/img/art09.jpg" alt="">
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer class="footer clearfix">
+        <div class="wrap_1200">
+            <button class="btn_top m">
+                <img src="../../../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
+            </button>
+
+            <img src="../../../comn/img/logo_footer.png" alt="" class="logo">
+
+            <p class="info">
+                38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
+                <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

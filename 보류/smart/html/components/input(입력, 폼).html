@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>스크롤</title>
+	<link rel="stylesheet" href="../../comn/css/default.css">
+	<link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+	<link rel="stylesheet" href="../../comn/css/animate.css">
+	<link rel="stylesheet" href="../../comn/css/swiper.min.css">
+	<link rel="stylesheet" href="../../comn/css/common.css">
+	<link rel="stylesheet" href="../../comn/css/im_board.css">
+	<link rel="stylesheet" href="../../comn/css/style.css">
+
+	<script src="../../comn/js/jquery-1.7.1.min.js"></script>
+	<script src="../../comn/js/swiper.min.js"></script>
+	<script src="../../comn/js/aos-2.3.1.js"></script>
+	<script src="../../comn/js/common.js"></script>
+	<script src="../../comn/js/animation.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+
+	<h1>이메일</h1>
+	<div class="input m-input-email type01">
+		<div class="input input_text input_select">
+			<input id="email_id" name="email_id" title="이메일" >
+			<span class="golbang">@</span>
+			<input id="email_domain" name="email_domain" id="email_domain" title="이메일">
+			<select class="" id="selectEmail">
+				<option value="">직접입력</option>
+
+				<option value="naver.com">naver.com</option>
+
+				<option value="gmail.com">gmail.com</option>
+
+				<option value="daum.net">daum.net</option>
+
+				<option value="nate.com">nate.com</option>
+
+				<option value="yahoo.co.kr">yahoo.co.kr</option>
+
+				<option value="hanmail.net">hanmail.net</option>
+
+				<option value="hotmail.com">hotmail.com</option>
+			</select>
+		</div>
+	</div>
+
+	<h1>버튼과 함께 번호 인풋</h1>
+	<div class="m-input-withBtn type01">
+		<div class="m-input-phone type01">
+			<div class="inputs">
+				<div class="m-input-select type01">
+					<select>
+						<option value="010">010</option>
+					</select>
+				</div>
+
+
+				<span class="hyphen">-</span>
+
+				<div class="m-input-text type01">
+					<input type="text" id="">
+				</div>
+
+				<span class="hyphen">-</span>
+
+				<div class="m-input-text type01">
+					<input type="text" id="">
+				</div>
+			</div>
+		</div>
+		<button class="m-boards-btn m-input-btn">버튼</button>
+	</div>
+
+	<h1>버튼과 함께 텍스트 인풋</h1>
+	<div class="m-input-withBtn type01">
+		<div class="m-input-text type01">
+			<span class="m-input-text-deco">04:40</span>
+			<input type="text">
+		</div>
+		<button class="m-boards-btn m-input-btn">버튼</button>
+	</div>
+
+	<h1>체크박스 .m-input-checkbox.type02</h1>
+	<div class="m-input-checkbox type02">
+		<input type="checkbox" id="agree">
+		<label for="agree">
+			<span class="text">개인정보 수집, 활용 동의</span>
+			<button type="button" class="m-script-pop" data-target="#agree01">약관보기</button>
+		</label>
+
+		<div class="m-input-checkbox-texts" id="agree01">개인정보보호법 등 관련 법규에 의거하여 신청자의 개인정보 수집 및 활용에 대해 동의서를 받고 있습니다. 개인정보 제공자가 동의한 내용외에 다른 목적으로 활용하지 않으며, 제공된 개인정보의 이용을 거부하고자 할때에는 개인정보 관리책임자를 통해 열람, 정정, 삭제를 요구할 수 있습니다.</div>
+	</div>
+
+	<h1>검색, m-input-search.type01</h1>
+	<div class="m-input-search type01">
+		<div class="m-input-text type01">
+			<input type="text">
+		</div>
+		<button class="m-input-search-btn"></button>
+	</div>
+
+	<h1>검색, m-input-search.type02</h1>
+
+	<div class="m-input-search type02">
+		<div class="m-input-select type01">
+			<select name="" id="">
+				<option value="">옵션글자글자</option>
+			</select>
+		</div>
+
+		<div class="m-input-text type01">
+			<input type="text">
+		</div>
+
+		<button class="m-input-search-btn"></button>
+	</div>
+
+	<h1>셀렉트, m-input-select.type01</h1>
+	<div class="m-input-select type01">
+		<select name="" id="">
+			<option value="">옵션</option>
+		</select>
+	</div>
+
+	<h1>집주소, m-input-address.type01</h1>
+	<div class="m-input-address type01">
+		<div class="m-input-withBtn type01">
+			<div class="m-input-text type01">
+				<input type="text" name="" id="" readonly="">
+			</div>
+			<button type="button" class="m-input-btn m-boards-btn" title="우편번호">우편번호 찾기</button>
+		</div>
+
+		<div class="m-input-text type01">
+			<input type="text" name="" id="" title="주소" readonly="">
+		</div>
+
+		<div class="m-input-text type01">
+			<input type="text" name="" id="" title="상세주소">
+		</div>
+	</div>
+</div>
+<script>
+	$(".m-input-search.type01 .m-input-search-btn").click(function(){
+		$(this).parents(".m-input-search.type01").toggleClass("active");
+	})
+</script>
+</body>
+</html>
