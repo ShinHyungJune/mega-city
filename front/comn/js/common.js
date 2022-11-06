@@ -126,7 +126,7 @@ $(document).ready(function(){
 
 	var isActive = false;
 	var gnbsEl = $('.header .gnbs.m');
-	var topEl = $('.header .m-input-select.type01, .header .top .btn-other');
+	var topEl = $('.header .links');
 	var topEl2 = $('.header .top .btn-VR');
 	var blockEl = $('.header .block');
 
@@ -266,20 +266,25 @@ $(document).ready(function(){
 	var tabIndex;
 	var tabsWrap;
 	var tabsContent;
-	
+
+	$(".m-tabs").each(function(index, item){
+		$(item).find(".m-tabs-tab").eq(0).addClass("active");
+		$(item).siblings(".m-tabs-contents").find(".m-tabs-content").eq(0).addClass("active");
+	});
+
 	tab.click(function(){
 		tabsWrap = $(this).parents('.m-tabs');
-		
-		tab.removeClass('active');
-		
+
+		tabsWrap.find(".m-tabs-tab").removeClass('active');
+
 		$(this).addClass('active');
-		
+
 		tabIndex = $(this).index();
 		
 		tabsContent = tabsWrap.siblings(".m-tabs-contents").find(".m-tabs-content");
-		
+
 		tabsContent.removeClass('active');
-		
+
 		tabsContent.eq(tabIndex).addClass('active');
 	});
 

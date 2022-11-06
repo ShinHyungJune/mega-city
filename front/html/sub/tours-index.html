@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>서브틀</title>
+    <title>관광지목록</title>
     <link rel="stylesheet" href="../../comn/css/default.css">
     <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
     <link rel="stylesheet" href="../../comn/css/animate.css">
@@ -231,6 +231,115 @@
         </h3>
 
         <div id="contents_wrap" class="contents_wrap">
+            <section class="section-cards">
+                <div class="wrap_1200">
+
+                    <!-- 카테고리 -->
+                    <div class="m-tabs type02">
+                        <div class="m-tabs-tab">전체</div>
+                        <div class="m-tabs-tab">자연</div>
+                        <div class="m-tabs-tab">역사</div>
+                        <div class="m-tabs-tab">문화</div>
+                        <div class="m-tabs-tab">체험</div>
+                    </div>
+
+                    <div class="mt-middle"></div>
+
+                    <!-- 정렬버튼 & 검색창 -->
+                    <div class="box-search type01">
+                        <div class="orders type01">
+                            <button class="order">총 <span class="point">1,000</span>건</button>
+                            <button class="order active">등록순</button>
+                            <button class="order">가나다순</button>
+                            <button class="order">좋아요순</button>
+                        </div>
+
+                        <div class="fragment">
+                            <fieldset>
+                                <legend>게시물 검색</legend>
+                                <form id="theForm" action="boardList" method="get">
+                                    <div class="m-search type02">
+                                        <div class="m-search-select-wrap">
+                                            <select class="m-search-select" id="search_type" name="search_type" title="검색구분 선택">
+                                                <option value="">지역</option>
+                                            </select>
+                                        </div>
+
+                                        <input class="m-search-input" id="search_keyword" name="search_keyword" title="검색어를 입력하세요." type="text" value="" placeholder="검색어를 입력하세요.">
+                                        <button class="m-search-btn" type="submit">
+                                            <span class="m-search-btn-text">검색</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <!-- 코스 목록 - 9개씩 노출 필요 -->
+                    <div class="cards type02">
+                        <div class="card-wrap">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="../../comn/img/festival1.jpg" alt="">
+
+                                        <div class="count">
+                                            <i class="xi-heart"></i>
+                                            <span class="text">12</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <p class="category">자연</p>
+                                    <h3 class="title">연꽃단지</h3>
+
+                                    <div class="more">
+
+                                        <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-wrap">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="../../comn/img/festival1.jpg" alt="">
+
+                                        <div class="count">
+                                            <i class="xi-heart"></i>
+                                            <span class="text">12</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <p class="category">자연</p>
+                                    <h3 class="title">연꽃단지</h3>
+
+                                    <div class="more">
+
+                                        <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 더보기 -->
+                    <div class="m-pagination btns align-center">
+                        <a href="#" class="btn type02 type-blue">
+                            더보기
+
+                            <i class="xi-plus plus"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     </div>
 
@@ -269,87 +378,5 @@
 
 </div>
 
-
-<script>
-    // 테스트 위치정보
-    let items = [
-        {
-            id: 1,
-            place_name: "효석 달빛 언덕",
-            address_name: "강원 화천군 하남면 건넌들길 97",
-            x: "127.983189",
-            y: "38.130878",
-        },
-    ];
-
-    // 지도세팅(마커 & 마커정보 추가)
-    settingMap(items);
-
-    // 답글달기
-    $(".m-reviews-wrap.type01 .review .btns .btn-reply").click(function(){
-        $(this).parents(".review").next(".type-create").toggleClass("active");
-    })
-
-
-    $(document).ready(function(){
-        new Swiper('.cards.type04 .swiper-container', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            navigation: {
-                nextEl: '.cards.type04 .swiper-btn-next',
-                prevEl: '.cards.type04 .swiper-btn-prev',
-            },
-            on: {
-
-            }
-        });
-
-        initSwiper();
-    });
-
-    $(".fragment02 .m-tabs-tab").click(function(){
-        initSwiper();
-    });
-
-    var swiper;
-
-    function initSwiper(){
-        setTimeout(function(){
-            if(swiper) {
-                swiper.destroy();
-            }
-
-            swiper = new Swiper('.fragment02 .active .swiper-container', {
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                slidesPerView:3,
-                spaceBetween:24,
-                navigation: {
-                    nextEl: '.cards.type04 .swiper-btn-next',
-                    prevEl: '.cards.type04 .swiper-btn-prev',
-                },
-                on: {
-
-                },
-                breakpoints: {
-                    1320: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                    }
-                }
-            });
-        }, 1);
-    }
-
-
-</script>
 </body>
 </html>

@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="../comn/css/common.css">
     <link rel="stylesheet" href="../comn/css/im_board.css">
     <link rel="stylesheet" href="../comn/css/style.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script src="../comn/js/jquery-1.7.1.min.js"></script>
     <script src="../comn/js/swiper.min.js"></script>
     <script src="../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../comn/js/map.js"></script>
     <script src="../comn/js/common.js"></script>
 </head>
 <style>
@@ -376,12 +378,45 @@
                                             </p>
                                         </div>
                                     </a>
+
+                                    <a href="#" class="swiper-slide">
+                                        <div class="m-ratioBox-wrap">
+                                            <div class="m-ratioBox">
+                                                <img src="../comn/img/travel2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">#겨울여행</h3>
+                                            <p class="body">
+                                                겨울놀이 즐기러 떠나자!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide">
+                                        <div class="m-ratioBox-wrap">
+                                            <div class="m-ratioBox">
+                                                <img src="../comn/img/travel3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">#갬성캠핑</h3>
+                                            <p class="body">
+                                                청적 자연속 힐링여행
+                                                <br/>강원도에서 캠핑하자!
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             
-                            <div class="swiper-btns">
+                            <div class="m-swiper-btns type01">
                                 <div class="swiper-btn swiper-btn-prev">
-                                    <span class="xi-flag"></span>
+                                    <span class="xi-angle-left"></span>
+                                </div>
+
+                                <div class="swiper-btn swiper-btn-next">
+                                    <span class="xi-angle-right"></span>
                                 </div>
                             </div>
                         </div>
@@ -389,22 +424,872 @@
                 </div>
 
 
+                <!-- 강원도 축제&행사 모여라 -->
+                <div class="section section03">
+                    <img src="../comn/img/section3-deco1.png" alt="" class="deco deco01">
+                    <img src="../comn/img/section3-deco2.png" alt="" class="deco deco02">
+
+                    <div class="wrap_1200">
+                        <div class="fragments">
+
+                            <!-- 좌측 내용 영역 -->
+                            <div class="fragment-wrap">
+                                <div class="fragment">
+                                    <div class="section-title">
+                                        <p class="sub">강원도 지역별 다양한 행사 즐기기</p>
+                                        <h3 class="title">
+                                            강원도 <span class="point">축제&행사</span> 모여라!
+                                        </h3>
+                                    </div>
+
+                                    <div class="swiper">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="content">
+                                                        <h3 class="title">홍천찰옥수수축제</h3>
+                                                        <p class="body">
+                                                            찰옥수수의 고장 홍천? 홍천군은 전국 유일의 옥수수 연구소가 자리잡은 모든 찰옥수수 종자의 발원지로, 미백 1호, 미백 2호, 미흑찰, 흑점찰 등 매년 다양한 종자 개량을 통해 우수한 찰옥수수를 개발하고 있다. 또한 낮과 밤의 일교차가 생깁니다.
+                                                        </p>
+                                                        <div class="infos">
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/cal-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">2022.07.29 ~ 2022.07.31</p>
+                                                            </div>
+
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">강원도 홍천군 홍천읍 신장대리</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btns">
+                                                            <a href="#" class="m-btn type01">자세히 보기</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="content">
+                                                        <h3 class="title">강릉열빙어축제2</h3>
+                                                        <p class="body">
+                                                            또한 낮과 밤의 일교차가 생깁니다. 찰옥수수의 고장 홍천? 홍천군은 전국 유일의 옥수수 연구소가 자리잡은 모든 찰옥수수 종자의 발원지로, 미백 1호, 미백 2호, 미흑찰, 흑점찰 등 매년 다양한 종자 개량을 통해 우수한 찰옥수수를 개발하고 있다.
+                                                            또한 낮과 밤의 일교차가 생깁니다. 찰옥수수의 고장 홍천? 홍천군은 전국 유일의 옥수수 연구소가 자리잡은 모든 찰옥수수 종자의 발원지로, 미백 1호, 미백 2호, 미흑찰, 흑점찰 등 매년 다양한 종자 개량을 통해 우수한 찰옥수수를 개발하고 있다.
+                                                        </p>
+                                                        <div class="infos">
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/cal-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">2022.06.29 ~ 2022.05.31</p>
+                                                            </div>
+
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">강원도 강릉 교동</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btns">
+                                                            <a href="#" class="m-btn type01">자세히 보기</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="content">
+                                                        <h3 class="title">강릉열빙어축제3</h3>
+                                                        <p class="body">
+                                                            또한 낮과 밤의 일교차가 생깁니다.
+                                                        </p>
+                                                        <div class="infos">
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/cal-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">2022.06.29 ~ 2022.05.31</p>
+                                                            </div>
+
+                                                            <div class="info">
+                                                                <div class="img-wrap">
+                                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                                </div>
+
+                                                                <p class="text">강원도 강릉 교동</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btns">
+                                                            <a href="#" class="m-btn type01">자세히 보기</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-swiper-btns type01">
+                                            <div class="swiper-btn swiper-btn-prev">
+                                                <span class="xi-angle-left"></span>
+                                            </div>
+
+                                            <div class="swiper-btn swiper-btn-next">
+                                                <span class="xi-angle-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 우측 이미지 영역 -->
+                            <div class="fragment-wrap">
+                                <div class="fragment">
+                                    <div class="m-ratioBox-wrap">
+                                        <div class="m-ratioBox">
+                                            <img src="../comn/img/festival1.jpg" alt="">
+
+                                            <img src="../comn/img/festival2.jpg" alt="">
+
+                                            <img src="../comn/img/festival3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- 퀵메뉴 -->
+                <div class="section section04">
+                    <div class="wrap_1200">
+                        <div class="fragments">
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick01.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">시티투어</h3>
+                                </a>
+                            </div>
+
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick02.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">맛집</h3>
+                                </a>
+                            </div>
+
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick03.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">VR여행</h3>
+                                </a>
+                            </div>
+
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick04.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">가이드북&지도</h3>
+                                </a>
+                            </div>
+
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick05.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">쿠폰</h3>
+                                </a>
+                            </div>
+
+                            <div class="fragment-wrap">
+                                <a href="#" class="fragment">
+                                    <div class="img-wrap">
+                                        <img src="../comn/img/quick06.png" alt="">
+                                    </div>
+
+                                    <h3 class="title">여행후기</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 당신을 위한 여행지 & 인기 여행 코스 -->
+                <div class="section section05">
+                    <div class="wrap_1200">
+
+                        <!-- 당신을 위한 여행지 -->
+                        <div class="section-inner section-inner01">
+                            <div class="section-title">
+                                <h3 class="title">
+                                    <span class="point">당신을 위한 여행지</span>
+                                </h3>
+                            </div>
+
+                            <div class="swiper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title">연꽃단지</h3>
+                                                <p class="body">
+                                                    연꽃들이 계절에 따라 꽃을 피워 사진작가들 에게 인기 있는 명소
+                                                </p>
+                                                <div class="location">
+                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                    화천군
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title">연꽃단지</h3>
+                                                <p class="body">
+                                                    연꽃들이 계절에 따라 꽃을 피워 사진작가들 에게 인기 있는 명소
+                                                    연꽃들이 계절에 따라 꽃을 피워 사진작가들 에게 인기 있는 명소
+                                                </p>
+                                                <div class="location">
+                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                    화천군
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title">연꽃단지</h3>
+                                                <p class="body">
+                                                    연꽃들이 계절에 따라 꽃을 피워 사진작가들 에게 인기 있는 명소
+                                                </p>
+                                                <div class="location">
+                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                    화천군
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="title">연꽃단지</h3>
+                                                <p class="body">
+                                                    연꽃들이 계절에 따라 꽃을 피워 사진작가들 에게 인기 있는 명소
+                                                </p>
+                                                <div class="location">
+                                                    <img src="../comn/img/location-primary.png" alt="">
+                                                    화천군
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="m-swiper-btns type01">
+                                    <div class="swiper-btn swiper-btn-prev">
+                                        <span class="xi-angle-left"></span>
+                                    </div>
+
+                                    <div class="swiper-btn swiper-btn-next">
+                                        <span class="xi-angle-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 인기 여행 코스 -->
+                        <div class="section-inner section-inner02">
+                            <div class="section-title">
+                                <h3 class="title">
+                                    <span class="point">인기 여행 코스</span>
+                                </h3>
+                            </div>
+
+                            <div class="swiper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="body">자연여행</p>
+                                                <h3 class="title">
+                                                    자연으로 가는 가장
+                                                    가까운 길, 네이처 로드
+                                                </h3>
+                                                <div class="location">
+                                                    <span class="point">by</span>
+                                                    홍길동
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="body">자연여행</p>
+                                                <h3 class="title">
+                                                    자연으로 가는 가장
+                                                    가까운 길, 네이처 로드
+                                                    자연으로 가는 가장
+                                                    가까운 길, 네이처 로드
+                                                </h3>
+                                                <div class="location">
+                                                    <span class="point">by</span>
+                                                    홍길동
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="body">자연여행</p>
+                                                <h3 class="title">
+                                                    자연으로 가는 가장
+                                                    가까운 길, 네이처 로드
+                                                </h3>
+                                                <div class="location">
+                                                    <span class="point">by</span>
+                                                    홍길동
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="swiper-slide">
+                                            <div class="m-ratioBox-wrap">
+                                                <div class="m-ratioBox">
+                                                    <img src="../comn/img/pic4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="body">자연여행</p>
+                                                <h3 class="title">
+                                                    자연으로 가는 가장
+                                                    가까운 길, 네이처 로드
+                                                </h3>
+                                                <div class="location">
+                                                    <span class="point">by</span>
+                                                    홍길동
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="m-swiper-btns type01">
+                                    <div class="swiper-btn swiper-btn-prev">
+                                        <span class="xi-angle-left"></span>
+                                    </div>
+
+                                    <div class="swiper-btn swiper-btn-next">
+                                        <span class="xi-angle-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- 강원 핫플 -->
+                <div class="section section06">
+                    <div class="wrap_1200">
+
+                        <div class="section-title">
+                            <p class="sub">
+                                강원도 구석구석 지역별여행 즐기기
+                            </p>
+                            <h3 class="title">
+                                지역별로 보는 <span class="point">강원 핫플!</span>
+                            </h3>
+                        </div>
+
+                        <div class="m-tabs type01">
+                            <button class="m-tabs-tab">전체</button>
+
+                            <button class="m-tabs-tab">춘천</button>
+
+                            <button class="m-tabs-tab">화천</button>
+
+                            <button class="m-tabs-tab">양구</button>
+
+                            <button class="m-tabs-tab">홍천</button>
+                        </div>
+
+                        <div class="m-tabs-contents">
+                            <div class="m-tabs-content">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">춘천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">철원</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">홍천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">춘천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">춘천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">춘천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">화천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">화천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">화천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">양구</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">양구</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">양구</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">홍천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">홍천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../comn/img/pic1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="sub">홍천</p>
+                                                    <h3 class="title">연꽃단지</h3>
+                                                    <div class="tags">#자연 #힐링여행 #걷기 #가족 #자연 #힐링여행 #걷기</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 팝업존 & 생생 여행후기 -->
+                <div class="section section07">
+
+                    <div class="wrap_1200">
+                        <div class="fragments">
+                            <div class="fragment-wrap fragment-wrap01">
+                                <div class="fragment">
+                                    <div class="section-title">
+                                        <h3 class="title">
+                                            <span class="point">팝업존</span>
+                                        </h3>
+
+                                        <div class="m-swiper-btns type01">
+                                            <div class="swiper-btn swiper-btn-prev">
+                                                <span class="xi-angle-left"></span>
+                                            </div>
+
+                                            <div class="swiper-btn swiper-btn-control">
+                                                <span class="xi-play play"></span>
+                                                <span class="xi-pause stop"></span>
+                                            </div>
+
+                                            <div class="swiper-btn swiper-btn-next">
+                                                <span class="xi-angle-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <a href="#" class="swiper-slide">
+                                                    <div class="m-ratioBox-wrap">
+                                                        <div class="m-ratioBox">
+                                                            <img src="../comn/img/popup.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fragment-wrap fragment-wrap02">
+                                <div class="fragment fragment02">
+                                    <div class="section-title">
+                                        <h3 class="title">
+                                            <span class="point">생생 여행후기</span>
+                                        </h3>
+
+                                        <div class="m-swiper-btns type01">
+                                            <div class="swiper-btn swiper-btn-prev">
+                                                <span class="xi-angle-left"></span>
+                                            </div>
+
+                                            <div class="swiper-btn swiper-btn-control">
+                                                <span class="xi-play play"></span>
+                                                <span class="xi-pause stop"></span>
+                                            </div>
+
+                                            <div class="swiper-btn swiper-btn-next">
+                                                <span class="xi-angle-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <a href="#" class="swiper-slide">
+                                                    <div class="m-ratioBox-wrap">
+                                                        <div class="m-ratioBox">
+                                                            <img src="../comn/img/review2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <a href="#" class="swiper-slide">
+                                                    <div class="m-ratioBox-wrap">
+                                                        <div class="m-ratioBox">
+                                                            <img src="../comn/img/review2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="footer clearfix">
-        <div class="wrap_1200">
-	        <button class="btn_top m">
-		        <img src="../comn/img/icon_up_forked_arrow_white.png" alt="최상단으로 이동">
-	        </button>
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
 
-	        <img src="../comn/img/logo_footer.png" alt="" class="logo">
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
 
-	        <p class="info">
-		        38, Gwangongseo-ro, Yanggu-eup, Yanggu-gun, Gangwon-do, Republic of Korea   /  TEL : <a href="tel:033-480-2251">033-480-2251</a>
-		        <br/>Copyright ⓒ Yanggu-gun. All rights reserved.
-	        </p>
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
         </div>
     </footer>
 </div>
@@ -429,15 +1314,7 @@
         }
     });
 
-    var btnControl = $('.jumbotron .swiper-btn-control');
-
-    btnControl.click(function(){
-        $(this).toggleClass('active');
-
-        swiper.autoplay.running ? swiper.autoplay.stop() : swiper.autoplay.start();
-    });
-
-    var swiper01 = new Swiper('.swiper-notice .swiper-container', {
+    new Swiper('.area_main .swiper-notice .swiper-container', {
         direction: "vertical",
 	    simulateTouch: false,
         loop:true,
@@ -457,8 +1334,188 @@
             nextEl: '.area_main .section01 .box-notice .swiper-btn-next',
             prevEl: '.area_main .section01 .box-notice .swiper-btn-prev',
         },
+
     });
 
+    new Swiper('.area_main .section02 .swiper .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        spaceBetween: 40,
+        loop: true,
+        navigation: {
+            nextEl: '.area_main .section02 .swiper-btn-next',
+            prevEl: '.area_main .section02 .swiper-btn-prev',
+        },
+        breakpoints: {
+            1320: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 1,
+            }
+        }
+    });
+
+    $(".area_main .section03 .m-ratioBox-wrap img").eq(0).addClass("active");
+
+    new Swiper('.area_main .section03 .swiper .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        effect: "fade",
+        navigation: {
+            nextEl: '.area_main .section03 .swiper-btn-next',
+            prevEl: '.area_main .section03 .swiper-btn-prev',
+        },
+        on: {
+            "slideChange": function(){
+                $(".area_main .section03 .m-ratioBox-wrap img").removeClass("active");
+                $(".area_main .section03 .m-ratioBox-wrap img").eq(this.realIndex).addClass("active");
+            }
+        }
+    });
+
+    new Swiper('.area_main .section05 .section-inner01 .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 4,
+        spaceBetween: 24,
+        loop: true,
+        navigation: {
+            nextEl: '.area_main .section05 .section-inner01 .swiper-btn-next',
+            prevEl: '.area_main .section05 .section-inner01 .swiper-btn-prev',
+        },
+        on: {
+
+        },
+        breakpoints: {
+            1320: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+        }
+    });
+
+    new Swiper('.area_main .section05 .section-inner02 .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 4,
+        spaceBetween: 24,
+        loop: true,
+        navigation: {
+            nextEl: '.area_main .section05 .section-inner02 .swiper-btn-next',
+            prevEl: '.area_main .section05 .section-inner02 .swiper-btn-prev',
+        },
+        breakpoints: {
+            1320: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+        }
+    });
+
+    var tabSwiper;
+
+    $(document).ready(function(){
+        initTabSwiper();
+    });
+
+    $(".m-tabs-tab").click(function(){
+        initTabSwiper();
+    });
+
+    function initTabSwiper(){
+        setTimeout(function(){
+            if(tabSwiper)
+                tabSwiper.destroy();
+
+            tabSwiper = new Swiper('.area_main .section06 .active .swiper-container', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 3,
+                spaceBetween: 40,
+                loop: true,
+                navigation: {
+                    nextEl: '.area_main .section06 .active .swiper-btn-next',
+                    prevEl: '.area_main .section06 .active .swiper-btn-prev',
+                },
+                on: {
+
+                },
+                breakpoints: {
+                    1320: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                }
+            });
+        }, 1);
+    }
+
+    var swiperFragment01 = new Swiper('.area_main .section07 .fragment-wrap01 .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.area_main .section07 .fragment-wrap01 .swiper-btn-next',
+            prevEl: '.area_main .section07 .fragment-wrap01 .swiper-btn-prev',
+        },
+        on: {
+
+        }
+    });
+
+    var controlFragment01 = $('.area_main .section07 .fragment-wrap01 .swiper-btn-control');
+
+    controlFragment01.click(function(){
+        $(this).toggleClass('active');
+
+        swiperFragment01.autoplay.running ? swiperFragment01.autoplay.stop() : swiperFragment01.autoplay.start();
+    });
+
+    var swiperFragment02 = new Swiper('.area_main .section07 .fragment-wrap02 .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.area_main .section07 .fragment-wrap02 .swiper-btn-next',
+            prevEl: '.area_main .section07 .fragment-wrap02 .swiper-btn-prev',
+        },
+        on: {
+
+        }
+    });
+
+    var controlFragment02 = $('.area_main .section07 .fragment-wrap02 .swiper-btn-control');
+
+    controlFragment02.click(function(){
+        $(this).toggleClass('active');
+
+        swiperFragment02.autoplay.running ? swiperFragment02.autoplay.stop() : swiperFragment02.autoplay.start();
+    });
 </script>
 </body>
 </html><!-- //하단부분 -->
