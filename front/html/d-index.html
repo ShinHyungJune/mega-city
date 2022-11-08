@@ -5,114 +5,887 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content=""/>
 	<meta name="viewport"
-	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui"/>
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui"/>
 	<title>파일가이드</title>
-	<link rel="stylesheet" href="../../comn/css/default.css"/>
-	<link rel="stylesheet" href="../../comn/css/style.css"/>
-	<link rel="stylesheet" href="../comn/css/bbs.css"/>
-	<link rel="stylesheet" href="../../comn/css/common.css"/>
-	<link rel="stylesheet" href="../comn/css/slick.css"/>
-	<!-- script -->
-	<script type="text/javascript" src="../comn/js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="../comn/js/slick.min.js"></script>
-	<script type="text/javascript" src="../../comn/js/common.js"></script>
+	<script src="../comn/js/jquery-1.7.1.min.js"></script>
+
 
 	<style>
+		html {background: #333;}
 		table {width:100%;}
-		table th {border-bottom:1px solid #ccc;}
-		table th, table td {padding:10px; text-align:center;}
-		.wrap-table {width:1400px; margin:80px auto}
-		.title {
-			margin-bottom: 20px;
+		.table-wrap {padding:40px; background-color:#fff; border-radius:10px;}
+		table th {border-bottom:1px solid #ccc; text-align: center;}
+		table th, table td {padding:10px 10px; text-align:center;}
+		.wrap-table {width:1200px; margin:80px auto}
+		.finish {background-color:lightgreen;}
+		.wrap-table > .title {
+			margin-bottom: 40px;
 			text-align: center;
 			font-size: 24px;
 			font-weight: bold;
+			color:#fff;
 		}
 
-		.table tbody td:nth-child(2) {
-			text-align: center;
-		}
+
+		.table th {font-weight:600;}
+		.table a {text-decoration: underline;}
 
 		.table tbody tr {
 			border-bottom: 1px solid #e1e1e1;
 		}
 
-		.table td:nth-child(6) {max-width:300px; padding:0 20px; text-align:left; color:blue;}
+		.blue {color:blue;}
+		.green {color:green;}
 
 		@media screen and (max-width: 1400px) {
 			.wrap-table {width:100%; padding:0 20px;}
 		}
-	</style>
+		.btns {text-align:center; margin:20px 0;}
+		.btn {padding:10px 20px; background-color:#333; color:#fff;}
+		.filter {display:flex; width:1200px; position:fixed; top:0; left:50%; transform:translateX(-50%); z-index:10; border-top:1px solid #e1e1e1; background-color:#fff; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
+		.filter select {width:200px; padding:0 20px; border-right:1px solid #e1e1e1;}
+		.filter .input {flex:auto; position:relative;}
+		.filter .input input {width:100%; padding:10px 20px;}
+		.filter .input img {position:absolute; right:20px; top:50%; transform:translateY(-50%);}
 
+		.box-progresses {margin-bottom:20px; padding:40px; background-color:#fff; border-radius:10px;}
+		.box-progress {display:flex; align-items: center; margin-bottom:10px;}
+		.box-progress:last-of-type {margin-bottom:0;}
+		.box-progress .title {width:120px;  margin-right:10px; font-size:16px; font-weight:500; color:#333;}
+		.box-progress .title .count {font-size:14px; color:#999;}
+		.box-progress .title .count * {font-size:14px; color:#999;}
+		.box-progress .box-gage {flex:auto; position:relative;}
+		.box-progress .gage {content:""; flex:auto; width:100%; height:40px; position:relative; background-color:#eee;}
+		.box-progress .gage .active {height:100%; position:absolute; left:0; top:0; background-color:#333;}
+		.box-progress .box-gage .percent {position:absolute; bottom:-38px; right:0; font-size:14px; font-weight:500;}
+
+		tbody tr {
+			background-color:#DAEEF3;
+		}
+		tbody tr.order2 {
+			background-color:#EBF1DE;
+		}
+		tbody tr.order3 {
+			background-color:#fff;
+		}
+
+		.colors {
+			display:flex; align-items: center; justify-content: center;
+			margin-bottom:20px;
+		}
+		.colors .square {
+			width:20px; height:20px;
+			margin-right:8px;
+			border:1px solid #e1e1e1;
+		}
+		.colors .color {
+			display:flex ;align-items: center;
+			margin-right:16px;
+		}
+		.colors .color .title {
+			font-size:14px;
+		}
+	</style>
 </head>
 <body>
 <div class="wrap-table" style="">
-	<h1 class="title" style="">퍼블리싱 현황</h1>
-	<table class="table">
-		<thead>
+	<h1 class="title" style="">퍼블리싱</h1>
+
+	<div class="box-progresses">
+
+
+		<div class="box-progress">
+			<h3 class="title">진행도 <span class="count">(<span class="active">1</span> / <span class="total">3</span>)</span></h3>
+
+			<div class="box-gage">
+				<div class="gage">
+					<div class="active">
+						<p class="percent">45%</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="table-wrap">
+		<div class="colors">
+			<div class="color">
+				<span class="square" style="background-color:#DAEEF3;"></span>
+				<h3 class="title">1순위</h3>
+			</div>
+
+			<div class="color">
+				<span class="square" style="background-color:#EBF1DE;"></span>
+				<h3 class="title">2순위</h3>
+			</div>
+
+			<div class="color">
+				<span class="square" style="background-color:#fff;"></span>
+				<h3 class="title">3순위</h3>
+			</div>
+		</div>
+
+		<table class="table">
+			<thead>
 			<tr>
-				<th>1차 메뉴</th>
-				<th>2차 메뉴</th>
-				<th>3차 메뉴</th>
-				<th>링크 및 파일명</th>
+				<th>1차메뉴</th>
+				<th>2차메뉴</th>
+				<th>3차메뉴</th>
+				<th>4차메뉴</th>
+				<th>파일명</th>
 				<th>유형</th>
-				<th>비고</th>
 				<!--<th>진행상태</th>-->
 			</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>2022-11-09(화) 정리예정 작업대기목록 정리예정</td>
-					<td></td>
-					<td></td>
-					<td>
+			<tr>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a href="./index.html">index.html</a>
+				</td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>서브</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<a href="./sub/sub.html" target="_blank">sub.html</a>
+				</td>
+				<td>
+					개발
+				</td>
+			</tr>
 
-					</td>
-					<td>개발</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>메인</td>
-					<td></td>
-					<td></td>
-					<td>
-						<a href="./index.html" target="_blank">index.html</a>
-					</td>
-					<td>개발</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>서브틀</td>
-					<td></td>
-					<td></td>
-					<td>
-						<a href="./sub/sub.html" target="_blank">sub.html</a>
-					</td>
-					<td>개발</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>관광지</td>
-					<td>목록</td>
-					<td></td>
-					<td>
-						<a href="./sub/tours-index.html" target="_blank">tours-index.html</a>
-					</td>
-					<td>개발</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>관광지</td>
-					<td>상세</td>
-					<td></td>
-					<td>
-						<a href="./sub/tours-show.html" target="_blank">tours-show.html</a>
-					</td>
-					<td>개발</td>
-					<td></td>
-				</tr>
-		</tbody>
-	</table>
+			<tr>
+				<td>추천</td>
+				<td>에디터추천</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>추천</td>
+				<td>에디터추천</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>추천</td>
+				<td>여행코스</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>추천</td>
+				<td>여행코스</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>추천</td>
+				<td>추천여행지</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order2">
+				<td>추천</td>
+				<td>VR여행(새창)</td>
+				<td>메인</td>
+				<td></td>
+				<td>
+
+				</td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>추천</td>
+				<td>VR여행(새창)</td>
+				<td>상세</td>
+				<td></td>
+				<td>
+
+				</td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>여행</td>
+				<td>관광지</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>여행</td>
+				<td>관광지</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>여행</td>
+				<td>맛집</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>여행</td>
+				<td>맛집</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>여행</td>
+				<td>숙박</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>여행</td>
+				<td>숙박</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>여행</td>
+				<td>축제&행사</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>여행</td>
+				<td>축제&행사</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>여행</td>
+				<td>쇼핑</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>여행</td>
+				<td>쇼핑</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order2">
+				<td>지역</td>
+				<td>춘천</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>지역</td>
+				<td>철원</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>지역</td>
+				<td>화천</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>지역</td>
+				<td>양구</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>지역</td>
+				<td>홍천</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order2">
+				<td>편의</td>
+				<td>가이드북&지도</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>씨티투어</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>쿠폰</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>쿠폰</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order2">
+				<td>편의</td>
+				<td>여행자지원정보</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>여행자지원정보</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>공지사항</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>편의</td>
+				<td>공지사항</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 여행코스</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 여행코스</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 여행코스</td>
+				<td>등록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr>
+				<td>마이페이지</td>
+				<td>위시리스트</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>위시리스트</td>
+				<td>폴더 등록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 위키</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 위키</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>나의 리뷰</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>다운받은 쿠폰</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>마이페이지</td>
+				<td>다운받은 쿠폰</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>기타메뉴</td>
+				<td>로그인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr>
+				<td>기타메뉴</td>
+				<td>회원가입</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order2">
+				<td>기타메뉴</td>
+				<td>이용약관</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+			<tr class="order2">
+				<td>기타메뉴</td>
+				<td>개인정보처리방침</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+
+			<tr class="order3">
+				<td>API</td>
+				<td>서브메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API이용안내</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>이용절차</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					컨텐츠
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>제공목록</td>
+				<td>목록</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>제공목록</td>
+				<td>상세</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>제공목록</td>
+				<td>테스트신청</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>제공목록</td>
+				<td>테스트 오픈 API</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order3">
+				<td>API</td>
+				<td>이용안내</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API 센터 로그인 / 회원가입</td>
+				<td>회원가입</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API 센터 로그인 / 회원가입</td>
+				<td>로그인</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API 센터 로그인 / 회원가입</td>
+				<td>아이디찾기</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API 센터 로그인 / 회원가입</td>
+				<td>비밀번호찾기</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>API정보</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>API이용내역</td>
+				<td>테스트계정</td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>API이용내역</td>
+				<td>정식계정</td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>API이용내역</td>
+				<td>상세</td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>사업자정보</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			<tr class="order3">
+				<td>API</td>
+				<td>API센터 마이페이지</td>
+				<td>담당자정보</td>
+				<td></td>
+				<td></td>
+				<td>
+					개발
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="filter">
+		<select name="" id="" onchange="changeType(event)">
+			<option value="" selected disabled>유형</option>
+			<option value="">전체</option>
+			<option value="개발">개발</option>
+			<option value="컨텐츠">컨텐츠</option>
+		</select>
+
+		<select name="" id="" onchange="changeState(event)">
+			<option value="" selected disabled>완료여부</option>
+			<option value="">전체</option>
+			<option value="완료">완료</option>
+			<option value="대기">대기</option>
+		</select>
+
+		<div class="input">
+			<input type="text" placeholder="페이지명을 입력하세요" onkeyup="changeWord(event)">
+
+			<img src="../comn/img/icon_search_black.png" alt="">
+		</div>
+	</div>
 </div>
+<script>
+	let word = "";
+	let type = "";
+	let state = "";
+	let componentsEl = $("tbody tr");
+
+	let filteredEl = [];
+
+	function changeState(event){
+		state = event.target.value;
+
+		filter();
+	}
+
+
+	function changeType(event){
+		type = event.target.value;
+
+		filter();
+	}
+
+	function changeWord(event){
+		word = event.target.value;
+
+		filter();
+	}
+
+	function filter(){
+		filteredEl = [];
+
+		componentsEl.each(function(index, item){
+			if($(item).text().includes(word) && $(item).find(".type").text().includes(type) && $(item).attr("class").includes(state))
+				filteredEl.push(item);
+		});
+
+		$("tbody").empty();
+
+		$("tbody").append(filteredEl);
+	}
+
+	$(".type").each(function(index, item){
+		$(item).text().includes("개발") ? $(this).addClass("blue") : $(this).addClass("green");
+	});
+
+	$("tr").each(function(index, item){
+		$(item).find("a").length ? $(this).addClass("완료") : $(this).addClass("대기");
+	});
+
+	let count = {
+		total : $("tbody tr").length,
+		finish: $("tbody .완료").length,
+	};
+
+	$(".box-progress .count .active").text(count.finish);
+	$(".box-progress .count .total").text(count.total);
+	$(".box-progress .gage .active").css("width", (count.finish / count.total * 100) + "%");
+	$(".box-progress .percent").text((count.finish / count.total * 100).toFixed(0) + "%");
+</script>
 </body>
 </html>

@@ -1,0 +1,1365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>쇼핑상세</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+    <div class="skip-navigation">
+        <a href="#contents_wrap">메뉴 건너뛰기</a>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <!-- 검색창 -->
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../../comn/img/logo.png" alt="홈으로 이동">
+            </a>
+
+            <div class="wrap_gnb">
+                <div class="gnbs gnbs-type01 pc clearfix">
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            추천여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행지
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            지역
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행정보
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            나의여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">HOME</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">로그인</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">강원도청</a>
+                </div>
+
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../comn/img/search.png" alt="">
+                </button>
+
+                <div class="pc btn_sitemap">
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">1차메뉴</p>
+            </div>
+
+            <!-- 이미지 삽입예정 -->
+            <img src="../../comn/img/visual01.jpg" alt="">
+        </div>
+
+        <div class="locate_wrap">
+            <div class="wrap_1200">
+                <div class="locates">
+                    <a href="#" class="locate">
+                        <span class="xi-home img"></span>
+                    </a>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+                            1차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth01" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+                            2차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth02" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="page-title">
+            2차메뉴
+        </h3>
+
+        <div id="contents_wrap" class="contents_wrap">
+            <section class="section-detail type01">
+                <div class="wrap_1200">
+                    <div class="cards type04">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn">
+                                                    <img src="../../comn/img/vr.png" alt="">
+                                                    <span class="text">가상여행</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="m-ratioBox-wrap">
+                                                    <div class="m-ratioBox">
+                                                        <img src="../../comn/img/festival2.jpg" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn">
+                                                    <img src="../../comn/img/vr.png" alt="">
+                                                    <span class="text">가상여행</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-content">
+                                    <div class="content">
+                                        <p class="category">카테고리</p>
+                                        <h3 class="title">풍물시장</h3>
+                                        <p class="body">
+                                            가산 이효석 선생은 우리나라 현대 단편문학의 대표작인 『메밀꽃 필 무렵』 의 작가로 높이
+                                            평가받고 있습니다.
+                                        </p>
+
+                                        <div class="infos">
+                                            <p class="info before-location">강원 화천군 하남면 건넌들길 97</p>
+                                            <p class="info before-contact">033-440-2952</p>
+                                        </div>
+
+                                        <div class="btns">
+                                            <!-- 횔성화시 active 클래스 추가 필요 -->
+                                            <a href="#" class="btn active">
+                                                <i class="xi-heart"></i>
+                                                좋아요
+
+                                                <span class="count">12</span>
+                                            </a>
+
+                                            <a href="#" class="btn">
+                                                <i class="xi-star"></i>
+                                                스크랩
+
+                                                <span class="count">12</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-middle"></div>
+
+                    <!-- 여행자의 여행사전 팝업창 -->
+                    <div class="m-pop type01 m-pop-travel" id="pop">
+                        <div class="m-pop-inner">
+                            <div class="m-pop-header">
+                                <p class="m-pop-header-title">
+                                    게시글 이동
+                                </p>
+
+                                <button class="m-script-pop m-pop-btn-close" data-target="#pop">
+                                    <i class="xi-close"></i>
+                                </button>
+                            </div>
+
+                            <div class="m-pop-content">
+                                <div class="m-tabs type05">
+                                    <div class="m-tabs-tab">여행 사전 내역</div>
+                                    <div class="m-tabs-tab">위키 등록</div>
+                                </div>
+
+                                <div class="m-tabs-contents">
+                                    <div class="m-tabs-content">
+                                        <div class="m-reviews-wrap type01">
+                                            <!-- 리뷰목록 -->
+                                            <div class="m-reviews">
+
+                                                <div class="review">
+                                                    <div class="box-img">
+                                                        <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                                    </div>
+
+                                                    <div class="content">
+                                                        <div class="info">
+                                                            <h3 class="title">ejqmf*****</h3>
+                                                            <span class="deco">·</span>
+                                                            <p class="sub">22.10.25.</p>
+                                                        </div>
+
+                                                        <p class="body">
+                                                            이용 시간이 09:00 ~ 18:00까지로 작성되어 있는데, 현재 하절기에는 09:00 ~ 19:00시로 변경되었습니다.
+                                                        </p>
+
+                                                        <div class="imgs">
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival3.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="#" class="btn-recommend state01">
+                                                        미확인
+                                                    </a>
+
+                                                    <!--
+                                                     <a href="#" class="btn-recommend state01">
+                                                        미확인
+                                                    </a>
+
+                                                    <a href="#" class="btn-recommend state02">
+                                                        반영완료
+                                                    </a>
+
+                                                    <a href="#" class="btn-recommend state03">
+                                                        확인불가
+                                                    </a>
+                                                    -->
+
+                                                </div>
+
+                                                <div class="review">
+                                                    <div class="box-img">
+                                                        <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                                    </div>
+
+                                                    <div class="content">
+                                                        <div class="info">
+                                                            <h3 class="title">ejqmf*****</h3>
+                                                            <span class="deco">·</span>
+                                                            <p class="sub">22.10.25.</p>
+                                                        </div>
+
+                                                        <p class="body">
+                                                            이용 시간이 09:00 ~ 18:00까지로 작성되어 있는데, 현재 하절기에는 09:00 ~ 19:00시로 변경되었습니다.
+                                                        </p>
+
+                                                        <div class="imgs">
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival3.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="#" class="btn-recommend state02">
+                                                        반영완료
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="review">
+                                                    <div class="box-img">
+                                                        <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                                    </div>
+
+                                                    <div class="content">
+                                                        <div class="info">
+                                                            <h3 class="title">ejqmf*****</h3>
+                                                            <span class="deco">·</span>
+                                                            <p class="sub">22.10.25.</p>
+                                                        </div>
+
+                                                        <p class="body">
+                                                            이용 시간이 09:00 ~ 18:00까지로 작성되어 있는데, 현재 하절기에는 09:00 ~ 19:00시로 변경되었습니다.
+                                                        </p>
+
+                                                        <div class="imgs">
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-wrap">
+                                                                <div class="m-ratioBox-wrap">
+                                                                    <div class="m-ratio-box">
+                                                                        <img src="../../comn/img/festival3.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="#" class="btn-recommend state03">
+                                                        확인불가
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="flex btns align-center mt-small">
+                                                <a href="#" class="m-btn type03">
+                                                    내역 더보기 <i class="xi-plus"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-tabs-content">
+                                        <h3 class="title">상세내용</h3>
+
+                                        <div class="m-reviews-wrap type01">
+                                            <!-- 리뷰생성폼 -->
+                                            <div class="m-input-review">
+                                                <textarea name="" id="" placeholder="현재 제공되고 있는 정보에 오류가 있거나, 새롭게 바뀐 정보가 있다면 해당 부분을 작성해 주세요."></textarea>
+
+                                                <div class="mt-small"></div>
+
+                                                <div class="bottom">
+                                                    <div class="left">
+                                                        <div class="m-input-checkbox type01">
+                                                            <input type="checkbox" id="test">
+                                                            <label for="test">저작권 보중 및 제공에 동의합니다.</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="right">
+                                                        <a href="#" class="btn-picture">
+                                                            <img src="../../comn/img/picture.png" alt="">
+                                                        </a>
+                                                        <a href="#" class="m-btn type02">등록</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="box-comment">
+                                            <h3 class="title">
+                                                ※ 작성 시 유의 사항
+                                            </h3>
+                                            <div class="bodies">
+                                                <p class="body">
+                                                    1. 저작권의 보호를 받는 내용이나 파일을 허락 없이 올리지 말아 주세요. <span class="point">저작권</span>을 침해하는 자료는 바로 삭제될 수 있습니다.
+
+                                                </p>
+                                                <p class="body">
+                                                    2. 상표권 및 초상권에 문제가 없는 사진을 올려주세요.(인물, 얼굴 노출 삼가)
+
+                                                </p>
+                                                <p class="body">
+                                                    3. 사진은 10개까지 가능합니다.
+
+                                                </p>
+                                                <p class="body">
+                                                    4. 본인이 직접 작성하였거나, 직접 촬영한 사진을 올려주세요.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 기본정보 & 상세내용 & 오시는길 & 리뷰목록 -->
+                    <div class="fragment fragment01">
+                        <div class="m-tabs type05">
+                            <button class="m-tabs-tab">기본정보</button>
+                            <button class="m-tabs-tab">상세내용</button>
+                            <button class="m-tabs-tab">오시는길</button>
+                            <button class="m-tabs-tab">여행자 리뷰</button>
+                        </div>
+
+                        <div class="m-tabs-contents">
+                            <!-- 기본정보 -->
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <h3 class="fragment-title">기본정보</h3>
+
+                                <div class="m-infos">
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/park.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">주차시설</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">있음 (소형 41대)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/notice.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">쉬는 날</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">매주 월요일, 1월 1일, 설날, 추석, 월요일이 공휴일인 경우 다음날</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/time.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">이용시간</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">*성수기(5~9월):오전9시~오후6시30분(오후6시 매표 마감)
+                                                *비수기(10~4월):오전9시~오후5시30분(오후5시 매표 마감)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/write.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">이용안내</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">[양몰이 공연]
+                                                운영 장소 : 양몰이 공연장
+                                                운영 기간 : 5월 ~ 10월
+                                                운영 시간 : 주중 13:00, 14:30, 16:00 / 주말 11:00, 13:00, 14:30, 16:00
+                                                소요 시간 : 약 15분
+                                                기타 : 우천 등 악천 후 & 목양견의 컨디션 등에 따라 공연이 취소될 수 있음
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/baby.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">유모차 대여</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">가능</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/card.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">신용카드 가능</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">가능</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/pet.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">애완동물 동반</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">불가능</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-info type01">
+                                        <div class="m-info-title">
+                                            <div class="img-wrap">
+                                                <img src="../../comn/img/park.png" alt="">
+                                            </div>
+
+                                            <h3 class="title">장애시설</h3>
+                                        </div>
+                                        <div class="m-info-body">
+                                            <p class="body">휠체어대여, 출입통로, 접근로</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-normal"></div>
+
+                                <div class="btns align-center">
+                                    <button type="button" class="m-script-pop m-btn type01 bg-revert-black" data-target="#pop">
+                                        여행자의 여행사전
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- 상세내용 -->
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <h3 class="fragment-title">상세내용</h3>
+
+                                <div style="padding:100px; font-size:24px; color:#fff; background-color:#ccc; text-align: center">텍스트 에디터 영역</div>
+                            </div>
+
+                            <!-- 오시는길 -->
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <h3 class="fragment-title">오시는길</h3>
+
+                                <div id="map"></div>
+
+                            </div>
+
+                            <!-- 여행자 리뷰 -->
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <h3 class="fragment-title">여행자 리뷰 (23)</h3>
+
+                                <div class="m-reviews-wrap type01">
+
+                                    <!-- 리뷰생성폼 -->
+                                    <div class="m-input-review">
+                                        <textarea name="" id="" placeholder="리뷰를 입력하세요."></textarea>
+
+                                        <div class="mt-small"></div>
+
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <div class="fragment">
+                                                    <h3 class="title">언제?</h3>
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">방문전</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fragment">
+                                                    <h3 class="title">누구와?</h3>
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">혼자</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="right">
+                                                <a href="#" class="btn-picture">
+                                                    <img src="../../comn/img/picture.png" alt="">
+                                                </a>
+                                                <a href="#" class="m-btn type02">리뷰등록</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 리뷰목록 -->
+                                    <div class="m-reviews">
+
+                                        <!-- 일반리뷰 -->
+                                        <div class="review">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="tags">
+                                                    <div class="tag">#방문전</div>
+                                                    <div class="tag">#혼자</div>
+                                                </div>
+
+                                                <p class="body">
+                                                    겨울에 눈 내린 자작나무숲을 너무 보고 싶네요 ㅠ 이번엔 못가서 잎사귀 난 후에 가봐야겠어요.
+                                                </p>
+
+                                                <div class="imgs">
+                                                    <div class="img-wrap">
+                                                        <div class="m-ratioBox-wrap">
+                                                            <div class="m-ratio-box">
+                                                                <img src="../../comn/img/festival1.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="img-wrap">
+                                                        <div class="m-ratioBox-wrap">
+                                                            <div class="m-ratio-box">
+                                                                <img src="../../comn/img/festival2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="img-wrap">
+                                                        <div class="m-ratioBox-wrap">
+                                                            <div class="m-ratio-box">
+                                                                <img src="../../comn/img/festival3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btns">
+                                                    <button class="btn btn-reply">답글달기</button>
+                                                    <span class="deco">|</span>
+                                                    <button class="btn">삭제</button>
+                                                </div>
+                                            </div>
+
+                                            <a href="#" class="btn-recommend">
+                                                <img src="../../comn/img/thumb.png" alt="">
+
+                                                0
+                                            </a>
+                                        </div>
+
+                                        <!-- 답글달기 폼 -->
+                                        <div class="review type-create type-reply">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/reply.png" alt="">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="m-input-review">
+                                                    <textarea name="" id="" placeholder="답글을 입력하세요."></textarea>
+
+                                                    <div class="mt-small"></div>
+
+                                                    <div class="bottom">
+                                                        <div class="left"></div>
+
+                                                        <div class="right">
+                                                            <a href="#" class="btn-picture">
+                                                                <img src="../../comn/img/picture.png" alt="">
+                                                            </a>
+                                                            <a href="#" class="m-btn type02">등록</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- 답글리뷰 -->
+                                        <div class="review type-reply">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="tags">
+                                                    <div class="tag">#방문전</div>
+                                                    <div class="tag">#혼자</div>
+                                                </div>
+
+                                                <p class="body">
+                                                    겨울에 눈 내린 자작나무숲을 너무 보고 싶네요 ㅠ 이번엔 못가서 잎사귀 난 후에 가봐야겠어요.
+                                                </p>
+
+                                                <div class="btns">
+                                                    <button class="btn btn-reply">답글달기</button>
+                                                    <span class="deco">|</span>
+                                                    <button class="btn">삭제</button>
+                                                </div>
+                                            </div>
+
+                                            <a href="#" class="btn-recommend">
+                                                <img src="../../comn/img/thumb.png" alt="">
+
+                                                0
+                                            </a>
+                                        </div>
+
+                                        <!-- 답글달기 폼 -->
+                                        <div class="review type-create type-reply">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/reply.png" alt="">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="m-input-review">
+                                                    <textarea name="" id="" placeholder="답글을 입력하세요."></textarea>
+
+                                                    <div class="mt-small"></div>
+
+                                                    <div class="bottom">
+                                                        <div class="left"></div>
+
+                                                        <div class="right">
+                                                            <a href="#" class="btn-picture">
+                                                                <img src="../../comn/img/picture.png" alt="">
+                                                            </a>
+                                                            <a href="#" class="m-btn type02">등록</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- 일반리뷰 -->
+                                        <div class="review">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="tags">
+                                                    <div class="tag">#방문전</div>
+                                                    <div class="tag">#혼자</div>
+                                                </div>
+
+                                                <p class="body">
+                                                    겨울에 눈 내린 자작나무숲을 너무 보고 싶네요 ㅠ 이번엔 못가서 잎사귀 난 후에 가봐야겠어요.
+                                                </p>
+
+                                                <div class="btns">
+                                                    <button class="btn btn-reply">답글달기</button>
+                                                    <span class="deco">|</span>
+                                                    <button class="btn">삭제</button>
+                                                </div>
+                                            </div>
+
+                                            <a href="#" class="btn-recommend">
+                                                <img src="../../comn/img/thumb.png" alt="">
+
+                                                0
+                                            </a>
+                                        </div>
+
+                                        <!-- 답글달기 폼 -->
+                                        <div class="review type-create type-reply">
+                                            <div class="box-img">
+                                                <img src="../../comn/img/reply.png" alt="">
+                                                <img src="../../comn/img/circlePerson.png" alt="" class="person">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="info">
+                                                    <h3 class="title">ejqmf*****</h3>
+                                                    <span class="deco">·</span>
+                                                    <p class="sub">22.10.25.</p>
+                                                </div>
+
+                                                <div class="m-input-review">
+                                                    <textarea name="" id="" placeholder="답글을 입력하세요."></textarea>
+
+                                                    <div class="mt-small"></div>
+
+                                                    <div class="bottom">
+                                                        <div class="left"></div>
+
+                                                        <div class="right">
+                                                            <a href="#" class="btn-picture">
+                                                                <img src="../../comn/img/picture.png" alt="">
+                                                            </a>
+                                                            <a href="#" class="m-btn type02">등록</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="flex btns align-center mt-middle">
+                                        <a href="#" class="m-btn type01">
+                                            <span class="text">더보기</span>
+                                        </a>
+                                    </div>
+
+                                    <!--
+                                    <div class="m-pagination type01">
+                                        <div class="m-pagination-pages">
+                                            <a href="?page=1" class="m-pagination-first" title="처음 페이지로 이동"></a>
+                                            <a href="javascript:;" class="m-pagination-prev" title="이전 페이지로 이동"></a>
+                                            <span>1</span>
+                                            <a href="?page=2">2</a>
+                                            <a href="?page=3">3</a>
+                                            <a href="?page=4">4</a>
+                                            <a href="?page=5">5</a>
+                                            <a href="?page=6" class="m-pagination-next" title="다음 페이지로 이동"></a>
+                                            <a href="?page=11" class="m-pagination-last" title="마지막 페이지로 이동"></a>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-big"></div>
+
+                    <!-- 함께 보면 좋은 여행지 -->
+                    <div class="fragment fragment02">
+                        <div class="m-tabs type05">
+                            <button class="m-tabs-tab">함께 보면 좋은 여행지</button>
+                            <button class="m-tabs-tab">등록된 코스</button>
+                        </div>
+
+                        <div class="m-tabs-contents">
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-middle"></div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
+
+                                <div class="swiper">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="cards type02">
+                                                    <div class="card-wrap">
+                                                        <a href="#" class="card">
+                                                            <div class="m-ratioBox-wrap">
+                                                                <div class="m-ratioBox">
+                                                                    <img src="../../comn/img/festival1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="box-text">
+                                                                <h3 class="title">연꽃단지</h3>
+
+                                                                <div class="more">
+
+                                                                    <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-middle"></div>
+
+                                    <div class="m-swiper-btns type01">
+                                        <div class="swiper-btn swiper-btn-prev">
+                                            <span class="xi-angle-left"></span>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-next">
+                                            <span class="xi-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex btns align-center">
+                        <a href="#" class="m-btn type01">
+                            <span class="text">목록보기</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
+
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
+
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+
+<script>
+    // 테스트 위치정보
+    let items = [
+        {
+            id: 1,
+            place_name: "효석 달빛 언덕",
+            address_name: "강원 화천군 하남면 건넌들길 97",
+            x: "127.983189",
+            y: "38.130878",
+        },
+    ];
+
+    // 지도세팅(마커 & 마커정보 추가)
+    settingMap(items, "map", "type-common");
+
+    // 답글달기
+    $(".m-reviews-wrap.type01 .review .btns .btn-reply").click(function(){
+        $(this).parents(".review").next(".type-create").toggleClass("active");
+    })
+
+
+    $(document).ready(function(){
+        new Swiper('.cards.type04 .swiper-container', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.cards.type04 .swiper-btn-next',
+                prevEl: '.cards.type04 .swiper-btn-prev',
+            },
+            on: {
+
+            }
+        });
+
+        initSwiper();
+    });
+
+    $(".fragment02 .m-tabs-tab").click(function(){
+        initSwiper();
+    });
+
+    var swiper;
+
+    function initSwiper(){
+        setTimeout(function(){
+            if(swiper) {
+                swiper.destroy();
+            }
+
+            swiper = new Swiper('.fragment02 .active .swiper-container', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                slidesPerView:3,
+                spaceBetween:24,
+                navigation: {
+                    nextEl: '.cards.type04 .swiper-btn-next',
+                    prevEl: '.cards.type04 .swiper-btn-prev',
+                },
+                on: {
+
+                },
+                breakpoints: {
+                    1320: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+        }, 1);
+    }
+
+
+</script>
+</body>
+</html>

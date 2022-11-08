@@ -721,32 +721,6 @@
                                             <p class="body">휠체어대여,  출입통로, 접근로</p>
                                         </div>
                                     </div>
-
-                                    <div class="m-info type01">
-                                        <div class="m-info-title">
-                                            <div class="img-wrap">
-                                                <img src="../../comn/img/park.png" alt="">
-                                            </div>
-
-                                            <h3 class="title">제목</h3>
-                                        </div>
-                                        <div class="m-info-body">
-                                            <p class="body">내용</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-info type01">
-                                        <div class="m-info-title">
-                                            <div class="img-wrap">
-                                                <img src="../../comn/img/park.png" alt="">
-                                            </div>
-
-                                            <h3 class="title">제목</h3>
-                                        </div>
-                                        <div class="m-info-body">
-                                            <p class="body">내용</p>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <div class="mt-normal"></div>
@@ -1337,21 +1311,44 @@
     let items = [
         {
             id: 1,
-            place_name: "효석 달빛 언덕",
-            address_name: "강원 화천군 하남면 건넌들길 97",
+            place_name: "한반도섬",
+            address_name: "강원 양구군 양구읍 고대리 647-1",
+            thumbnail: "../../comn/img/picture01.png",
             x: "127.983189",
             y: "38.130878",
+            detailLink: "#" // 슬라이드 클릭 시 이동할 링크
+        },
+        {
+            id: 2,
+            place_name: "양구선사박물관",
+            address_name: "강원도 양구군 양구읍 하리 510",
+            thumbnail: "../../comn/img/picture02.png",
+            x: "127.990462",
+            y: "38.123400",
+            detailLink: "#"
+        },
+        {
+            id: 3,
+            place_name: "박수근미술관",
+            address_name: "강원도 양구군 양구읍 정림리 131-1 박수근로265-15",
+            thumbnail: "../../comn/img/picture03.png",
+            x: "127.990462",
+            y: "38.096514",
+            detailLink: "#"
+        },
+        {
+            id: 4,
+            place_name: "양구인 문학박물관",
+            address_name: "강원도 양구군 양구읍 동수리 100-1 파로호로869번길 101",
+            thumbnail: "../../comn/img/picture04.png",
+            x: "127.981223",
+            y: "38.121961",
+            detailLink: "#"
         },
     ];
 
     // 지도세팅(마커 & 마커정보 추가)
-    settingMap(items);
-
-    // 답글달기
-    $(".m-reviews-wrap.type01 .review .btns .btn-reply").click(function(){
-        $(this).parents(".review").next(".type-create").toggleClass("active");
-    })
-
+    settingMap(items, "map", "type-common");
 
     $(document).ready(function(){
         new Swiper('.cards.type04 .swiper-container', {
@@ -1374,6 +1371,8 @@
 
     $(".fragment02 .m-tabs-tab").click(function(){
         initSwiper();
+
+        settingMap(items, "map", "type-common");
     });
 
     var swiper;

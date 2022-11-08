@@ -18,8 +18,10 @@ let infos = []; // 마커정보목록
 	@ 출력값
 	- 생성된 지도객체
 */
-function settingMap(items, id){
-	// 2020-11-11 #추가부분 (지도 id 전달 받아서 선언도 가능하도록 변경)
+
+
+function settingMap(items, id, type){
+
 	let targetId = id ? id : "map";
 
 	let coordinate = { // 초기좌표
@@ -39,9 +41,9 @@ function settingMap(items, id){
 
 	// 마커 & 마커정보 추가
 	items.map(function(item, index) {
-		infos.push(addInfo(item));
+		infos.push(addInfo(item, type));
 
-		markers.push(addMarker(item, index));
+		markers.push(addMarker(item, index, type));
 	});
 
 	return map;
@@ -57,20 +59,35 @@ function settingMap(items, id){
 	@ 출력값
 	- 생성된 마커정보 객체
 */
-function addInfo(item){
+function addInfo(item, type){
+	let content = '<div class="infoWindow">' +
+		'<div class="infoWindow-thumbnail"><img src="'+ item.thumbnail +'" alt=""></div>' +
+		'<p class="infoWindow-title">' +
+		item.place_name +
+		'</p><p class="infoWindow-subtitle">' +
+		item.address_name +
+		'</p><div class="btns"><a class="infoWindow-link btn type03 type-blue" href="' +
+		'https://map.kakao.com/link/to/' + item.place_name + ',' + item.y + ',' + item.x +
+		'"target="_blank">길찾기</a><a class="infoWindow-link btn type03 type-blue" href="' + item.url + '" target="_blank">상세보기</a></div>' +
+		'</div>';
+
+	if(type === "type-common")
+		content = '<div class="infoWindow">' +
+			'<p class="infoWindow-title">' +
+			item.place_name +
+			'</p><p class="infoWindow-subtitle">' +
+			item.address_name +
+			'</p><a class="infoWindow-link btn type03 type-blue" href="' +
+			'https://map.kakao.com/link/to/' + item.place_name + ',' + item.y + ',' + item.x +
+			'"target="_blank">길찾기</a>' +
+			'</div>';
+
+
 	return {
 		id: item.id,
 		content: new kakao.maps.InfoWindow({
 			position: new kakao.maps.LatLng(item.y, item.x),
-			content: '<div class="infoWindow">' +
-					'<p class="infoWindow-title">' +
-					item.place_name +
-					'</p><p class="infoWindow-subtitle">' +
-					item.address_name +
-					'</p><a class="infoWindow-link btn type03 type-blue" href="' +
-					'https://map.kakao.com/link/to/' + item.place_name + ',' + item.y + ',' + item.x +
-					'"target="_blank">길찾기</a>' +
-					'</div>',
+			content: content,
 			removable: true
 		})
 	}
@@ -86,25 +103,32 @@ function addInfo(item){
 	@ 출력값
 	- 생성된 마커 객체
 */
-function addMarker(item, index){
+function addMarker(item, index, type){
 	let targetInfo = null;
 
-	/*let img = {
+	let img = {
 		src: "../../comn/img/marker" + parseInt(index + 1) + ".png",
 		size: new kakao.maps.Size(34,41),
 		// 	size: new kakao.maps.Size(45,44)
 	};
 
+	img = new kakao.maps.MarkerImage(img.src, img.size);
 
-	img = new kakao.maps.MarkerImage(img.src, img.size);*/
+	let content = new kakao.maps.Marker({
+		map: map,
+		position: new kakao.maps.LatLng(item.y,item.x),
+		image: img
+	});
+
+	if(type === "type-common")
+		content = new kakao.maps.Marker({
+			map: map,
+			position: new kakao.maps.LatLng(item.y,item.x),
+		});
 
 	let marker = {
 		id: item.id,
-		content: new kakao.maps.Marker({
-			map: map,
-			position: new kakao.maps.LatLng(item.y,item.x),
-			// image: img
-		})
+		content: content
 	};
 
 	// 마커 클릭 이벤트
