@@ -1,4 +1,37 @@
 $(document).ready(function(){
+	if($(".area-mypage").length > 0){
+		$(".page-title").hide();
+	}
+
+	$(".area-mypage .box-container .btn-toggle").click(function(){
+		$(this).toggleClass("active");
+		$(".area-mypage .box-container .sidebar").toggleClass("active");
+	});
+
+	$(".sidebar-toggle-btn").click(function(){
+		$(".sidebar").toggleClass("active");
+	});
+
+	if($(".m-pop-tags").length > 0){
+		initTags();
+
+		$(".m-pop-tags .m-input-checkbox").click(function(){
+			initTags();
+		})
+	}
+
+
+	function initTags(){
+		$(".m-pop-tags .box-result").text("");
+
+		let items = $(".m-pop-tags").find("input:checked + label");
+
+		items.each(function (index, item){
+			let text = $(".m-pop-tags .box-result").text();
+			let value = $(item).text();
+			$(".m-pop-tags .box-result").text(text + " " + value);
+		});
+	}
 	var agent = navigator.userAgent.toLowerCase();
 	
 	if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
@@ -335,7 +368,7 @@ $(document).ready(function(){
 	popButton.click(function(){
 		target = $(this).attr("data-target");
 		animation = $(this).attr("data-animation");
-		
+
 		if(animation === "toggle")
 			return $(target).toggle();
 		

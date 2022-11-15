@@ -175,7 +175,7 @@ html, body {overflow-x:hidden;}
 .sub_wrap .depth03.active {color:#fff; background-color:#f6841f;}
 
 .locate_wrap {
-    margin-bottom:70px; margin-top:-60px;
+    margin-top:-60px;
     position: relative; z-index:1;
     background-color:rgba(0,0,0,0.5);
 }
@@ -222,6 +222,7 @@ html, body {overflow-x:hidden;}
 .locate_wrap .util {display:inline-block; margin-left:25px; position:relative; top:2px;}
 
 .page-title {
+    margin-top:70px;
     margin-bottom:50px;
     font-size:40px; font-weight:bold; font-family: "SCoreDream"; text-align: center;
 }
@@ -2064,15 +2065,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type04 .sidebar-toggle .sidebar-toggle-btn img {transform:translate(0);}
 .map.type04 .sidebar-toggle-btn {display:flex; align-items:center; justify-content:center; width:30px; height:44px; position:absolute; right:-30px; top:51px; background-color:#5e5e5e; box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
 .map.type04 .sidebar-toggle-btn img {transform:rotate(180deg);}
-.map.type04 .sidebar-box01 {width:160px; background-color:#102c5f;}
-.map.type04 .sidebar-box01 > .top {justify-content:center; background:#0a1d40; border-bottom:1px solid #43587f;}
+.map.type04 .sidebar-box01 {width:160px; background-color:#222;}
+.map.type04 .sidebar-box01 > .top {justify-content:center; background:#000;}
 .map.type04 .sidebar-box01 > .top .title {font-size:17px; text-align:center; color:#fff;}
 .map.type04 .sidebar-box01 .contents {height:auto;}
 .map.type04 .sidebar-box01 .box-content {position:relative;}
 .map.type04 .sidebar-box01 .box-content .btn-delete {position:absolute; bottom:8px; right:8px; cursor:pointer;}
-.map.type04 .sidebar-box01 .content {display:block; width:100%; padding:25px 10px; position:relative; text-align:center; border-bottom:1px solid #43587f; transition: background-color .3s;}
-.map.type04 .sidebar-box01 .content:hover {background-color:#2c8feb;}
-.map.type04 .sidebar-box01 .content.active {background-color:#2c8feb;}
+.map.type04 .sidebar-box01 .content {display:block; width:100%; padding:25px 10px; position:relative; text-align:center; transition: background-color .3s;}
+.map.type04 .sidebar-box01 .content:hover {background-color:#fdb728;}
+.map.type04 .sidebar-box01 .content.active {background-color:#fdb728;}
 .map.type04 .sidebar-box01 .content .title {display:block; font-size:17px; font-weight:500; text-align:center; color:#fff;}
 .map.type04 .sidebar-box01 .content .sub {font-size:14px; font-weight:300; color:#fff;}
 .map.type04 .sidebar-box01 .contents {height:auto;}
@@ -2084,7 +2085,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type04 .box-distance {padding:8px; text-align:center; background-color:#f8f8f8; border:1px solid #dddddd; border-right:none; border-left:none;}
 .map.type04 .box-distance .text {margin-left:10px; position:relative; top:-2px; font-size:14px; color:#949494;}
 .map.type04 .sidebar-box02 {width:244px; border-right:1px solid #ddd;}
-.map.type04 .sidebar-box02 > .top {background-color:#8291ad;}
+.map.type04 .sidebar-box02 > .top {background-color:#3e3e3e;}
 .map.type04 .sidebar-box02 > .top .title {font-size:18px; font-weight:500; color:#fff;}
 .map.type04 .sidebar-box02 > .top .body {font-size:18px; color:#fff;}
 .map.type04 .sidebar-box02 > .top .btn-rotate {position:relative; top:2px;}
@@ -2092,16 +2093,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type04 .sidebar-box02 .content {display:flex; flex-wrap:wrap; align-items: stretch; min-height:100px; padding:15px 10px; padding-left:90px; position:relative; border-bottom:1px solid #ccc; cursor:pointer;}
 .map.type04 .sidebar-box02 .content .m-input-checkbox label {content:""; width:14px; height:14px; position:absolute; top:15px; right:10px; border:1px solid #929292;}
 .map.type04 .sidebar-box02 .content .m-input-checkbox input:checked + label {background:url("../img/checkbox-active.png") no-repeat; background-size:100%;}
-.map.type04 .sidebar-box02 .content.checked {border:2px solid #7167f8;}
+.map.type04 .sidebar-box02 .content.checked {border:2px solid #fdb728;}
 .map.type04 .sidebar-box02 .content.checked .point {display:inline-block;}
 .map.type04 .sidebar-box02 .content .m-input-checkbox.type02 {}
 .map.type04 .sidebar-box02 .content .title {width:100%; padding-right:15px; font-size:14px;}
 .map.type04 .sidebar-box02 .content .m-ratioBox-wrap {width:70px; padding-top:70px; position:absolute; left:10px; top:50%; transform:translateY(-50%); background:#fff;}
-.map.type04 .sidebar-box02 .content .m-ratioBox-wrap .m-ratioBox:after {width:52px; height:55px;}
+.map.type04 .sidebar-box02 .content .m-ratioBox-wrap .m-ratioBox:after {width:52px; height:18px;}
 .map.type04 .sidebar-box02 .content .btns {margin-left:auto; margin-top:auto; text-align:right;}
 .map.type04 .sidebar-box02 .content .btns .btn-util {margin:0; margin-left:4px;}
-.map.type04 .sidebar-box02 .content .number {display:inline-block; width:21px; height:21px; font-size:14px; position:absolute; top:0; left:0; text-align:center; color:#fff; background-color:#2c8feb; z-index:6;}
-.map.type04 .sidebar-box02 .content .point {display:none; padding:0.5px 6px; position:absolute; top:0; right:0; font-size:14px; color:#fff; background-color:#7167f8; z-index:2;}
+.map.type04 .sidebar-box02 .content .number {display:inline-block; width:21px; height:21px; font-size:14px; position:absolute; top:0; left:0; text-align:center; color:#fff; background-color:#fdb728; z-index:6;}
+.map.type04 .sidebar-box02 .content .point {display:none; padding:0.5px 6px; position:absolute; top:0; right:0; font-size:14px; color:#fff; background-color:#fdb728; z-index:2;}
 .map.type04 .sidebar-box03 {width:310px; position:relative; border-right:1px solid #e1e1e1;}
 .map.type04 .sidebar-box03 > .top {background-color:#dcdcdc;}
 .map.type04 .sidebar-box03 .input-search {width:100%; position:relative;}
@@ -2316,15 +2317,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .pop.type01 {width:calc(100% - 40px);}
 }
 
-.box-form.type01 {padding:30px 40px; border:1px solid #d2d2d2; border-top:3px solid #2c8feb;}
-.box-form.type01 .m-input-wrap.type01 {padding-left:150px;}
-.box-form.type01 .m-input-wrap.type01 .title {top:5px; font-size:18px; font-weight:400;}
-
-@media screen and (max-width:768px) {
-    .box-form.type01 {padding:20px;}
-    .box-form.type01 .m-input-wrap.type01 .title {margin-bottom:8px; position:static; font-size:16px;}
-    .box-form.type01 .m-input-wrap.type01 {padding-left:0;}
-}
 
 
 @media screen and (max-width:768px){

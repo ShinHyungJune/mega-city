@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>에디터 추천여행 목록</title>
+    <title>프로필 편집</title>
     <link rel="stylesheet" href="../../comn/css/default.css">
     <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
     <link rel="stylesheet" href="../../comn/css/animate.css">
@@ -233,11 +233,11 @@
         <div id="contents_wrap" class="contents_wrap">
             <div class="area-users-edit">
                 <div class="wrap_1200">
-                    <div class="m-login-social-box">
+                    <div class="box-edit">
                         <div class="m-input-img type01">
                             <div class="m-ratioBox-wrap">
                                 <div class="m-ratioBox">
-                                    <img src="../../comn/img/profile.png" alt="">
+                                    <!--<img src="../../comn/img/profile.png" alt="">-->
                                 </div>
                             </div>
 
@@ -246,7 +246,9 @@
                                 <img src="../../comn/img/circlePicture.png" alt="">
                             </label>
                         </div>
-                        
+
+                        <div class="mt-small"></div>
+
                         <div class="m-input-wrap">
                             <h3 class="m-input-title">이름</h3>
                             <div class="m-input-body">
@@ -278,7 +280,15 @@
                             <h3 class="m-input-title">성별</h3>
                             <div class="m-input-body">
                                 <div class="m-input-radios">
-                                    div.m-input-radio
+                                    <div class="m-input-radio type02">
+                                        <input type="radio">
+                                        <label for="">남</label>
+                                    </div>
+
+                                    <div class="m-input-radio type02">
+                                        <input type="radio">
+                                        <label for="">여</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -286,8 +296,18 @@
                         <div class="m-input-wrap">
                             <h3 class="m-input-title">거주지</h3>
                             <div class="m-input-body">
-                                <div class="m-input-text type01">
-                                    <input type="text">
+                                <div class="m-input-selects">
+                                    <div class="m-input-select type01">
+                                        <select name="" id="">
+                                            <option value="" selected disabled>거주지</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="m-input-select type01">
+                                        <select name="" id="">
+                                            <option value="" selected disabled>시/군/구</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -295,11 +315,25 @@
                         <div class="m-input-wrap">
                             <h3 class="m-input-title">연령</h3>
                             <div class="m-input-body">
-                                <div class="m-input-text type01">
-                                    <input type="text">
+                                <div class="m-input-select type01" style="max-width:160px;">
+                                    <select name="" id="">
+                                        <option value="" selected disabled>선택</option>
+                                        <option value="">10대이하</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="mt-middle"></div>
+                        
+                        <div class="btns">
+                            <a href="#" class="m-btn type01 black">저장</a>
+                            <a href="#" class="m-btn type01 bg-gray">취소</a>
+                        </div>
+
+                        <div class="mt-small"></div>
+
+                        <a href="#" class="btn-remove">회원탈퇴</a>
                     </div>
                 </div>
             </div>
