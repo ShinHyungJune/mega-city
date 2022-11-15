@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>쇼핑 목록</title>
+    <title>추천여행지 목록</title>
     <link rel="stylesheet" href="../../comn/css/default.css">
     <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
     <link rel="stylesheet" href="../../comn/css/animate.css">
@@ -234,24 +234,10 @@
             <section class="section-cards">
                 <div class="wrap_1200">
 
-                    <!-- 카테고리 -->
-                    <div class="m-tabs type02">
-                        <div class="m-tabs-tab">전체</div>
-                        <div class="m-tabs-tab">5일장</div>
-                        <div class="m-tabs-tab">상설시장</div>
-                        <div class="m-tabs-tab">쇼핑몰</div>
-                        <div class="m-tabs-tab">관광상품</div>
-                    </div>
-
-                    <div class="mt-middle"></div>
-
                     <!-- 정렬버튼 & 검색창 -->
                     <div class="box-search type01">
                         <div class="orders type01">
                             <button class="order">총 <span class="point">1,000</span>건</button>
-                            <button class="order active">등록순</button>
-                            <button class="order">가나다순</button>
-                            <button class="order">좋아요순</button>
                         </div>
 
                         <div class="fragment">
@@ -259,12 +245,6 @@
                                 <legend>게시물 검색</legend>
                                 <form id="theForm" action="boardList" method="get">
                                     <div class="m-search type02">
-                                        <div class="m-search-select-wrap">
-                                            <select class="m-search-select" id="search_type" name="search_type" title="검색구분 선택">
-                                                <option value="">지역</option>
-                                            </select>
-                                        </div>
-
                                         <input class="m-search-input" id="search_keyword" name="search_keyword" title="검색어를 입력하세요." type="text" value="" placeholder="검색어를 입력하세요.">
                                         <button class="m-search-btn" type="submit">
                                             <span class="m-search-btn-text">검색</span>
@@ -281,8 +261,9 @@
                             <a href="#" class="card">
                                 <div class="m-ratioBox-wrap">
                                     <div class="m-ratioBox">
+                                        <span class="mark">관광지</span>
+
                                         <img src="../../comn/img/festival1.jpg" alt="">
-                                        <div class="mark">5일장</div>
 
                                         <div class="count">
                                             <i class="xi-heart"></i>
@@ -292,8 +273,10 @@
                                 </div>
 
                                 <div class="box-text">
-                                    <p class="category">5일장</p>
-                                    <h3 class="title">풍물시장</h3>
+                                    <h3 class="title">연꽃단지</h3>
+                                    <p class="body">
+                                        연꽃들이 계절에 따라 꽃을 피워 사진작가들에게 인기 있는 명소
+                                    </p>
 
                                     <div class="more">
 
@@ -307,9 +290,9 @@
                             <a href="#" class="card">
                                 <div class="m-ratioBox-wrap">
                                     <div class="m-ratioBox">
-                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                        <span class="mark">관광지</span>
 
-                                        <div class="mark">상설시장</div>
+                                        <img src="../../comn/img/festival1.jpg" alt="">
 
                                         <div class="count">
                                             <i class="xi-heart"></i>
@@ -319,8 +302,10 @@
                                 </div>
 
                                 <div class="box-text">
-                                    <p class="category">상설시장</p>
-                                    <h3 class="title">번개시장</h3>
+                                    <h3 class="title">연꽃단지</h3>
+                                    <p class="body">
+                                        연꽃들이 계절에 따라 꽃을 피워 사진작가들에게 인기 있는 명소
+                                    </p>
 
                                     <div class="more">
 

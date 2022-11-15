@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>쇼핑 목록</title>
+    <title>에디터 추천여행 목록</title>
     <link rel="stylesheet" href="../../comn/css/default.css">
     <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
     <link rel="stylesheet" href="../../comn/css/animate.css">
@@ -231,117 +231,78 @@
         </h3>
 
         <div id="contents_wrap" class="contents_wrap">
-            <section class="section-cards">
+            <div class="area-users-edit">
                 <div class="wrap_1200">
+                    <div class="m-login-social-box">
+                        <div class="m-input-img type01">
+                            <div class="m-ratioBox-wrap">
+                                <div class="m-ratioBox">
+                                    <img src="../../comn/img/profile.png" alt="">
+                                </div>
+                            </div>
 
-                    <!-- 카테고리 -->
-                    <div class="m-tabs type02">
-                        <div class="m-tabs-tab">전체</div>
-                        <div class="m-tabs-tab">5일장</div>
-                        <div class="m-tabs-tab">상설시장</div>
-                        <div class="m-tabs-tab">쇼핑몰</div>
-                        <div class="m-tabs-tab">관광상품</div>
-                    </div>
-
-                    <div class="mt-middle"></div>
-
-                    <!-- 정렬버튼 & 검색창 -->
-                    <div class="box-search type01">
-                        <div class="orders type01">
-                            <button class="order">총 <span class="point">1,000</span>건</button>
-                            <button class="order active">등록순</button>
-                            <button class="order">가나다순</button>
-                            <button class="order">좋아요순</button>
+                            <input type="file" id="img">
+                            <label for="img">
+                                <img src="../../comn/img/circlePicture.png" alt="">
+                            </label>
+                        </div>
+                        
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">이름</h3>
+                            <div class="m-input-body">
+                                <div class="m-input-text type01">
+                                    <input type="text">
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="fragment">
-                            <fieldset>
-                                <legend>게시물 검색</legend>
-                                <form id="theForm" action="boardList" method="get">
-                                    <div class="m-search type02">
-                                        <div class="m-search-select-wrap">
-                                            <select class="m-search-select" id="search_type" name="search_type" title="검색구분 선택">
-                                                <option value="">지역</option>
-                                            </select>
-                                        </div>
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">이메일</h3>
+                            <div class="m-input-body">
+                                test@naver.com
 
-                                        <input class="m-search-input" id="search_keyword" name="search_keyword" title="검색어를 입력하세요." type="text" value="" placeholder="검색어를 입력하세요.">
-                                        <button class="m-search-btn" type="submit">
-                                            <span class="m-search-btn-text">검색</span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </fieldset>
-                        </div>
-                    </div>
-
-                    <!-- 코스 목록 - 9개씩 노출 필요 -->
-                    <div class="cards type02">
-                        <div class="card-wrap">
-                            <a href="#" class="card">
-                                <div class="m-ratioBox-wrap">
-                                    <div class="m-ratioBox">
-                                        <img src="../../comn/img/festival1.jpg" alt="">
-                                        <div class="mark">5일장</div>
-
-                                        <div class="count">
-                                            <i class="xi-heart"></i>
-                                            <span class="text">12</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="box-text">
-                                    <p class="category">5일장</p>
-                                    <h3 class="title">풍물시장</h3>
-
-                                    <div class="more">
-
-                                        <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
-                                    </div>
-                                </div>
-                            </a>
+                                <span class="state">인증완료</span>
+                            </div>
                         </div>
 
-                        <div class="card-wrap">
-                            <a href="#" class="card">
-                                <div class="m-ratioBox-wrap">
-                                    <div class="m-ratioBox">
-                                        <img src="../../comn/img/festival1.jpg" alt="">
-
-                                        <div class="mark">상설시장</div>
-
-                                        <div class="count">
-                                            <i class="xi-heart"></i>
-                                            <span class="text">12</span>
-                                        </div>
-                                    </div>
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">연락처</h3>
+                            <div class="m-input-body">
+                                <div class="m-input-text type01">
+                                    <input type="text">
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="box-text">
-                                    <p class="category">상설시장</p>
-                                    <h3 class="title">번개시장</h3>
-
-                                    <div class="more">
-
-                                        <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
-                                    </div>
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">성별</h3>
+                            <div class="m-input-body">
+                                <div class="m-input-radios">
+                                    div.m-input-radio
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">거주지</h3>
+                            <div class="m-input-body">
+                                <div class="m-input-text type01">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-input-wrap">
+                            <h3 class="m-input-title">연령</h3>
+                            <div class="m-input-body">
+                                <div class="m-input-text type01">
+                                    <input type="text">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- 더보기 -->
-                    <div class="m-pagination btns align-center">
-                        <a href="#" class="btn type02 type-blue">
-                            더보기
-
-                            <i class="xi-plus plus"></i>
-                        </a>
-                    </div>
-
                 </div>
-            </section>
+            </div>
 
         </div>
     </div>

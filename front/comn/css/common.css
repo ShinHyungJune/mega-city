@@ -1676,8 +1676,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .btn.type02 .plus {width:15px; margin-left:8px;}
 
-.btn.type03 {padding:3px 16px; background-color:#848484; border-radius:4px; color:#fff;}
-.btn.type03.type-blue {background-color:#1c70cc;}
+.btn.type03 {padding:5px 16px; background-color:#848484;  color:#fff;}
+.btn.type03.type-blue {background-color:#aeaeae;}
 
 .btn.type04 {display:flex; align-items:center; justify-content: center; padding:22px 30px; position:relative;
     transition: all .6s cubic-bezier(.13,.77,.35,1);
@@ -1968,7 +1968,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .infoWindow-subtitle {margin-bottom:5px; font-size:14px; color:#999;}
 .infoWindow-link {display:block; font-size:14px;}
 .infoWindow .btn-close {content:""; width:12px; height:12px; position:absolute; right:10px; top:10px; background:url("../img/icon_x_black.png") no-repeat; background-size:100%;}
-
+.infoWindow .btns {
+    display:flex;
+    margin:0 -2px;
+}
+.infoWindow .btns .btn {
+    flex:1; margin:0 2px;
+}
+.infoWindow .btns .btn + .btn {
+    background-color:black;
+}
 .map.type01 {}
 .map.type01 .m-tabs {margin-top:45px;}
 .map.type01 #map {height:695px !important;}
@@ -1993,17 +2002,26 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type01 .swiper-button-next {right:30px;}
 .map.type01 .swiper-button-disabled {opacity:0.7;}
 
-.map.type02 {position:relative;}
+.map.type02 {
+    padding:50px;
+    position:relative;
+    border:1px solid #e1e1e1; border-top:none;
+}
 .map.type02 .swiper {position:relative;}
 .map.type02 #map {height:695px !important;}
-.map.type02 .flag {content:""; width:34px; height:41px; margin-bottom:12px; position:relative; background:url('../img/flag_blue.png') no-repeat;}
-.map.type02 .flag .text {width:20px; heigth:20px; position:absolute; top:7px; left:7px; font-size:14px; font-weight:600; text-align:center; color:#7167f8; background-color:#fff; border-radius:100%;}
+.map.type02 .flag {content:""; width:34px; height:41px; margin-bottom:58px; position:relative; background:url('../img/marker.png') no-repeat;}
+.map.type02 .flag .text {
+    width:20px; height:20px;
+    position:absolute; top:7px; left:7px;
+    font-size:14px; font-weight:600; text-align:center;
+    color:#fdb728; background-color:#fff; border-radius:100%;
+}
 .map.type02 .body img {margin:0 auto;}
 .map.type02 .swiper-slide {cursor:pointer;}
 .map.type02 .swiper-slide:hover .m-ratioBox-wrap:after {opacity:1;}
 .map.type02 .swiper-slide:hover .m-ratioBox-wrap:before {opacity:1;}
 .map.type02 .swiper-slide .box-content {display:flex; flex-wrap:wrap; justify-content: center;}
-.map.type02 .swiper-slide .box-content:after {content:""; display:inline-block; width:8px; height:8px; position:absolute; left:50%; top:83%; transform:translate(-50%, -50%); background-color:#272727; border-radius:100%;}
+.map.type02 .swiper-slide .box-content:after {content:""; display:inline-block; width:8px; height:8px; position:absolute; left:50%; top:84.7%; transform:translate(-50%, -50%); background-color:#272727; border-radius:100%;}
 .map.type02 .swiper-slide .m-ratioBox-wrap {padding-top:70%; margin-bottom:24px;}
 .map.type02 .swiper-slide .m-ratioBox-wrap:after {content:""; width:100%; height:100%; position:absolute; top:0; left:0; background-color:rgba(0,0,0,0.5); opacity:0; z-index:1;
     transition:opacity .3s;
@@ -2018,11 +2036,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type02 .swiper-slide .box-text {width:100%;}
 .map.type02 .swiper-buttons {width:100%; position:absolute; left:0; bottom:65px;}
 .map.type02 .swiper-buttons:after {content:""; width:100%; height:1px; position:absolute; top:0; left:0; background-color:#c1c1c2;}
-.map.type02 .swiper-button {width:70px; height:70px; position:absolute; top:90%; transform:translateY(-50%); cursor:pointer; border-radius:100%; border:1px solid #bfbfbf; background-color:#fff; z-index:1;}
+.map.type02 .swiper-button {width:70px; height:70px; position:absolute; top:90%; transform:translateY(-22%); cursor:pointer; border-radius:100%; border:1px solid #bfbfbf; background-color:#fff; z-index:1;}
 .map.type02 .swiper-button img {width:8px; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
 .map.type02 .swiper-button-prev {left:-8px;}
 .map.type02 .swiper-button-next {right:-8px;}
-.map.type02 .swiper-button-disabled {background:#ededed;}
+.map.type02 .swiper-button-disabled {background:#ededed; opacity:1;}
 .map.type02 .swiper-button-disabled img {opacity:0.6;}
 
 .map.type03 .ways > div {margin-bottom:16px; padding:10px; border:1px solid #e1e1e1;}

@@ -68,7 +68,7 @@ function addInfo(item, type){
 		item.address_name +
 		'</p><div class="btns"><a class="infoWindow-link btn type03 type-blue" href="' +
 		'https://map.kakao.com/link/to/' + item.place_name + ',' + item.y + ',' + item.x +
-		'"target="_blank">길찾기</a><a class="infoWindow-link btn type03 type-blue" href="' + item.url + '" target="_blank">상세보기</a></div>' +
+		'"target="_blank">길찾기</a><a class="infoWindow-link btn type03 type-blue" href="' + item.detailLink + '" target="_blank">상세보기</a></div>' +
 		'</div>';
 
 	if(type === "type-common")

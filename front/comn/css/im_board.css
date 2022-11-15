@@ -213,23 +213,9 @@
 .userFooter .link:first-child:before {display:none;}
 .userFooter:after {display:block; content:""; clear:both;}
 
-.m-login-social .m-login-social-box {padding:50px 60px 80px 60px; text-align:center; border:1px solid #c9c9c9;}
-.m-login-social .m-login-social-box .comment {margin-bottom:70px; color:#666666;}
-.m-login-social .m-login-social-box .social {display:block; width:310px; margin:0 auto; margin-bottom:20px; position:relative; line-height:37px; background-color:#f5f5f6; border-radius:18px; transition: background-color .3s, color .3s;}
-.m-login-social .m-login-social-box .social img {position:absolute; left:0; top:0;}
-.m-login-social .m-login-social-box .social:hover {color:#fff;}
-.m-login-social .m-login-social-box .social:focus {color:#fff;}
-.m-login-social .m-login-social-box .social.naver:hover {background-color:#00cf37;}
-.m-login-social .m-login-social-box .social.naver:focus {background-color:#00cf37;}
-.m-login-social .m-login-social-box .social.kakao:hover {background-color:#f8dd00;}
-.m-login-social .m-login-social-box .social.kakao:focus {background-color:#f8dd00;}
-.m-login-social .m-login-social-box .social.facebook:hover {background-color:#3a5898;}
-.m-login-social .m-login-social-box .social.facebook:focus {background-color:#3a5898;}
 
 @media screen and (max-width:750px){
-    .m-login-social .m-login-social-box {padding:45px 30px;}
-    .m-login-social .m-login-social-box .comment {margin-bottom:30px;}
-    .m-login-social .m-login-social-box .social {width:100%;}
+
 
     .userHeader .logo {display:block; width:160px; margin:0 auto; margin-bottom:15px; float:none;}
     .userHeader .utils {float:none; text-align:center;}

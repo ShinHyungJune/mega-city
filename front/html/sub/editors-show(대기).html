@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>관광지상세</title>
+    <title>에디터 추천여행 상세</title>
     <link rel="stylesheet" href="../../comn/css/default.css">
     <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
     <link rel="stylesheet" href="../../comn/css/animate.css">
@@ -231,15 +231,14 @@
         </h3>
 
         <div id="contents_wrap" class="contents_wrap">
-            <section class="section-detail type02">
+
+            <section class="section-detail type01">
                 <div class="wrap_1200">
                     <!-- 기본정보 -->
                     <div class="m-thumbnailInfo type01">
                         <div class="m-thumbnailInfo-inner">
-                            <span class="category">문화&체험여행</span>
-
                             <h3 class="title">
-                                아이들과 함께 당일치기 여행
+                                휴식과 힐링이 필요하다면!
                             </h3>
 
                             <p class="body">
@@ -269,147 +268,46 @@
                                     <div class="m-tag">#자연</div>
                                 </div>
                             </div>
-
-                            <div class="owner">
-                                <span class="primary bold">by</span> 홍길동
-                            </div>
-                        </div>
-
-                        <div class="btns-wrap">
-                            <div class="btns">
-                                <!-- 횔성화시 active 클래스 추가 필요 -->
-                                <a href="#" class="btn active">
-                                    <i class="xi-heart"></i>
-                                    좋아요
-
-                                    <span class="count">12</span>
-                                </a>
-
-                                <a href="#" class="btn">
-                                    <i class="xi-star"></i>
-                                    스크랩
-
-                                    <span class="count">12</span>
-                                </a>
-                            </div>
-
-                            <div class="btns">
-                                <a href="#" class="btn">
-                                    수정
-                                </a>
-                            </div>
                         </div>
                     </div>
 
                     <div class="mt-middle"></div>
 
-                    <!-- 일자별 코스 -->
+                    <!-- 기본정보 & 상세내용 & 오시는길 & 리뷰목록 -->
                     <div class="fragment fragment01">
                         <div class="m-tabs type05">
-                            <!-- 실 탭메뉴가 아닌 비동기 연동 필요 시 "m-tabs-tab" -> "m-tabs-fakeTab"으로 클래스명 변경 필요 -->
-                            <button class="m-tabs-tab">DAY1</button>
-                            <button class="m-tabs-tab">DAY2</button>
+                            <button class="m-tabs-tab">상세내용</button>
+                            <button class="m-tabs-tab">오시는길</button>
                         </div>
 
                         <div class="m-tabs-contents">
+                            <!-- 상세내용 -->
                             <div class="m-tabs-content">
-                                <div class="map type02">
-                                    <div class="swiper">
-                                        <div class="swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <a href="#" target="_blank" title="새창열림" class="swiper-slide">
-                                                    <div class="m-ratioBox-wrap">
-                                                        <div class="m-ratioBox">
-                                                            <img src="../../comn/img/travel1.jpg" alt="">
-                                                        </div>
-                                                    </div>
+                                <div class="mt-normal"></div>
 
-                                                    <div class="box-content">
-                                                        <div class="flag">
-                                                            <span class="text">1</span>
-                                                        </div>
+                                <h3 class="fragment-title">상세내용</h3>
 
-                                                        <div class="box-text">
-                                                            <h3 class="title">관광지명</h3>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                <div style="padding:100px; font-size:24px; color:#fff; background-color:#ccc; text-align: center">텍스트 에디터 영역</div>
+                            </div>
 
-                                                <a href="#" target="_blank" title="새창열림" class="swiper-slide">
-                                                    <div class="m-ratioBox-wrap">
-                                                        <div class="m-ratioBox">
-                                                            <img src="../../comn/img/travel2.jpg" alt="">
-                                                        </div>
-                                                    </div>
+                            <!-- 오시는길 -->
+                            <div class="m-tabs-content">
+                                <div class="mt-normal"></div>
 
-                                                    <div class="box-content">
-                                                        <div class="flag">
-                                                            <span class="text">2</span>
-                                                        </div>
+                                <h3 class="fragment-title">오시는길</h3>
 
-                                                        <div class="box-text">
-                                                            <h3 class="title">관광지명</h3>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                <div id="map"></div>
 
-                                                <a href="#" target="_blank" title="새창열림" class="swiper-slide">
-                                                    <div class="m-ratioBox-wrap">
-                                                        <div class="m-ratioBox">
-                                                            <img src="../../comn/img/travel3.jpg" alt="">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="box-content">
-                                                        <div class="flag">
-                                                            <span class="text">3</span>
-                                                        </div>
-
-                                                        <div class="box-text">
-                                                            <h3 class="title">관광지명</h3>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <a href="#" target="_blank" title="새창열림" class="swiper-slide">
-                                                    <div class="m-ratioBox-wrap">
-                                                        <div class="m-ratioBox">
-                                                            <img src="../../comn/img/festival1.jpg" alt="">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="box-content">
-                                                        <div class="flag">
-                                                            <span class="text">4</span>
-                                                        </div>
-
-                                                        <div class="box-text">
-                                                            <h3 class="title">관광지명</h3>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-buttons">
-                                            <div class="swiper-button swiper-button-prev" title="이전 슬라이드">
-                                                <img src="../../comn/img/arrow_left_gray.png" alt="이전 슬라이드">
-                                            </div>
-                                            <div class="swiper-button swiper-button-next" title="다음 슬라이드">
-                                                <img src="../../comn/img/arrow_right_gray.png" alt="다음 슬라이드">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="map" style="height:400px; width:100%;"></div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- BEST 여행코스 -->
+                    <div class="mt-big"></div>
+
+                    <!-- 함께 보면 좋은 여행지 -->
                     <div class="fragment fragment02">
-                        <h3 class="title">BEST 여행 코스</h3>
+                        <div class="mt-normal"></div>
+                        <h3 class="fragment-title">연관된 관광지</h3>
 
                         <div class="swiper">
                             <div class="swiper-container">
@@ -428,10 +326,9 @@
                                                     <div class="box-text">
                                                         <h3 class="title">연꽃단지</h3>
 
-                                                        <div class="mt-smaller"></div>
-
                                                         <div class="more">
-                                                            <p class="before-location">강원 화천군 하남면 건넌물길 97</p>
+
+                                                            <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -452,10 +349,9 @@
                                                     <div class="box-text">
                                                         <h3 class="title">연꽃단지</h3>
 
-                                                        <div class="mt-smaller"></div>
-
                                                         <div class="more">
-                                                            <p class="before-location">강원 화천군 하남면 건넌물길 97</p>
+
+                                                            <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -476,10 +372,9 @@
                                                     <div class="box-text">
                                                         <h3 class="title">연꽃단지</h3>
 
-                                                        <div class="mt-smaller"></div>
-
                                                         <div class="more">
-                                                            <p class="before-location">강원 화천군 하남면 건넌물길 97</p>
+
+                                                            <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -489,6 +384,8 @@
 
                                 </div>
                             </div>
+
+                            <div class="mt-middle"></div>
 
                             <div class="m-swiper-btns type01">
                                 <div class="swiper-btn swiper-btn-prev">
@@ -501,12 +398,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="flex btns align-center">
-                        <a href="#" class="m-btn type01">
-                            <span class="text">목록보기</span>
-                        </a>
-                    </div>
+                <div class="flex btns align-center">
+                    <a href="#" class="m-btn type01">
+                        <span class="text">목록보기</span>
+                    </a>
                 </div>
             </section>
         </div>
@@ -553,132 +450,42 @@
     let items = [
         {
             id: 1,
-            place_name: "한반도섬",
-            address_name: "강원 양구군 양구읍 고대리 647-1",
-            thumbnail: "../../comn/img/festival1.jpg",
+            place_name: "효석 달빛 언덕",
+            address_name: "강원 화천군 하남면 건넌들길 97",
             x: "127.983189",
             y: "38.130878",
-            detailLink: "#" // 슬라이드 클릭 시 이동할 링크
-        },
-        {
-            id: 2,
-            place_name: "양구선사박물관",
-            address_name: "강원도 양구군 양구읍 하리 510",
-            thumbnail: "../../comn/img/festival1.jpg",
-            x: "127.990462",
-            y: "38.123400",
-            detailLink: "#"
-        },
-        {
-            id: 3,
-            place_name: "박수근미술관",
-            address_name: "강원도 양구군 양구읍 정림리 131-1 박수근로265-15",
-            thumbnail: "../../comn/img/festival1.jpg",
-            x: "127.990462",
-            y: "38.096514",
-            detailLink: "#"
-        },
-        {
-            id: 4,
-            place_name: "양구인 문학박물관",
-            address_name: "강원도 양구군 양구읍 동수리 100-1 파로호로869번길 101",
-            thumbnail: "../../comn/img/festival1.jpg",
-            x: "127.981223",
-            y: "38.121961",
-            detailLink: "#"
         },
     ];
 
+    // 지도세팅(마커 & 마커정보 추가)
+    settingMap(items, "map", "type-common");
 
-    $(document).ready(function(){
-        // 지도세팅(마커 & 마커정보 추가)
-        settingMap(items);
+    new Swiper('.fragment02 .swiper-container', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        slidesPerView:3,
+        spaceBetween:24,
+        navigation: {
+            nextEl: '.fragment02 .swiper-btn-next',
+            prevEl: '.fragment02 .swiper-btn-prev',
+        },
+        on: {
 
-        new Swiper('.cards.type04 .swiper-container', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
+        },
+        breakpoints: {
+            1320: {
+                slidesPerView: 2,
             },
-            loop: true,
-            navigation: {
-                nextEl: '.cards.type04 .swiper-btn-next',
-                prevEl: '.cards.type04 .swiper-btn-prev',
-            },
-            on: {
-
+            768: {
+                slidesPerView: 1,
             }
-        });
-
-        initSwiper();
+        }
     });
 
-    $(".m-tabs-tab").click(function(){
-        initSwiper();
 
-        settingMap(items);
-    });
-
-    var swiper;
-
-    function initSwiper(){
-        setTimeout(function(){
-            if(swiper) {
-                swiper.destroy();
-            }
-
-            swiper = new Swiper('.fragment01 .active .swiper-container', {
-                loop: false,
-                slidesPerView:3,
-                spaceBetween:24,
-                navigation: {
-                    nextEl: '.fragment01 .active .swiper-button-next',
-                    prevEl: '.fragment01 .active .swiper-button-prev',
-                },
-                on: {
-
-                },
-                breakpoints: {
-                    1400: {
-                        slidesPerView: 3,
-                    },
-                    1000: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        loop:true
-                    }
-                }
-            });
-        }, 1);
-    }
-
-
-    // BEST 여행코스 SWIPER
-    $(document).ready(function(){
-        new Swiper('.fragment02 .swiper-container', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            slidesPerView: 3,
-            spaceBetween: 24,
-            loop: true,
-            navigation: {
-                nextEl: '.fragment02 .swiper-btn-next',
-                prevEl: '.fragment02 .swiper-btn-prev',
-            },
-            breakpoints: {
-                1320: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 1,
-                    loop:true
-                }
-            }
-        });
-    });
 </script>
 </body>
 </html>
