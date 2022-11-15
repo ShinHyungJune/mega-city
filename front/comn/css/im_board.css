@@ -178,6 +178,9 @@
 .m-login-icon {margin-left:10px; position:relative; top:2px;}
 
 @media screen and (max-width:768px) {
+    .m-input-text.type01 input {
+        font-size:14px;
+    }
     .m-login {width:100%; height:auto; position:static; transform:none;}
     .m-login-wrap {width:100%; padding:0px 10px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
     .m-login-left {width:100%; height:auto; padding:30px; float:none; text-align:center;}
@@ -904,15 +907,32 @@
 
 .m-input-text input {width:100%;}
 .m-input-text.type01 {position:relative;}
-.m-input-text.type01 input {width:100%; padding:8px 10px; border:1px solid #e1e1e1;}
+.m-input-text.type01 input {
+    width:100%; padding:8px 10px;
+    font-size:14px;
+    border:1px solid #e1e1e1; border-radius:5px;
+}
 .m-input-text.type01 .m-input-text-deco {position:absolute; right:10px; top:50%; transform:translateY(-50%); color:#979797; font-size:14px;}
 .m-input-textarea.type01 textarea {width:100%; min-height:200px; padding:10px; border:1px solid #e1e1e1; resize:none; }
 
 .m-input-date.type01 {display:inline-block; max-width:260px;}
 .m-input-date.type01 input::-webkit-inner-spin-button {display: none;}
 .m-input-date.type01 input::-webkit-calendar-picker-indicator {opacity: 0;}
-.m-input-date.type01  input {width:100%; padding:6px 10px; background:#fff url('../img/icon_calendar_lightBlack.png')  87% 50% no-repeat; border:1px solid #e1e1e1;}
+.m-input-date.type01  input {
+    width:100%; padding:6px 10px;
+    font-size:14px;
+    background:#fff url('../img/icon_calendar_lightBlack.png')  87% 50% no-repeat; border:1px solid #e1e1e1;  border-radius:5px;
+}
 
+@media screen and (max-width:768px) {
+    .m-input-textarea.type01 textarea {
+        min-height:150px;
+        font-size:14px;
+    }
+    .m-input-date.type01 input {
+        font-size:14px;
+    }
+}
 .m-input-time.type01 {display:inline-block;}
 .m-input-time.type01 + .wave {margin:0 10px;}
 .m-input-time.type01 .m-select {display:inline-block;}
@@ -951,12 +971,14 @@
 .m-input-select.type01::-ms-expand { display: none; }
 
 .m-input-select.type01 {position:relative; overflow:hidden;}
-.m-input-select.type01 select {width:100%; padding:7px 10px; padding-right:30px; border:1px solid #e1e1e1;  background-color:#fff;
+.m-input-select.type01 select {
+    width:100%; padding:7px 10px; padding-right:30px; border:1px solid #e1e1e1;  background-color:#fff;
     cursor:pointer;
-    border-radius:0; /* 아이폰 사파리 보더 없애기 */
+    border-radius:5px; /* 아이폰 사파리 보더 없애기 */
     -webkit-appearance: none; /* 화살표 없애기 for chrome*/
     -moz-appearance: none; /* 화살표 없애기 for firefox*/
     appearance: none;
+    font-size:14px;
 }
 .m-input-select.type01:after {content:""; width:13px; height:9px; position:absolute; right:10px; top:50%; transform:translateY(-50%); background:url("../img/icon_triangle_down_gray.png") no-repeat; background-size:cover;}
 .m-input-select.type01 select::-ms-expand { display: none; }

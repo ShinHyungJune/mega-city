@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>마이페이지 - 위시리스트 상세</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+    <div class="skip-navigation">
+        <a href="#contents_wrap">메뉴 건너뛰기</a>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <!-- 검색창 -->
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../../comn/img/logo.png" alt="홈으로 이동">
+            </a>
+
+            <div class="wrap_gnb">
+                <div class="gnbs gnbs-type01 pc clearfix">
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            추천여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행지
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            지역
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행정보
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            나의여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">HOME</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">로그인</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">강원도청</a>
+                </div>
+
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../comn/img/search.png" alt="">
+                </button>
+
+                <div class="pc btn_sitemap">
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">1차메뉴</p>
+            </div>
+
+            <!-- 이미지 삽입예정 -->
+            <img src="../../comn/img/visual01.jpg" alt="">
+        </div>
+
+        <div class="locate_wrap">
+            <div class="wrap_1200">
+                <div class="locates">
+                    <a href="#" class="locate">
+                        <span class="xi-home img"></span>
+                    </a>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+                            1차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth01" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+                            2차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth02" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="page-title">
+            2차메뉴
+        </h3>
+
+        <div id="contents_wrap" class="contents_wrap">
+            <div class="area-mypage area-mypage-wishes-show">
+                <div class="box-user-top">
+                    <div class="wrap_1200">
+                        <div class="fragment fragment01">
+                            <div class="box-img">
+                                <div class="box-img-inner">
+                                    <a href="#" class="btn-edit">
+                                        <img src="../../comn/img/edit-gray.png" alt="">
+                                    </a>
+
+                                    <div class="m-ratioBox-wrap">
+                                        <div class="m-ratioBox">
+                                            <img src="../../comn/img/profile.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <h3 class="title">
+                                            <span class="point">홍길동</span>님
+                                        </h3>
+
+                                        <p class="body">
+                                            남 <span class="hyphen">|</span> 20대
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fragment fragment02">
+                            <div class="box-top">
+                                <div class="title">
+                                    당신의 취향은?
+
+                                    <button type="button" class="m-script-pop btn-edit" data-target="#m-pop-tags">
+                                        <img src="../../comn/img/edit-gray.png" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="tags">
+                                    <!-- 활동이 없어 수집이 안된 경우
+                                    <div class="tag">아직은 당신의 취향을 알 수 없네요.ㅜㅜ 우리 좀 더 친해져요.</div>
+                                    -->
+                                    <div class="tag">#커플</div>
+                                    <div class="tag">#봄</div>
+                                    <div class="tag">#힐링</div>
+                                    <div class="tag">#커플</div>
+                                    <div class="tag">#봄</div>
+                                    <div class="tag">#힐링</div>
+                                    <div class="tag">#커플</div>
+                                    <div class="tag">#봄</div>
+                                    <div class="tag">#힐링</div>
+                                    <div class="tag">#커플</div>
+                                    <div class="tag">#봄</div>
+                                    <div class="tag">#힐링</div>
+                                </div>
+
+                                <!-- 취향설정 팝업 -->
+                                <div class="m-pop m-pop-tags type01" id="m-pop-tags">
+                                    <div class="m-pop-inner">
+                                        <div class="m-pop-header">
+                                            <p class="m-pop-header-title">
+                                                취향
+                                            </p>
+
+                                            <button class="m-script-pop m-pop-btn-close" data-target="#m-pop-tags">
+                                                <i class="xi-close"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="m-pop-content">
+                                            <div class="box-top">
+                                                <img src="../../comn/img/deco-tag.png" alt="">
+
+                                                <p class="body">
+                                                    기존에 설정된 성향은 “강원 메가시티＂ 홈페이지에서의 활동을 바탕으로
+                                                    여행자님의 취향을 유추한 것입니다.평소에 선호하시는 여행 취향을 설정하시면,
+                                                    당신을 위한 여행지를 추천 받으실 수 있습니다.
+                                                </p>
+                                            </div>
+
+                                            <div class="box-body">
+                                                <div class="fragment">
+                                                    <h3 class="title">일행</h3>
+
+                                                    <div class="m-input-checkboxes">
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="부모" id="부모" checked>
+                                                            <label for="부모">#부모</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="아이" id="아이">
+                                                            <label for="아이">#아이</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="커플" id="커플">
+                                                            <label for="커플">#커플</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="친구" id="친구">
+                                                            <label for="친구">#친구</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="혼자" id="혼자">
+                                                            <label for="혼자">#혼자</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fragment">
+                                                    <h3 class="title">계절</h3>
+
+                                                    <div class="m-input-checkboxes">
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="사계절" id="사계절">
+                                                            <label for="사계절">#사계절</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="봄" id="봄">
+                                                            <label for="봄">#봄</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="여름" id="여름">
+                                                            <label for="여름">#여름</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="가을" id="가을">
+                                                            <label for="가을">#가을</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="겨울" id="겨울">
+                                                            <label for="겨울">#겨울</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fragment">
+                                                    <h3 class="title">테마</h3>
+
+                                                    <div class="m-input-checkboxes">
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="힐링" id="힐링">
+                                                            <label for="힐링">#힐링</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="미식" id="미식">
+                                                            <label for="미식">#미식</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="체험" id="체험">
+                                                            <label for="체험">#체험</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="레포츠" id="레포츠">
+                                                            <label for="레포츠">#레포츠</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="가족여행" id="가족여행">
+                                                            <label for="가족여행">#가족여행</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="자연" id="자연">
+                                                            <label for="자연">#자연</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="드라이브코스" id="드라이브코스">
+                                                            <label for="드라이브코스">#드라이브코스</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="트레킹" id="트레킹">
+                                                            <label for="트레킹">#트레킹</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="비대면안심관광지" id="비대면안심관광지">
+                                                            <label for="비대면안심관광지">#비대면안심관광지</label>
+                                                        </div>
+
+                                                        <div class="m-input-checkbox type03">
+                                                            <input type="checkbox" name="tags" value="실내여행지" id="실내여행지">
+                                                            <label for="실내여행지">#실내여행지</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-result"></div>
+
+                                                <p class="comment">최소 3개를 등록해주세요.</p>
+                                            </div>
+                                            
+                                            <div class="flex btns align-center mt-small">
+                                                <a href="#" class="m-btn type01">
+                                                    적용하기
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxes">
+                                <div class="box-wrap">
+                                    <a href="#" class="box">
+                                        <h3 class="title">
+                                            나의 여행코스
+                                            <i class="xi-angle-right"></i>
+                                        </h3>
+
+                                        <p class="body">3</p>
+                                    </a>
+                                </div>
+
+                                <div class="box-wrap">
+                                    <a href="#" class="box">
+                                        <h3 class="title">
+                                            나의 위시리스트
+                                            <i class="xi-angle-right"></i>
+                                        </h3>
+
+                                        <p class="body">3</p>
+                                    </a>
+                                </div>
+
+                                <div class="box-wrap">
+                                    <a href="#" class="box">
+                                        <h3 class="title">
+                                            나의 리뷰
+                                            <i class="xi-angle-right"></i>
+                                        </h3>
+
+                                        <p class="body">100</p>
+                                    </a>
+                                </div>
+
+                                <div class="box-wrap">
+                                    <a href="#" class="box">
+                                        <h3 class="title">
+                                            나의 위키
+                                            <i class="xi-angle-right"></i>
+                                        </h3>
+
+                                        <p class="body">3</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container">
+                    <div class="wrap_1200">
+                        <button class="btn-toggle">
+                            <i class="active xi-hamburger-out"></i>
+                            <i class="inactive xi-hamburger-back"></i>
+                        </button>
+
+                        <div class="sidebar">
+                            <h3 class="title">마이페이지</h3>
+
+                            <div class="links">
+                                <a href="#" class="link">나의 여행코스</a>
+                                <a href="#" class="link active">위시리스트</a>
+                                <a href="#" class="link">나의 리뷰</a>
+                                <a href="#" class="link">나의 위키</a>
+                                <a href="#" class="link">다운받은 쿠폰</a>
+                            </div>
+                        </div>
+
+                        <div class="box-container-inner">
+                            <h3 class="title">폴더명</h3>
+
+                            <div class="box-top">
+                                <div class="m-inputs">
+                                    <div class="m-input-date type01">
+                                        <input type="date">
+                                    </div>
+                                    <div class="m-input-select type01">
+                                        <select name="" id="">
+                                            <option value="" selected disabled>누구와 떠나시나요?</option>
+                                            <option value="">부모</option>
+                                            <option value="">아이</option>
+                                            <option value="">커플</option>
+                                            <option value="">친구</option>
+                                            <option value="">혼자</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="m-tabs type02">
+                                    <a href="#" class="m-tabs-fakeTab">폴더이동</a>
+                                    <a href="#" class="m-tabs-fakeTab">선택삭제</a>
+                                </div>
+                            </div>
+
+                            <div class="mt-small"></div>
+
+                            <!-- 6개씩 노출 필요 -->
+                            <div class="cards type02">
+                                <div class="card-wrap">
+                                    <!-- 선택됨 -->
+                                    <div class="card active">
+                                        <div class="m-ratioBox-wrap">
+                                            <div class="m-ratioBox">
+                                                <img src="../../comn/img/festival1.jpg" alt="">
+
+                                                <div class="count">
+                                                    <i class="xi-heart"></i>
+                                                    <span class="text">12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="box-text">
+                                            <p class="category">자연</p>
+                                            <h3 class="title">연꽃단지</h3>
+
+                                            <div class="more">
+
+                                                <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-wrap">
+                                    <!-- 선택안됨 -->
+                                    <div class="card">
+                                        <div class="m-ratioBox-wrap">
+                                            <div class="m-ratioBox">
+                                                <img src="../../comn/img/festival1.jpg" alt="">
+
+                                                <div class="count">
+                                                    <i class="xi-heart"></i>
+                                                    <span class="text">12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="box-text">
+                                            <p class="category">자연</p>
+                                            <h3 class="title">연꽃단지</h3>
+
+                                            <div class="more">
+
+                                                <p class="before-location">강원 양구군 양구읍 고대리 647-1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-middle"></div>
+
+                            <!-- 더보기 -->
+                            <div class="m-pagination btns align-center">
+                                <a href="#" class="btn type02 type-blue">
+                                    더보기
+
+                                    <i class="xi-plus plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
+
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
+
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+<script>
+
+</script>
+</body>
+</html>

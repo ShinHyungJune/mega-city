@@ -2081,6 +2081,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .map.type04 .sidebar-box01 .content .sub .point {font-size:14px; font-weight:300; color:#ffe71c;}
 .map.type04 .sidebar-box01 .btn-more {display:block; width:40px; height:40px; margin:0 auto; margin-top:20px;  border:1px solid #e1e1e1; opacity:0.7; transition: opacity .3s;}
 .map.type04 .sidebar-box01 .btn-more:hover {opacity:1;}
+.map.type04 .sidebar-box01 .btn-more img {
+    width:20px;
+}
 
 .map.type04 .box-distance {padding:8px; text-align:center; background-color:#f8f8f8; border:1px solid #dddddd; border-right:none; border-left:none;}
 .map.type04 .box-distance .text {margin-left:10px; position:relative; top:-2px; font-size:14px; color:#949494;}
