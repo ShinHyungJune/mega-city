@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>VR 가상여행</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../comn/css/default.css">
+    <link rel="stylesheet" href="../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../comn/css/animate.css">
+    <link rel="stylesheet" href="../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../comn/css/common.css">
+    <link rel="stylesheet" href="../comn/css/im_board.css">
+    <link rel="stylesheet" href="../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../comn/js/swiper.min.js"></script>
+    <script src="../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../comn/js/map.js"></script>
+    <script src="../comn/js/common.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="skip-navigation">
+    <a href="#contents_wrap">메뉴 건너뛰기</a>
+</div>
+
+<!-- main-vr 클래스 추가 필요 -->
+<div id="app" class="main-vr">
+    <header class="header header-type01">
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../comn/img/logo-vr.png" alt="홈으로 이동">
+            </a>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">강원메가시티 바로가기</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="contents_wrap" id="contents_wrap">
+            <div class="area-vr">
+
+                <div class="intro">
+                    <div class="content">
+                        <h3 class="title">
+                            강원도
+                            <br/>가상여행
+                        </h3>
+
+                        <img src="../comn/img/rotate-gray.png" alt="" class="rotate">
+
+
+                        <p class="body">VR</p>
+                    </div>
+
+                    <div class="decos">
+                        <i class="xi-caret-down-min"></i>
+                        <i class="xi-caret-down-min"></i>
+                        <i class="xi-caret-down-min"></i>
+                    </div>
+                </div>
+
+                <!-- 메인배너 -->
+                <div class="section section01">
+                    <div class="content">
+                        <h3 class="title">
+                            <span class="point">VR</span>로 생생하게
+                            <br/>강원도 가상여행
+                        </h3>
+
+                        <img src="../comn/img/rotate-gray.png" alt="" class="rotate">
+
+                        <p class="body">VR</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
+
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
+
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
+        </div>
+    </footer>
+</div>
+<script>
+
+    $("html, body").addClass("inactive-vr");
+    $("html,body").on("wheel", function(){
+        $(".intro").animate({opacity: 0}, 600, function(){
+            $(".intro").hide();
+            $("html, body").removeClass("inactive-vr");
+            $(".section01").addClass("active");
+        });
+
+    });
+
+</script>
+</body>
+</html><!-- //하단부분 -->

@@ -2676,4 +2676,175 @@
 }
 @media screen and (max-width:768px) {}
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 60px, 0);
+        transform: translate3d(0, 60px, 0);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
+    }
+}
+/*fadeInUp 1s both 0.7s cubic-bezier(0.34, 1, 0.64, 1)*/
+
+.main-vr {}
+.main-vr .main {
+    padding-top:0;
+}
+.main-vr .header {
+    padding-top:50px; background-color:transparent;
+}
+.main-vr .header .right {
+    margin-left:auto;
+}
+.main-vr .header .right .link {
+    color:#fff;
+}
+.area-vr .intro {
+    content:"";
+    animation:fadeIn 1.4s cubic-bezier(0.34, 1, 0.64, 1) forwards;
+    animation-delay: .6s;
+    display:flex; align-items: center; justify-content: center;
+    width:100%; height:100vh;
+    position:fixed; top:0; left:0;
+    text-align: center;
+    background-color:rgba(40,37,63);
+    z-index:100;
+}
+@keyframes fadeIn {
+    from {
+        background-color:rgba(40,37,63);
+    }
+    to {
+        background-color:rgba(40,37,63,0.6);
+    }
+}
+
+.inactive-vr {
+    overflow:hidden;
+}
+.inactive-vr .section01 .title {
+    opacity:0;
+}
+
+
+.area-vr .intro {
+
+
+}
+.area-vr .intro .title {
+    font-size:90px; font-weight:bold; font-family: NanumSquare; color:#fff;
+}
+.area-vr .intro .rotate {
+    margin:40px 0;
+}
+.area-vr .intro .body {
+    font-size:80px; font-family: ScoreDream; font-weight:500; color:#fff;
+}
+.area-vr .intro .decos {
+    position:absolute;
+    bottom:60px; left:50%; transform:translateX(-50%);
+}
+.area-vr .intro .decos i {
+    display:block;
+    margin:-5px 0;
+    font-size:20px;
+    color:#fff;
+}
+.area-vr .intro .decos i:nth-child(1){ animation: arrows 1.5s linear infinite -0.6s;}
+.area-vr .intro .decos i:nth-child(2){ animation: arrows 1.5s linear infinite -0.3s;}
+.area-vr .intro .decos i:nth-child(3){ animation: arrows 1.5s linear infinite;}
+
+
+.area-vr .section01 {
+    display:flex; align-items: center; justify-content: center;
+    height:100vh;
+    text-align: center;
+    background:url("../img/vr-jumbotron01.jpg") no-repeat; background-size:cover; background-position:center;
+}
+.area-vr .section01 .body {
+    opacity:0;
+}
+.area-vr .section01 .title {
+    opacity:0;
+    font-size:90px; font-weight:300; font-family: NanumSquare; color:#fff;
+}
+.area-vr .section01 .title .point {
+    font-size:90px; font-weight:bold; font-family: NanumSquare; color:#fff;
+}
+.area-vr .section01 .rotate {
+    margin:40px 0;
+}
+.area-vr .section01 .body {
+    font-size:80px; font-family: ScoreDream; font-weight:500; color:#fff;
+}
+.area-vr .section01.active .title {
+    animation:fadeInUp 1s both 0.7s cubic-bezier(0.34, 1, 0.64, 1);
+}
+
+@keyframes arrows {
+    0% {
+        opacity:0;
+        transform: translateY(-1rem);
+    }
+    33% {
+        opacity:0;
+        transform: translateY(-0.5rem);
+    }
+    66% {
+        opacity:1;
+        transform: translateY(0);
+    }
+    100% {
+
+        opacity:0;
+        transform: translateY(0.5rem);
+    }
+}
+
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:1320px) {}
+@media screen and (max-width:768px) {}
 
