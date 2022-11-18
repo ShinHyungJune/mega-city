@@ -1535,7 +1535,15 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .area_vr .sidebar .btn-up {position:absolute; top:131px; left:0; z-index:1; border-bottom:none !important; border-top:none !important;}
 .area_vr .sidebar .btn-down {position:absolute; bottom:0; left:0; z-index:1;}
-.area_vr .sidebar .menus-wrap .box-logo {width:100%; padding:20px 10px; position:absolute; top:0; right:0; background-color:#1e70cd; z-index:2;}
+.area_vr .sidebar .menus-wrap .box-logo {
+    display:flex; align-items: center; justify-content: center;
+    width:100%; height:130px;
+    padding:20px 10px;
+    position:absolute; top:0; right:0; background-color:#fdb728; z-index:2;
+}
+.area_vr .sidebar .menus-wrap .box-logo img {
+    width:140px;
+}
 .area_vr .sidebar .menus-wrap > .menu {display:flex; align-items: center; justify-content: center; width:100%; padding:20px 10px; font-size:15px; font-weight:500; border-top:1px solid #4d4d4d; color:#fff; background-color:#353535; transition: all .3s;}
 .area_vr .sidebar .menus-wrap  > .menus > .menu {display:flex; align-items: center; justify-content: center; width:100%; padding:20px 10px; word-break:break-word; font-size:15px; font-weight:500; border-top:1px solid #4d4d4d; color:#fff; background-color:#353535; transition: all .3s;}
 .area_vr .sidebar .menus-wrap  > .menus > .menu:hover {background-color:#525252;}
@@ -1575,9 +1583,10 @@ input[type="number"]::-webkit-inner-spin-button {
 @media screen and (max-width:768px){
     #app.type02 .header {justify-content: flex-start;}
     #app.type02 .header .title {display:none;}
-    .area_vr .controls {top: 25px; right:10px; transform:translateY(0); z-index:110;}
-    .area_vr .sidebar .menus-wrap .box-logo {padding:10px;}
-    .area_vr .sidebar .menus-wrap .box-logo img {width:50px; position:relative; top:2px;}
+    .area_vr .controls {top: 25px; right:10px;}
+    ransform:translateY(0); z-index:110;}
+    .area_vr .sidebar .menus-wrap .box-logo {height:77px; padding:10px;}
+    .area_vr .sidebar .menus-wrap .box-logo img {width:100px; position:relative; top:2px;}
     .area_vr .sidebar .menus-wrap > .menus > .menu {padding:15px 10px; font-size:14px;}
     .area_vr .sidebar .menus-wrap > .menus > .menus > .menu {font-size:14px;}
     .area_vr .sidebar .menus-wrap > .menu img {width:20px;}
@@ -1602,7 +1611,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .area_vr .iframe {width:100%; height:100%; position:absolute; top:0; left:0; z-index:100;}
 .header.type02:after {content:""; width:100%; height:150px; position:absolute; top:0; left:0; background:url("../img/base-black.png") no-repeat; background-size:cover; transform:rotate(180deg); z-index:1;}
-.header.type02 .logo {z-index:2; position:absolute; left:40px; top:40px; transition: all .6s;}
+.header.type02 .logo {z-index:2; position:absolute; left:40px; top:54px; transition: all .6s;}
 .header.type02 .title {position:absolute; left:50%; top:44px; font-size:30px; font-weight:500; text-align:center; color:#fff; transform:translateX(-50%); z-index:2; text-shadow:0px 3px 6px rgba(0,0,0,0.16); transition: all .6s;}
 .header.type02.fold .logo {top:0; opacity:0;}
 .header.type02.fold .title {top:0; opacity:0;}

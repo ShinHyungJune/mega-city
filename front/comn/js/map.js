@@ -133,6 +133,9 @@ function addMarker(item, index, type){
 
 	// 마커 클릭 이벤트
 	kakao.maps.event.addListener(marker.content, 'click', function(){
+		if(type === "type-vr")
+			return location.href = item.detailLink;
+
 		// 열려있던 정보창 닫기
 		infos.map(function(info){
 			info.content.close()
