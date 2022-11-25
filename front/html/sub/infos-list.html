@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>여행자 지원정보 목록</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+    <div class="skip-navigation">
+        <a href="#contents_wrap">메뉴 건너뛰기</a>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <!-- 검색창 -->
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../../comn/img/logo.png" alt="홈으로 이동">
+            </a>
+
+            <div class="wrap_gnb">
+                <div class="gnbs gnbs-type01 pc clearfix">
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            추천여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행지
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            지역
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행정보
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            나의여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">HOME</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">로그인</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">강원도청</a>
+                </div>
+
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../comn/img/search.png" alt="">
+                </button>
+
+                <div class="pc btn_sitemap">
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">1차메뉴</p>
+            </div>
+
+            <!-- 이미지 삽입예정 -->
+            <img src="../../comn/img/visual01.jpg" alt="">
+        </div>
+
+        <div class="locate_wrap">
+            <div class="wrap_1200">
+                <div class="locates">
+                    <a href="#" class="locate">
+                        <span class="xi-home img"></span>
+                    </a>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+                            1차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth01" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+                            2차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth02" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="page-title">
+            2차메뉴
+        </h3>
+
+        <div id="contents_wrap" class="contents_wrap">
+
+            <div class="area-infos-list">
+                <div class="wrap_1200">
+                    <!-- 정렬버튼 & 검색창 -->
+                    <div class="box-search type01">
+                        <div class="orders type01">
+                            <button class="order">총 <span class="point">1,000</span>건</button>
+                        </div>
+
+                        <div class="fragment">
+                            <fieldset>
+                                <legend>게시물 검색</legend>
+                                <form id="theForm" action="boardList" method="get">
+                                    <div class="m-search type02">
+                                        <div class="m-search-select-wrap">
+                                            <select class="m-search-select" id="search_type" name="search_type" title="검색구분 선택">
+                                                <option value="">제목</option>
+                                            </select>
+                                        </div>
+
+                                        <input class="m-search-input" id="search_keyword" name="search_keyword" title="검색어를 입력하세요." type="text" value="" placeholder="검색어를 입력하세요.">
+                                        <button class="m-search-btn" type="submit">
+                                            <span class="m-search-btn-text">검색</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="mt-middle"></div>
+
+                    <div class="cards type02">
+                        <div class="card-wrap">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <h3 class="title">관광안내소</h3>
+                                    <p class="body">
+                                        여행 중 도움이 필요할 땐 관광안내소를 방문해 보세요.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-wrap">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <h3 class="title">여행 중 분실물이 있다면?</h3>
+                                    <p class="body">
+                                        문화유적지에 대해 흥미있는 해설과 안내를 해주실 수 있는 전문해설사입니다.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card-wrap">
+                            <a href="#" class="card">
+                                <div class="m-ratioBox-wrap">
+                                    <div class="m-ratioBox">
+                                        <img src="../../comn/img/festival1.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="box-text">
+                                    <h3 class="title">관광안내소</h3>
+                                    <p class="body">
+                                        여행 중 도움이 필요할 땐 관광안내소를 방문해 보세요.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-middle"></div>
+
+                    <!-- 더보기 -->
+                    <div class="m-pagination btns align-center">
+                        <a href="#" class="btn type02 type-blue">
+                            더보기
+
+                            <i class="xi-plus plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
+
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
+
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

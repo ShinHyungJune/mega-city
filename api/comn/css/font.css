@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+
+@font-face {
+	font-family: 'Nanum Myeongjo';
+	font-weight:400;
+	src: url(font/NanumMyeongjo.woff) format('woff'),
+		   url(font/NanumMyeongjo.otf) format('opentype');
+}
+@font-face {
+	font-family: 'S-CoreDream-9Black';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

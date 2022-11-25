@@ -148,6 +148,11 @@ html, body {overflow-x:hidden;}
 .visual_wrap .box_text {position:absolute; top:46%; left:50%; transform:translate(-50%, -50%); text-align:center; z-index:2;}
 .visual_wrap .box_text .body {opacity:0.5; font-size:18px; color:#fff;}
 
+@media screen and (min-width:1920px) {
+    .visual_wrap img {
+        width:100%; height:auto;
+    }
+}
 .sub .contents_wrap { padding-bottom:100px;}
 .contents_wrap {min-height:500px; }
 .sub_wrap {margin-top:-36px; position:relative; text-align:center;}

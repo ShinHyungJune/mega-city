@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>시티투어</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5e85237532da8edfc3cc9905f1abdd8c&libraries=services,clusterer,drawing"></script>
+    <script src="../../comn/js/map.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+<!-- 서브페이지는 sub 클래스 필요 -->
+<div id="app" class="sub">
+    <div class="skip-navigation">
+        <a href="#contents_wrap">메뉴 건너뛰기</a>
+    </div>
+
+    <header class="header header-type01">
+        <div class="pc base_depth02"></div>
+
+        <!-- 검색창 -->
+        <div id="search">
+            <div class="fragment">
+                <div class="input input_search">
+                    <input type="text">
+                    <button class="input_search_btn">
+                        <img src="../../comn/img/icon_search_gray.png" alt="검색하기">
+                    </button>
+                </div>
+            </div>
+
+            <button type="button" class="btn_close_pop" data-target="#search">
+                <img src="../../comn/img/icon_x_gray.png" alt="">
+            </button>
+        </div>
+
+        <!-- gnb, logo, sitemap -->
+        <div class="middle clearfix">
+            <a href="#" class="logo">
+                <img src="../../comn/img/logo.png" alt="홈으로 이동">
+            </a>
+
+            <div class="wrap_gnb">
+                <div class="gnbs gnbs-type01 pc clearfix">
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            추천여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행지
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            지역
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            여행정보
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+
+                    <div class="gnb">
+                        <a href="#" class="text">
+                            나의여행
+                        </a>
+                        <div class="depth02">
+                            <a href="#">서브01</a>
+                            <a href="#">서브02</a>
+                            <a href="#">서브03</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="links">
+                    <a href="#" class="link">HOME</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">로그인</a>
+                    <span class="deco">·</span>
+                    <a href="#" class="link">강원도청</a>
+                </div>
+
+                <button class="btn_search btn_open_pop" data-target="#search">
+                    <img src="../../comn/img/search.png" alt="">
+                </button>
+
+                <div class="pc btn_sitemap">
+
+                </div>
+
+                <div class="block m"></div>
+
+                <div class="m wrap_hamburger btn_menu">
+                    <button class="hamburger hamburger_type01" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일용-->
+        <div class="gnbs m clearfix">
+            <div class="gnb">
+                <p class="text">
+                    메뉴1
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                    <a href="#">서브4</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴2
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+
+            <div class="gnb">
+                <p class="text">
+                    메뉴3
+                    <span class="m icon-arrow"></span>
+                </p>
+                <div class="depth02">
+                    <a href="#">서브1</a>
+                    <a href="#">서브2</a>
+                    <a href="#">서브3</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="visual_wrap">
+            <div class="box_text">
+                <p class="title">1차메뉴</p>
+            </div>
+
+            <!-- 이미지 삽입예정 -->
+            <img src="../../comn/img/visual01.jpg" alt="">
+        </div>
+
+        <div class="locate_wrap">
+            <div class="wrap_1200">
+                <div class="locates">
+                    <a href="#" class="locate">
+                        <span class="xi-home img"></span>
+                    </a>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
+                            1차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth01" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+
+                    <div class="box-locate">
+                        <button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
+                            2차메뉴
+                            <span class="xi-angle-down img"></span>
+                        </button>
+                        <div id="depth02" class="subs">
+                            <a href="#">서브1</a>
+                            <a href="#">서브2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="page-title">
+            2차메뉴
+        </h3>
+
+        <div id="contents_wrap" class="contents_wrap">
+            <div class="wrap_1200">
+                <!-- 검색 -->
+                <fieldset>
+                    <legend>게시물 검색</legend>
+                    <form id="theForm" action="boardList" method="get">
+                        <div class="m-search type01">
+
+                            <div class="m-search-select-wrap">
+                                <select class="m-search-select" id="" name="" title="">
+                                    <option value="">분류선택</option>
+                                </select>
+                            </div>
+
+                            <div class="m-search-select-wrap">
+                                <select class="m-search-select" id="search_type" name="search_type" title="검색구분 선택">
+                                    <option value="">선택</option>
+                                    <option value="1">제목</option>
+                                    <option value="2">내용</option>
+                                    <option value="3">작성자</option>
+                                </select>
+                            </div>
+
+                            <input class="m-search-input" id="search_keyword" name="search_keyword" title="검색어 입력" type="text" value="" placeholder="검색어를 입력하세요.">
+                            <button class="m-search-btn" type="submit">
+                                <span class="m-search-btn-text">검색</span>
+                            </button>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <div class="m-guide-total">
+                    총 게시물 <strong>15</strong>건
+                </div>
+
+                <!-- admin 클래스 설명
+                - 관리자 권한일 경우, 게시판 최상단 태그에 admin 클래스를 붙여 only-admin 클래스가 붙은 태그들 화면에 노출
+                -->
+                <div class="m-boards type-general01 admin">
+                    <summary>게시판 내용</summary>
+
+                    <p class="m-boards-comment">※ 홍보 및 비방의 목적을 갖은 글은 관리자의 의해 무단삭제됨을 알려드립니다.</p>
+
+                    <table>
+                        <!-- only-pc : 모바일에선 노출 x -->
+                        <!-- only-admin : 관리자에서만 노출 x -->
+                        <thead class="only-admin">
+                        <tr>
+                            <th scope="col" class="only-pc">번호</th>
+                            <th scope="col">분류</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">답변</th>
+                            <th scope="col" class="only-pc">답변일</th>
+                            <th scope="col">상태</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="m-board">
+                            <td class="only-pc">
+                                <img src="../../comn/img/icon_circle_notice_blue.png" alt="공지사항">
+                            </td>
+                            <td>
+                                <span class="m-board-tag">공지사항</span>
+                            </td>
+                            <td class="m-board-main align-left">
+                                <!-- 제목글 아이콘 클래스 설명
+                                비밀글 : after-lock
+                                새로운글 : after-new
+                                -->
+                                <a href="#" class="m-board-title after-lock">Q&A 질문 제목 영역입니다.</a>
+                            </td>
+                            <td>
+                                <p class="m-board-body">관리자</p>
+                            </td>
+                            <td>
+                                <p class="m-board-body">2019-09-30</p>
+                            </td>
+                            <td class="only-pc">
+                                <!-- <p class="m-board-body gray">대기</p> -->
+                                <p class="m-board-body medium">완료</p>
+                            </td>
+                            <td class="only-admin">
+                                <p class="m-board-body only-pc">2020-01-30</p>
+                            </td>
+                            <td class="only-admin">
+                                <span class="m-board-state m-board-state01">정상</span>
+                            </td>
+                        </tr>
+
+                        <tr class="m-board">
+                            <td class="only-pc">
+                                <p class="m-board-body">1</p>
+                            </td>
+                            <td>
+                                <span class="m-board-tag">공지사항</span>
+                            </td>
+                            <td class="m-board-main align-left">
+                                <!-- 제목글 아이콘 클래스 설명
+                                비밀글 : after-lock
+                                새로운글 : after-new
+                                -->
+                                <a href="#" class="m-board-title after-lock">Q&A 질문 제목 영역입니다.</a>
+                            </td>
+                            <td>
+                                <p class="m-board-body">관리자</p>
+                            </td>
+                            <td>
+                                <p class="m-board-body">2019-09-30</p>
+                            </td>
+                            <td class="only-pc">
+                                <p class="m-board-body gray">대기</p>
+                                <!-- <p class="m-board-body medium">완료</p> -->
+                            </td>
+                            <td class="only-admin">
+                                <p class="m-board-body only-pc">-</p>
+                            </td>
+                            <td class="only-admin">
+                                <span class="m-board-state m-board-state02">차단</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="m-boards-btns align-right">
+                        <a href="#" class="m-boards-btn">글쓰기</a>
+                    </div>
+                </div>
+
+
+
+                <div class="m-pagination type01">
+                    <div class="m-pagination-pages">
+                        <a href="?page=1" class="m-pagination-first" title="처음 페이지로 이동"></a>
+                        <a href="javascript:;" class="m-pagination-prev" title="이전 페이지로 이동"></a>
+                        <span>1</span>
+                        <a href="?page=2">2</a>
+                        <a href="?page=3">3</a>
+                        <a href="?page=4">4</a>
+                        <a href="?page=5">5</a>
+                        <a href="?page=6" class="m-pagination-next" title="다음 페이지로 이동"></a>
+                        <a href="?page=11" class="m-pagination-last" title="마지막 페이지로 이동"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer clearfix">
+        <div class="box_middle">
+            <div class="box_top">
+                <div class="wrap_1200">
+                    <div class="links">
+                        <a href="#" class="link point">개인정보처리방침</a>
+                        <a href="#" class="link">영상정보처리기기관리방침</a>
+                        <a href="#" class="link">저작권 보호</a>
+                    </div>
+
+                    <button class="btn_top">
+                        <span class="xi-angle-up"></span>
+                        TOP
+                    </button>
+                </div>
+            </div>
+
+            <div class="wrap_1200">
+                <div class="fragment">
+                    <p class="info">
+                        강원 춘천시 동면 춘천순환로 609 7층(서유빌딩)
+                    </p>
+                    <p class="copyright">
+                        COPYRIGHTⓒ Gangwon-do. All Rights reserved.
+                    </p>
+                </div>
+
+                <img src="../../comn/img/logo_footer.png" alt="청춘양구" class="logo">
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
