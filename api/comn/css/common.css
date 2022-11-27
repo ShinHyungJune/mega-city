@@ -1057,8 +1057,7 @@ html, body {overflow-x:hidden;}
 .groupReservation-wrap.step05 .info:first-child {margin-top:0px;}
 
 label {cursor:pointer;}
-.input input {width:100%; padding:10px 10px;}
-.input select {width:100%; padding:9px 10px;}
+
 .input_select select {width:100%; border:1px solid #e1e1e1;}
 .input_text input {border:1px solid #e1e1e1;}
 .input_text label {display:inline-block; width:50px; font-size:16px;}
@@ -1417,7 +1416,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .footer .btn_top {
         width:60px; height:60px; border:none;
         position:fixed; bottom:20px; right:20px;
-        background-color:#fdb728;
+        background-color:#004264;
         border-radius:3px;
         z-index:10;
 
@@ -1667,15 +1666,17 @@ input[type="number"]::-webkit-inner-spin-button {
 .btn.type01.with-plus .plus img {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
 .btn.type01.with-plus:hover .plus img {transform:translate(-50%, -50%) rotate(360deg);}
 
-.btn.type02 {min-width:135px; padding:10px 20px; font-size:18px;
+.btn.type02 {
+    display:inline-block;
+    min-width:135px; padding:10px 20px; font-size:16px;
     transition: all .3s;
 }
 .btn.type02.type-white {color:#b5b5b5; border:1px solid #b5b5b5;}
-.btn.type02.type-blue {background-color:#fdb728; color:#333;}
+.btn.type02.type-blue {background-color:#7a7a7a; color:#fff;}
 .btn.type02.type-gray {background-color:#999999; color:#fff;}
 .btn.type02.type-navy {background-color:#102c5f; color:#fff;}
 .btn.type02 .plus {
-    transition: all .3s;
+    transition: all .3s; color:#fff;
 }
 .btn.type02:hover {transform:translate(-5px, -5px); box-shadow:0px 3px 6px rgba(0,0,0,0.16);}
 .btn.type02:hover .plus {

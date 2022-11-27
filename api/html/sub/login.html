@@ -185,85 +185,67 @@
 
 
     <div class="main">
-        <div class="visual_wrap">
-            <div class="box_text">
-                <p class="title">1차메뉴</p>
-            </div>
-
-            <!-- 이미지 삽입예정 -->
-            <img src="../../comn/img/visual01.jpg" alt="">
-        </div>
-
-        <div class="locate_wrap">
+        <div class="box-container">
             <div class="wrap_1200">
-                <div class="locates">
-                    <a href="#" class="locate">
-                        <span class="xi-home img"></span>
-                    </a>
+                <button class="btn-toggle">
+                    <i class="active xi-hamburger-out"></i>
+                    <i class="inactive xi-hamburger-back"></i>
+                </button>
 
-                    <div class="box-locate">
-                        <button type="button" class="m-script-pop" data-target="#depth01" data-animation="toggle">
-                            1차메뉴
-                            <span class="xi-angle-down img"></span>
-                        </button>
-                        <div id="depth01" class="subs">
-                            <a href="#">서브1</a>
-                            <a href="#">서브2</a>
+                <div class="sidebar">
+                    <h3 class="title">1차메뉴</h3>
+
+                    <div class="links">
+                        <a href="#" class="link active">2차메뉴</a>
+                        <a href="#" class="link">2차메뉴</a>
+                        <a href="#" class="link">2차메뉴</a>
+                        <a href="#" class="link">2차메뉴</a>
+                    </div>
+                </div>
+
+                <div class="box-container-inner">
+                    <div class="title">
+                        2차메뉴
+
+                        <div class="locates">
+                            <p class="locate">1차메뉴</p>
+                            <p class="locate">2차메뉴</p>
                         </div>
                     </div>
 
-                    <div class="box-locate">
-                        <button type="button" class="m-script-pop" data-target="#depth02" data-animation="toggle">
-                            2차메뉴
-                            <span class="xi-angle-down img"></span>
-                        </button>
-                        <div id="depth02" class="subs">
-                            <a href="#">서브1</a>
-                            <a href="#">서브2</a>
+                    <!-- 내용 영역 -->
+                    <div id="contents_wrap" class="contents_wrap">
+                        <div class="area-login">
+                            <h3 class="title">
+                                API센터 로그인
+                            </h3>
+
+                            <div class="mt-middle"></div>
+
+                            <div class="inputs">
+                                <div class="m-input-text type01">
+                                    <input type="text" placeholder="이메일">
+                                </div>
+                                <div class="m-input-text type01">
+                                    <input type="password" placeholder="비밀번호">
+                                </div>
+                            </div>
+
+                            <div class="mt-small"></div>
+
+                            <a href="#" class="m-btn type01">로그인</a>
+
+                            <div class="mt-small"></div>
+
+                            <div class="links">
+                                <a href="#" class="link">아이디찾기</a>
+                                <span class="hyphen">|</span>
+                                <a href="#" class="link">비밀번호찾기</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <h3 class="page-title">
-            2차메뉴
-        </h3>
-
-        <div id="contents_wrap" class="contents_wrap">
-            <div class="m-login-social">
-                <div class="wrap_1200">
-                    <div class="m-login-social-box">
-                        <p class="comment">
-                            기존에 이용중인 SNS계정으로
-                            <br/>손쉽게 로그인을 하세요.
-                        </p>
-
-                        <div class="socials">
-                            <a href="#" class="social naver">
-                                <img src="../../comn/img/img_circle_naver.png" alt="">
-                                네이버 로그인
-                            </a>
-
-                            <a href="#" class="social facebook">
-                                <img src="../../comn/img/img_circle_facebook.png" alt="">
-                                페이스북 로그인
-                            </a>
-
-                            <a href="#" class="social google">
-                                <img src="../../comn/img/img_circle_google.png" alt="">
-                                구글 로그인
-                            </a>
-
-                            <a href="#" class="social kakao">
-                                <img src="../../comn/img/img_circle_kakao.png" alt="">
-                                카카오 로그인
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 

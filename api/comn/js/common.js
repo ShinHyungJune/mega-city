@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	if($(".area-login").length > 0 || $(".area-register").length > 0){
+		$(".sidebar").hide();
+		$(".box-container-inner > .title").hide();
+		$(".box-container > .wrap_1200 > .btn-toggle").hide();
+	}
+
 	$(".box-container .btn-toggle").click(function(){
 		$(this).toggleClass("active");
 		$(".box-container .sidebar").toggleClass("active");
