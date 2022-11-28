@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>여행지관리 > 등록</title>
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css">
+
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script>
+</head>
+<body>
+
+<div class="wrap_1200">
+    <div class="m-boardWrite type-general01">
+        <div class="wrap-table">
+            <table>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                        게시상태 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-radio type02">
+                            <input type="radio" id="" name="" checked>
+                            <label for="">정상</label>
+                        </div>
+                        <div class="m-input-radio type02">
+                            <input type="radio" id="" name="">
+                            <label for="">차단</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        수집 사이트 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-radio type02">
+                            <input type="radio" id="" name="" checked>
+                            <label for="">대한민국구석구석</label>
+                        </div>
+                        <div class="m-input-radio type02">
+                            <input type="radio" id="" name="">
+                            <label for="">스마트관광DB</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        여행지 구분 <span class="start">*</span>
+                    </th>
+                    <td>
+                        <div class="m-select type01">
+                            <select name="" id="" title="">
+                                <option value="" disabled selected>선택</option>
+                                <option value="">관광지</option>
+                                <option value="">음식점</option>
+                                <option value="">숙박</option>
+                                <option value="">축제&행사</option>
+                                <option value="">쇼핑</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        세부 분류 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-checkbox type01">
+                            <input type="checkbox" id="">
+                            <label for="">자연</label>
+                        </div>
+                        <div class="m-input-checkbox type01">
+                            <input type="checkbox" id="">
+                            <label for="">역사</label>
+                        </div>
+                        <div class="m-input-checkbox type01">
+                            <input type="checkbox" id="">
+                            <label for="">문화</label>
+                        </div>
+                        <div class="m-input-checkbox type01">
+                            <input type="checkbox" id="">
+                            <label for="">체험</label>
+                        </div>
+
+                        <p class="comment">※ 사용자 플레이스 메뉴 분류를 구분합니다. 복수 선택 가능</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        여행지 명 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-text type01">
+                            <input type="text" title="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        전화번호 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-text type01">
+                            <input type="text" title="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        주소 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-withBtn type01">
+                            <div class="m-input-text type01">
+                                <input type="text" title="" disabled>
+                            </div>
+
+                            <a href="#" class="m-input-btn m-boards-btn">주소 찾기</a>
+                        </div>
+
+                        <div class="mt-small"></div>
+
+                        <div class="m-input-text type01">
+                            <input type="text" disabled>
+                        </div>
+
+                        <div class="mt-small"></div>
+
+                        <div class="m-input-text type01">
+                            <input type="text" placeholder="나머지 주소">
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        상세내용 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-input-textarea type01">
+                            <textarea name="" id="" title=""></textarea>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        한줄내용
+                    </th>
+                    <td>
+                        <div class="m-input-text type01">
+                            <input type="text" title="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        업종
+                    </th>
+                    <td>
+                        <div class="m-input-text type01">
+                            <input type="text" title="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        홈페이지
+                    </th>
+                    <td>
+                        <div class="m-input-text type01">
+                            <input type="text" title="">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        해시태그 <span class="star">*</span>
+                    </th>
+                    <td>
+                        <div class="m-hashtags type01">
+                            <div class="fragment">
+                                <h3 class="title">일행</h3>
+
+                                <div class="m-input-checkboxes">
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="부모" id="부모" checked="">
+                                        <label for="부모">#부모</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="아이" id="아이">
+                                        <label for="아이">#아이</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="커플" id="커플">
+                                        <label for="커플">#커플</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="친구" id="친구">
+                                        <label for="친구">#친구</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="혼자" id="혼자">
+                                        <label for="혼자">#혼자</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fragment">
+                                <h3 class="title">계절</h3>
+
+                                <div class="m-input-checkboxes">
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="사계절" id="사계절">
+                                        <label for="사계절">#사계절</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="봄" id="봄">
+                                        <label for="봄">#봄</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="여름" id="여름">
+                                        <label for="여름">#여름</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="가을" id="가을">
+                                        <label for="가을">#가을</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="겨울" id="겨울">
+                                        <label for="겨울">#겨울</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fragment">
+                                <h3 class="title">테마</h3>
+
+                                <div class="m-input-checkboxes">
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="힐링" id="힐링">
+                                        <label for="힐링">#힐링</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="미식" id="미식">
+                                        <label for="미식">#미식</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="체험" id="체험">
+                                        <label for="체험">#체험</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="레포츠" id="레포츠">
+                                        <label for="레포츠">#레포츠</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="가족여행" id="가족여행">
+                                        <label for="가족여행">#가족여행</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="자연" id="자연">
+                                        <label for="자연">#자연</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="드라이브코스" id="드라이브코스">
+                                        <label for="드라이브코스">#드라이브코스</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="트레킹" id="트레킹">
+                                        <label for="트레킹">#트레킹</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="비대면안심관광지" id="비대면안심관광지">
+                                        <label for="비대면안심관광지">#비대면안심관광지</label>
+                                    </div>
+
+                                    <div class="m-input-checkbox type03">
+                                        <input type="checkbox" name="tags" value="실내여행지" id="실내여행지">
+                                        <label for="실내여행지">#실내여행지</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-middle"></div>
+
+                        <div class="m-input-text type01">
+                            <input type="text" id="" style="width:40%" placeholder="해시태그 입력 후 엔터키를 눌러 추가하세요." maxlength="25">
+                        </div>
+                        <div id="hashtagArea" style="margin-top:10px">
+                            <span class="m-board-state m-board-state02" style="margin-right:10px">
+                                #123
+                                <a href="#" class="tag-close">x</a>
+                            </span>
+                            <span class="m-board-state m-board-state02" style="margin-right:10px">
+                                #123
+                                <a href="#" class="tag-close">x</a>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        추가정보
+                    </th>
+                    <td>
+                        <table class="table_basic">
+                            <thead>
+                            <tr>
+                                <th>순서</th>
+                                <th>필드명</th>
+                                <th>필드내용</th>
+                                <th>
+                                    <a href="#" class="m-boards-btn">추가</a>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="ico ico_mouse_sort handle ui-sortable-handle"></span>
+                                </td>
+                                <td>
+                                    <div class="m-input-text type01">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="m-input-text type01">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#" class="m-boards-btn bg-red">삭제</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        비밀글
+                    </th>
+                    <td>
+                        <div class="m-input-checkbox type01">
+                            <input type="checkbox" id="">
+                            <label for="">비밀글</label>
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="m-boardWrite-images">
+            <!-- 대표 이미지 설정 -->
+            <div class="m-boardWrite-images-boxThumbnail">
+
+                <!-- 2020-03-02 #수정
+                     - 로딩 추가
+                 -->
+                <!-- 로딩 -->
+                <div class="m-loading-wrap" style="display:none">
+                    <div class="m-loading">
+                        <!-- 회전 원형 -->
+                        <div class="loadingio-spinner-spinner-v8vnze5ye18">
+                            <div class="ldio-9gvb75r1nia">
+                                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                            </div>
+                        </div>
+
+                        <!-- 진행률 -->
+                        <p class="m-loading-text">
+                            99%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="m-ratioBox-wrap">
+                    <div class="m-ratioBox">
+                        <img src="../../comn/img/no_image_2to1.png" alt="이미지 없음">
+                    </div>
+                </div>
+
+                <div class="m-boardWrite-images-boxThumbnail-btns">
+                    <button type="button" class="m-boards-btn type-small bg-gray">대표이미지 설정</button>
+                    <div class="m-input-file type01 m-boards-btn type-small bg-primary">
+                        <input type="file" id="image">
+                        <label for="image">파일추가</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 파일 목록 -->
+            <div class="m-boardWrite-images-files">
+                <!-- 2020-02-28 #수정
+                    - 삭제버튼 별도 분리 => span.btn_remove
+                    - 클릭된 파일 배경색 부여 => m-boardWrite-images-file에 active 추가
+                 -->
+                <p class="m-boardWrite-images-file point">첨부파일1.doc <span class="m-board-sub">(56KB)</span>
+                    <span class="btn_remove"></span>
+                </p>
+                <p class="m-boardWrite-images-file active">첨부파일2.xls <span class="m-board-sub">(56KB)</span>
+                    <span class="btn_remove"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="m-boards-btns align-center">
+            <a href="#" class="m-boards-btn">취소</a>
+            <a href="#" class="m-boards-btn bg-primary">등록</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+
+</script>
+</html>
