@@ -154,7 +154,7 @@ html, body {overflow-x:hidden;}
         width:100%; height:auto;
     }
 }
-.sub .contents_wrap { padding-bottom:100px;}
+.sub .contents_wrap {padding-top:60px; padding-bottom:100px;}
 .contents_wrap {min-height:500px; }
 .sub_wrap {margin-top:-36px; position:relative; text-align:center;}
 .sub_wrap + .contents_wrap {padding-bottom:100px;}

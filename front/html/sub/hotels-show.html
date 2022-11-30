@@ -187,7 +187,7 @@
     <div class="main">
         <div class="visual_wrap">
             <div class="box_text">
-                <p class="title">1차메뉴</p>
+                <p class="title">2차메뉴</p>
             </div>
 
             <!-- 이미지 삽입예정 -->
@@ -226,9 +226,7 @@
             </div>
         </div>
 
-        <h3 class="page-title">
-            2차메뉴
-        </h3>
+
 
         <div id="contents_wrap" class="contents_wrap">
             <section class="section-detail type01">
@@ -1346,20 +1344,6 @@
 
 
 <script>
-    // 테스트 위치정보
-    let items = [
-        {
-            id: 1,
-            place_name: "효석 달빛 언덕",
-            address_name: "강원 화천군 하남면 건넌들길 97",
-            x: "127.983189",
-            y: "38.130878",
-        },
-    ];
-
-    // 지도세팅(마커 & 마커정보 추가)
-    settingMap(items, "map", "type-common");
-
     // 답글달기
     $(".m-reviews-wrap.type01 .review .btns .btn-reply").click(function(){
         $(this).parents(".review").next(".type-create").toggleClass("active");
@@ -1423,6 +1407,22 @@
             });
         }, 1);
     }
+
+    // 테스트 위치정보
+    let items = [
+        {
+            id: 1,
+            place_name: "효석 달빛 언덕",
+            address_name: "강원 화천군 하남면 건넌들길 97",
+            x: "127.983189",
+            y: "38.130878",
+        },
+    ];
+
+    // 지도세팅(마커 & 마커정보 추가)
+    settingMap(items, "map", "type-common");
+
+
 
 
 </script>

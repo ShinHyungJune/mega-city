@@ -2766,6 +2766,9 @@
 }
 /*fadeInUp 1s both 0.7s cubic-bezier(0.34, 1, 0.64, 1)*/
 
+.swiper-container {
+    padding:0 1px;
+}
 .main-vr {}
 
 .main-vr .main {
