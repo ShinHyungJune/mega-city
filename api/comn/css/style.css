@@ -49,6 +49,7 @@
 }
 .area_main .jumbotron .swiper-slide .box-content {
     display:flex; align-items: center; justify-content: space-between;
+    margin-right:-7%;
 }
 .area_main .jumbotron .swiper-slide .box-content .title {
     font-size:50px; font-weight:500; color:#004264;
@@ -156,6 +157,9 @@
     }
     .area_main .jumbotron .swiper-slide {
         padding:0;
+    }
+    .area_main .jumbotron .swiper-slide .box-content {
+        margin-right:0;
     }
     .area_main .jumbotron .swiper-slide .box-content .img {
         position:absolute; top:50%; right:50%;

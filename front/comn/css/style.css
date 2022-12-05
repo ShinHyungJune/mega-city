@@ -2949,7 +2949,7 @@
         font-size:24px;
     }
     .area-vr .m-tabs.type04 {
-        display:block; max-width:230px;
+        display:flex; max-width:230px;
         position:static;
         margin:0 auto; margin-bottom:20px;
     }
@@ -2963,12 +2963,13 @@
 @media screen and (max-width:768px) {}
 
 .m-tabs.type04 {
-    display:inline-block;
+    display:flex;
     background-color:#fdb728;
     border-radius:10px;
 }
 .m-tabs.type04 .m-tabs-tab {
-    padding:8px 20px;
+    flex:1;
+    padding:8px 10px;
     position:relative;
 
 }
@@ -3141,7 +3142,7 @@
         padding:5px;
     }
     .area-location .section01 .box {
-        width:130px; height:130px;
+        width:150px; height:150px;
     }
     .area-location .section01 .box img {
         transform:scale(0.8);
@@ -3192,7 +3193,9 @@
         margin-right:0;
     }
 }
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+}
 
 .area-guideBook-list .section {
     margin-bottom:100px;
@@ -3372,7 +3375,7 @@
     }
     .area-citytour .section .wrap_1200 .img {
         z-index:0;
-        top:auto; bottom:0; right:0;
+        top:auto; bottom:-61px; right:0;
     }
     .area-citytour .section .box-wrap {
         width:100%;
