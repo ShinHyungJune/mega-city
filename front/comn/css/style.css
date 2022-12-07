@@ -108,27 +108,28 @@
 .area_main .jumbotron .swiper-pagination-counts {margin-left:9px;}
 .area_main .jumbotron .swiper-pagination-count.slash {display:inline-block; margin:0 -2px;}
 .area_main .jumbotron .swiper-pagination-count {color:#fff;}
-.area_main .jumbotron .box-weather {
+.area_main .box-weather {
     display:flex; align-items: center; justify-content: center;
     width:200px; height:200px;
     position:absolute; top:50px; right:100px;
     background-color:rgba(0,0,0,0.3);
     border-radius:100%;
+    z-index:2;
 }
-.area_main .jumbotron .box-weather .subtitle {
+.area_main .box-weather .subtitle {
     display:flex; align-items: center;
     margin-bottom:10px;
     font-size:16px; font-weight:300;
     color:#fff;
 }
-.area_main .jumbotron .box-weather .title {
+.area_main .box-weather .title {
     margin-bottom:6px;
     font-size:26px; font-weight:bold; text-align: center; color:#fff;
 }
-.area_main .jumbotron .box-weather .subtitle img {
+.area_main .box-weather .subtitle img {
     display:block; margin-right:6px;
 }
-.area_main .jumbotron .box-weather .info {
+.area_main .box-weather .info {
     line-height:18px; font-weight:300;
     text-align: center; color:#fff;
 }
@@ -152,13 +153,13 @@
     .area_main .jumbotron .swiper-slide .img-title {
         max-width:70%;
     }
-    .area_main .jumbotron .box-weather {
+    .area_main .box-weather {
         width:150px; height:150px;
     }
-    .area_main .jumbotron .box-weather .title {
+    .area_main .box-weather .title {
         font-size:20px;
     }
-    .area_main .jumbotron .box-weather .subtitle {
+    .area_main .box-weather .subtitle {
         font-size:14px;
     }
     .area_main .jumbotron .swiper-pagination-wrap {
@@ -178,7 +179,7 @@
 
 }
 @media screen and (max-width:768px) {
-    .area_main .jumbotron .box-weather {
+    .area_main .box-weather {
         left:50%; transform:translateX(-50%);
     }
 }
@@ -274,6 +275,7 @@
 
 .area_main .section01 {
     padding:0;
+    position:relative;
 }
 .area_main .section01 .box-notice {
     width:100%;
@@ -1011,6 +1013,7 @@
     padding-top:407px;
 }
 .cards.type04 .box-content {
+    flex:auto;
     margin-left:50px; padding:30px 0;
     border-top:1px solid black; border-bottom:1px solid black;
 }

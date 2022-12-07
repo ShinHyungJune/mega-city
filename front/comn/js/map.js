@@ -46,6 +46,12 @@ function settingMap(items, id, type){
 		markers.push(addMarker(item, index, type));
 	});
 
+	$(".m-tabs-tab, .m-script-pop").click(function(){
+		setTimeout(function(){
+			map.relayout();
+			map.setCenter(new kakao.maps.LatLng(coordinate.y, coordinate.x))
+		}, 300);
+	});
 	return map;
 }
 
@@ -106,25 +112,28 @@ function addInfo(item, type){
 function addMarker(item, index, type){
 	let targetInfo = null;
 
-	let img = {
-		src: "../../comn/img/marker" + parseInt(index + 1) + ".png",
-		size: new kakao.maps.Size(34,41),
-		// 	size: new kakao.maps.Size(45,44)
-	};
+	let content = null;
 
-	img = new kakao.maps.MarkerImage(img.src, img.size);
-
-	let content = new kakao.maps.Marker({
-		map: map,
-		position: new kakao.maps.LatLng(item.y,item.x),
-		image: img
-	});
-
-	if(type === "type-common")
+	if(type === "type-common"){
 		content = new kakao.maps.Marker({
 			map: map,
 			position: new kakao.maps.LatLng(item.y,item.x),
 		});
+	} else{
+		let img = {
+			src: "../../comn/img/marker" + parseInt(index + 1) + ".png",
+			size: new kakao.maps.Size(34,41),
+			// 	size: new kakao.maps.Size(45,44)
+		};
+
+		img = new kakao.maps.MarkerImage(img.src, img.size);
+
+		content = new kakao.maps.Marker({
+			map: map,
+			position: new kakao.maps.LatLng(item.y,item.x),
+			image: img
+		});
+	}
 
 	let marker = {
 		id: item.id,
